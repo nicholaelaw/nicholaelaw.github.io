@@ -4,7 +4,7 @@
  <title>三只猫的朋友</title>
  <link href="http://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="http://nicholaelaw.github.io/"/>
- <updated>2015-08-26T04:13:04+08:00</updated>
+ <updated>2015-08-26T05:35:35+08:00</updated>
  <id>http://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>博客诞生记</title>
    <link href="http://nicholaelaw.github.io/2015/08/26/making-of-this-blog/"/>
-   <updated>2015-08-26T03:44:53+08:00</updated>
+   <updated>2015-08-26T05:30:42+08:00</updated>
    <id>http://nicholaelaw.github.io/2015/08/26/making-of-this-blog</id>
    <content type="html">&lt;p&gt;本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。&lt;/p&gt;
 
@@ -26,6 +26,19 @@
 &lt;p&gt;看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用&lt;a href=&quot;http://blog.getpelican.com/&quot;&gt;Pelican&lt;/a&gt;。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的&lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;。&lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole/&quot;&gt;这个博客&lt;/a&gt;让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。&lt;/p&gt;
 
 &lt;p&gt;那就开干吧。我的目标是以&lt;a href=&quot;http://getpoole.com/&quot;&gt;Poole&lt;/a&gt;的Lanyon主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>mobile blogging test</title>
+   <link href="http://nicholaelaw.github.io/2015/08/26/mobile-blogging-test/"/>
+   <updated>2015-08-26T00:00:00+08:00</updated>
+   <id>http://nicholaelaw.github.io/2015/08/26/mobile-blogging-test</id>
+   <content type="html">&lt;p&gt;This is a test article for mobile blogging capability on github with jekyll. This text is written in MrHyde on Android.&lt;/p&gt;
+
+&lt;p&gt;中文测试文本。&lt;/p&gt;
+
+&lt;p&gt;EDITED.&lt;/p&gt;
 </content>
  </entry>
  
