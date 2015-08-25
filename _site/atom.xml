@@ -4,7 +4,7 @@
  <title>三只猫的朋友</title>
  <link href="http://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="http://nicholaelaw.github.io/"/>
- <updated>2015-08-26T05:39:54+08:00</updated>
+ <updated>2015-08-26T05:49:03+08:00</updated>
  <id>http://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -15,9 +15,11 @@
  <entry>
    <title>博客诞生记</title>
    <link href="http://nicholaelaw.github.io/2015/08/26/making-of-this-blog/"/>
-   <updated>2015-08-26T05:30:42+08:00</updated>
+   <updated>2015-08-26T05:49:03+08:00</updated>
    <id>http://nicholaelaw.github.io/2015/08/26/making-of-this-blog</id>
-   <content type="html">&lt;p&gt;本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。&lt;/p&gt;
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。&lt;/p&gt;
 
 &lt;p&gt;平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的&lt;a href=&quot;http://whatif.xkcd.com&quot;&gt;What if?&lt;/a&gt;站点风格的影响，决定弄个博客。&lt;/p&gt;
 
@@ -26,6 +28,18 @@
 &lt;p&gt;看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用&lt;a href=&quot;http://blog.getpelican.com/&quot;&gt;Pelican&lt;/a&gt;。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的&lt;a href=&quot;http://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;。&lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole/&quot;&gt;这个博客&lt;/a&gt;让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。&lt;/p&gt;
 
 &lt;p&gt;那就开干吧。我的目标是以&lt;a href=&quot;http://getpoole.com/&quot;&gt;Poole&lt;/a&gt;的Lanyon主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;注意事项&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;直接将User Page（也就是username.github.io）作为博客空间时&lt;code&gt;baseurl&lt;/code&gt;必须为空。同要修改根目录的&lt;code&gt;index.html&lt;/code&gt;文件，找到&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;&amp;lt;a href=&quot;/&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;这一行，把中间那个&lt;code&gt;/&lt;/code&gt;去掉。否则的话首页上的Permalink会变得千奇百怪。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  

@@ -123,7 +123,9 @@
 
     <span class="post-date">26 Aug 2015</span>
 
-    <p>本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。</p>
+    <h2 id="section">前言</h2>
+
+<p>本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。</p>
 
 <p>平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的<a href="http://whatif.xkcd.com">What if?</a>站点风格的影响，决定弄个博客。</p>
 
@@ -132,6 +134,18 @@
 <p>看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用<a href="http://blog.getpelican.com/">Pelican</a>。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的<a href="http://jekyllrb.com">jekyll</a>。<a href="http://joshualande.com/jekyll-github-pages-poole/">这个博客</a>让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。</p>
 
 <p>那就开干吧。我的目标是以<a href="http://getpoole.com/">Poole</a>的Lanyon主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以</p>
+
+<h2 id="section-1">注意事项</h2>
+
+<ul>
+  <li>
+    <p>直接将User Page（也就是username.github.io）作为博客空间时<code>baseurl</code>必须为空。同要修改根目录的<code>index.html</code>文件，找到</p>
+
+    <p><code>&lt;a href="/"&gt;</code></p>
+
+    <p>这一行，把中间那个<code>/</code>去掉。否则的话首页上的Permalink会变得千奇百怪。</p>
+  </li>
+</ul>
 
   </div>
   
