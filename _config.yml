@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               三只猫的朋友
+tagline:             '高冷，忠诚，温暖'
+description:         'For all the things that does&#39;nt really belong anywhere else.'
+url:                 http://nicholaelaw.github.io/
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              nicholaelaw
+  url:               https://nicholaelaw.github.io/
+  email:             nicholaelaw@gmail.com
+
+# Custom vars
+version:             1.0.0
