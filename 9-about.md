@@ -5,7 +5,7 @@ title: 关于
 
 I will always remember his warmth.
 
-![The Little One]({{ site.url }}/_assets/the_little_one.jpg)
+![The Little One](/assets/the-little-one.jpg)
 
 Rest in peace, my little one.
 

@@ -11,4 +11,4 @@ title: 博客诞生记
 
 看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用[Pelican](http://blog.getpelican.com/)。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的[jekyll](http://jekyllrb.com)。[这个博客](http://joshualande.com/jekyll-github-pages-poole/)让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。
 
-那就开干吧。我的目标是以[Poole](http://getpoole.com/)的Lanyon主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。
+那就开干吧。我的目标是以[Poole](http://getpoole.com/)的Lanyon主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以
