@@ -10,7 +10,7 @@ title: 一个走路的问题
 
 > A man I know, who lives in my neighborhood, travels to Chinsura everyday for his work. His wife drives him over to Howrah Station every morning and in the evening exactly at 6 p.m. she picks him up from the station and takes him home.
 > 
-> One day he was let off at work an hour earlier, and so he arrived at the Howrah Station at 5 p.m. instead of at 6 p.m. He started walking home. However he met his wife enroute to the stationand got into the car. They drove home arriving 10 minutes earlier than usual.
+> One day he was let off at work an hour earlier, and so he arrived at the Howrah Station at 5 p.m. instead of at 6 p.m. He started walking home. However he met his wife enroute to the station and got into the car. They drove home arriving 10 minutes earlier than usual.
 > 
 > How long did the man have to walk, before he was picked up by his wife?
 
@@ -18,7 +18,7 @@ title: 一个走路的问题
 
 > 有个男滴，住在双流，在郫县上班。每天早上他老婆开车送他到郫县的高铁站（有高铁还开什么车，你可能会问，他脑子不好使呗），然后晚上六点钟准时到高铁站接他回家（多和谐的家庭！）。
 > 
-> 有一天，介个男滴早了一个小时下班（老板不在？），他五点钟就到了高铁站。于是他二话不说（！）闷头就开始步行回家。走着走着，正好遇上从家里出发过来接他的老婆，于是就上了车，回了家。到家一看表，哎呀妈呀，比平常早了整整10分钟到家！
+> 有一天，介个男滴早了一个小时下班（老板不在？），他五点钟就到了高铁站。于是他二话不说（！）闷头就开始步行回家。走着走着，正好遇上从家里出发过来接他的老婆，于是就上了车，回了家。到家一看表，哎呀妈呀，比平常早了整整10分钟！
 > 
 > 问，介个男滴他走了好久才遇到他老婆？
 
@@ -43,7 +43,7 @@ $$\begin{equation}
 今天老公走了一段路，所以到家的时间提前了10分钟：
 
 $$\begin{equation}
-	t'_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}=t_{wife}-10
+	t'_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{wife}-10
 \end{equation}$$
 
 代入$$(2)$$运算，得出
@@ -55,7 +55,7 @@ $$\begin{equation}
 但是对男人来说，今天五点钟就出发了，回家所用的时间是
 
 $$\begin{equation}
-	t'=x+\frac{d-v_{man}\cdot x}{v_{car}}=t_{home}+60-10
+	t'=x+\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{home}+60-10
 \end{equation}$$
 
 代入$$(1)$$，计算得出
