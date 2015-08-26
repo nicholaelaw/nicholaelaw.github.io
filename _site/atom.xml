@@ -4,7 +4,7 @@
  <title>三只猫的温暖</title>
  <link href="https://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="https://nicholaelaw.github.io/"/>
- <updated>2015-08-26T19:19:24+08:00</updated>
+ <updated>2015-08-26T22:14:20+08:00</updated>
  <id>https://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -58,9 +58,9 @@
 
 &lt;p&gt;今天老公走了一段路，所以到家的时间提前了10分钟：&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
 	t&#39;_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{wife}-10
-\end{equation}&lt;/script&gt;
+\end{equation*}&lt;/script&gt;
 
 &lt;p&gt;代入&lt;script type=&quot;math/tex&quot;&gt;(2)&lt;/script&gt;运算，得出&lt;/p&gt;
 
@@ -70,25 +70,25 @@
 
 &lt;p&gt;但是对男人来说，今天五点钟就出发了，回家所用的时间是&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
 	t&#39;=x+\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{home}+60-10
-\end{equation}&lt;/script&gt;
+\end{equation*}&lt;/script&gt;
 
 &lt;p&gt;代入&lt;script type=&quot;math/tex&quot;&gt;(1)&lt;/script&gt;，计算得出&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{aligned}
 	x+\frac{d}{v_{car}}-\frac{v_{man}}{v_{car}}\cdot x &amp;=\frac{d}{v_{car}}+50\\
-	x--\frac{v_{man}}{v_{car}}\cdot x &amp;=50
+	x-\frac{v_{man}}{v_{car}}\cdot x &amp;=50
 \end{aligned} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;将&lt;script type=&quot;math/tex&quot;&gt;(4)&lt;/script&gt;代入到上述结果中，得出&lt;script type=&quot;math/tex&quot;&gt;x=55&lt;/script&gt;。即男人走了55分钟（略凄凉）。&lt;/p&gt;
+&lt;p&gt;将&lt;script type=&quot;math/tex&quot;&gt;(3)&lt;/script&gt;代入到上述结果中，得出&lt;script type=&quot;math/tex&quot;&gt;x=55&lt;/script&gt;。即男人走了55分钟（略凄凉）。&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\square&lt;/script&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;吐槽&lt;/h2&gt;
 
-&lt;p&gt;最开始我解到&lt;script type=&quot;math/tex&quot;&gt;(4)&lt;/script&gt;就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。&lt;/p&gt;
+&lt;p&gt;一开始我解到&lt;script type=&quot;math/tex&quot;&gt;(3)&lt;/script&gt;就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。&lt;/p&gt;
 
 &lt;p&gt;这可怎么办，知其然而不知其所以然是最要命的。我只有一使劲——就有了上面的东西了。今后有空我还会把平时解过的一些有意思的题目发出来。拜。&lt;/p&gt;
 </content>

@@ -42,9 +42,9 @@ $$\begin{equation}
 
 今天老公走了一段路，所以到家的时间提前了10分钟：
 
-$$\begin{equation}
+$$\begin{equation*}
 	t'_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{wife}-10
-\end{equation}$$
+\end{equation*}$$
 
 代入$$(2)$$运算，得出
 
@@ -54,23 +54,23 @@ $$\begin{equation}
 
 但是对男人来说，今天五点钟就出发了，回家所用的时间是
 
-$$\begin{equation}
+$$\begin{equation*}
 	t'=x+\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{home}+60-10
-\end{equation}$$
+\end{equation*}$$
 
 代入$$(1)$$，计算得出
 
 $$\begin{aligned}
 	x+\frac{d}{v_{car}}-\frac{v_{man}}{v_{car}}\cdot x &=\frac{d}{v_{car}}+50\\
-	x--\frac{v_{man}}{v_{car}}\cdot x &=50
+	x-\frac{v_{man}}{v_{car}}\cdot x &=50
 \end{aligned}$$
 
-将$$(4)$$代入到上述结果中，得出$$x=55$$。即男人走了55分钟（略凄凉）。
+将$$(3)$$代入到上述结果中，得出$$x=55$$。即男人走了55分钟（略凄凉）。
 
 $$\square$$
 
 ##吐槽
 
-最开始我解到$$(4)$$就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。
+一开始我解到$$(3)$$就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。
 
 这可怎么办，知其然而不知其所以然是最要命的。我只有一使劲——就有了上面的东西了。今后有空我还会把平时解过的一些有意思的题目发出来。拜。
