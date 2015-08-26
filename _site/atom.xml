@@ -4,7 +4,7 @@
  <title>三只猫的温暖</title>
  <link href="https://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="https://nicholaelaw.github.io/"/>
- <updated>2015-08-26T18:56:01+08:00</updated>
+ <updated>2015-08-26T18:56:50+08:00</updated>
  <id>https://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -321,19 +321,6 @@ $ git push -u origin master
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Work in Progress</title>
-   <link href="https://nicholaelaw.github.io/2015/08/25/work-in-progress/"/>
-   <updated>2015-08-25T00:00:00+08:00</updated>
-   <id>https://nicholaelaw.github.io/2015/08/25/work-in-progress</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/doors.jpg&quot; alt=&quot;under construction?&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This blog is still under construction! Move along.&lt;/p&gt;
-
-&lt;p&gt;博客建设中，谢绝围观。&lt;/p&gt;
 </content>
  </entry>
  
