@@ -84,7 +84,9 @@ Privoxy的默认http代理端口是8118：
 
 首先选择一个主题。在Lanyon的官方页面里介绍了Lanyon预置的各种配色以及可选的边栏布局，我直接全选了：
 
-	<% raw %><body class="theme-base-08 layout-reverse sidebar-overlay"><% endraw %>
+	{% raw %}
+	<body class="theme-base-08 layout-reverse sidebar-overlay">
+	{% endraw %}
 	
 先加这么一句，一会儿还要回来。
 
@@ -97,12 +99,12 @@ $$f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z$$
 
 我几乎要忍不住大笑。实际安装很简单，将MathJax的脚本复制粘贴下来，就算完工了：
 
-	<% raw %>
+	{% raw %}
 	<!-- Mathjax CDN -->
 	<script type="text/javascript"
 	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-	<% endraw %>
+	{% endraw %}
 	
 值得注意的是，上面实际上是远程调用了储存在MathJax服务器上的JS脚本，所以有时加载页面的速度会受到影响。同时考虑到国内网络的各种不稳定因素，所以也可以在本地安装MathJax，具体操作官网上有。[^math]
 
@@ -140,7 +142,7 @@ $$f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z$$
 
 ###懒人的办法
 
-`git`做了十几次之后终于厌烦了，下载[GitHub for Mac](https://central.github.com/mac/latest)，加入本地repo，push或者commit就行了。操作没什么难度，第一次用时还有教学，相当给力。
+`git`做了十几次之后终于厌烦了，下载[GitHub for Mac](https://central.github.com/mac/latest)，加入本地repo，commit后push就行了。操作没什么难度，第一次用时还有教学，相当给力。
 
 ##评论、数据统计
 
@@ -150,7 +152,7 @@ $$f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z$$
 
 废话不多说，注册Google Analytics之后把tracking code保存到`/_includes/googleAnalytics.html`，然后在`default.html`里面加一句`include`就可以了。
 
-不过就我这个小小站的访问量，估计tracking有和没有其实区别不大：来访的人数两只手数绰绰有余了。所以现阶段这玩意儿只是个bling。
+不过就我这个小小站的访问量，估计tracking有和没有其实区别不大：来访的人数两只手数绰绰有余了。所以这玩意儿仅仅是个bling。
 
 ###添加[Disqus](http://www.disqus.com)评论[^comments]
 将Disqus的Universal代码复制到`/_include/comments.html`文件里：

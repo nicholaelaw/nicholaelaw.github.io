@@ -28,8 +28,8 @@ Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章�
 
 但是问题来了，首页看起来是内容丰富多了，可是感觉都是没写完的文章：缺少一个“more”按钮。在`index.html`里修改过的地方后面再加一句：
 
-	{% raw %}
-	<a href="{{ site.baseurl }}{{ post.url }}">
+    {% raw %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
       <p style="text-align:center">\(\{\)<b>继续看</b>\(\}\)
     </p></a>
     {% endraw %}
