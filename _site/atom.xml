@@ -4,7 +4,7 @@
  <title>三只猫的朋友</title>
  <link href="http://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="http://nicholaelaw.github.io/"/>
- <updated>2015-08-26T06:51:26+08:00</updated>
+ <updated>2015-08-26T07:57:54+08:00</updated>
  <id>http://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>博客诞生记</title>
    <link href="http://nicholaelaw.github.io/2015/08/26/making-of-this-blog/"/>
-   <updated>2015-08-26T06:51:26+08:00</updated>
+   <updated>2015-08-26T07:57:53+08:00</updated>
    <id>http://nicholaelaw.github.io/2015/08/26/making-of-this-blog</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
 
@@ -74,7 +74,35 @@ Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.
 
 &lt;h3 id=&quot;poole-lanyo&quot;&gt;Poole, Lanyo&lt;/h3&gt;
 
-&lt;p&gt;下载已经预制好的&lt;a href=&quot;http://lanyon.getpoole.com/&quot;&gt;Lanyon&lt;/a&gt;主题，解压到打算作为repo的目录下&lt;/p&gt;
+&lt;p&gt;下载已经预制好的&lt;a href=&quot;http://lanyon.getpoole.com/&quot;&gt;Lanyon&lt;/a&gt;主题，解压到打算作为repo的目录下，先不着急修改，&lt;code&gt;cd&lt;/code&gt;到根目录下运行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在浏览器里访问&lt;code&gt;127.0.0.1:4000&lt;/code&gt;，看看刚刚建起来的网站雏形，和Lanyon的官方页面一模一样。接下来修改各种模板参数。&lt;/p&gt;
+
+&lt;h4 id=&quot;configyml&quot;&gt;&lt;code&gt;/_config.yml&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;这里&lt;code&gt;Setup&lt;/code&gt;部分修改&lt;code&gt;title&lt;/code&gt;（标题），&lt;code&gt;tagline&lt;/code&gt;（副标题），&lt;code&gt;description&lt;/code&gt;（描述）和&lt;code&gt;url&lt;/code&gt;（链接地址）。&lt;code&gt;baseurl&lt;/code&gt;为空。&lt;/p&gt;
+
+&lt;h3 id=&quot;google-analyticshttpwwwgooglecomanalytics&quot;&gt;添加&lt;a href=&quot;http://www.google.com/analytics&quot;&gt;Google Analytics&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;disqushttpwwwdisquscom&quot;&gt;添加&lt;a href=&quot;http://www.disqus.com&quot;&gt;Disqus&lt;/a&gt;评论&lt;/h3&gt;
+&lt;p&gt;将Disqus的Universal代码复制到&lt;code&gt;/_include/comments.html&lt;/code&gt;文件里：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% if page.comments %}
+&amp;lt;!-- Add Disqus comments. --&amp;gt;
+
+&amp;lt;--- 代码粘到这里 ---&amp;gt;
+
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在&lt;code&gt;/_layouts/default.html&lt;/code&gt;中的&lt;code&gt;{{ content }}&lt;/code&gt;这句后面加入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% include comments.html %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就大功告成了。之后就可以在FrontMatter里面用&lt;code&gt;comments:true&lt;/code&gt;来开关评论了！&lt;/p&gt;
 
 &lt;h2 id=&quot;section-4&quot;&gt;注意事项&lt;/h2&gt;
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Work in Progress
+comments: false
 ---
 
 ![under construction?](/assets/doors.jpg)

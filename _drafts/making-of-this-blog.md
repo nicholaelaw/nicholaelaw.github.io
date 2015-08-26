@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 博客诞生记
+comments: true
 ---
 
 ##前言
@@ -56,7 +57,37 @@ Privoxy的默认http代理端口是8118：
 
 ###Poole, Lanyo
 
-下载已经预制好的[Lanyon](http://lanyon.getpoole.com/)主题，解压到打算作为repo的目录下
+下载已经预制好的[Lanyon](http://lanyon.getpoole.com/)主题，解压到打算作为repo的目录下，先不着急修改，`cd`到根目录下运行
+
+	$jekyll serve
+	
+然后在浏览器里访问`127.0.0.1:4000`，看看刚刚建起来的网站雏形，和Lanyon的官方页面一模一样。接下来修改各种模板参数。
+
+####`/_config.yml`
+这里`Setup`部分修改`title`（标题），`tagline`（副标题），`description`（描述）和`url`（链接地址）。`baseurl`为空。
+
+
+
+###添加[Google Analytics](http://www.google.com/analytics)
+
+###添加[Disqus](http://www.disqus.com)评论
+将Disqus的Universal代码复制到`/_include/comments.html`文件里：
+
+	{% raw %}
+	{% if page.comments %}
+	<!-- Add Disqus comments. -->
+	
+	<--- 代码粘到这里 --->
+	
+	{% endif %}
+	{% endraw %}
+
+然后在`/_layouts/default.html`中的`{% raw %}{{ content }}{% endraw %}`这句后面加入
+
+	{% raw %}{% include comments.html %}{% endraw %}
+	
+就大功告成了。之后就可以在FrontMatter里面用`comments:true`来开关评论了！
+
 
 ##注意事项
 
