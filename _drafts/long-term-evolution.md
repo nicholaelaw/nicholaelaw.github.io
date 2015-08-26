@@ -61,3 +61,27 @@ $$\rhd$$
 除了字有点小，图标有点丑（不清晰）以外，还是挺不错的。
 
 $$\rhd$$
+
+###加入`.gitignore`
+
+为了节省GitHub资源，有些不必要上传的东西可以加入到`.gitignore`文件里；GitHub甚至有个repo专门收集各种工作环境下的[`.gitignore`](https://github.com/github/gitignore)文档。对于Jekyll来说，自动生成的`_site`文件夹是不必上传的。因为传说中GitHub Pages本身就会忽略其内容，根据源文件编译生成网站。
+
+由此我又得出了另外一个重要结论，那就是既然在GitHub Pages上使用Jekyll无需在本地build，那么在任何地方、任何设备上，只要能够将写好的文档push到GitHub，就算是发布了？为啥这个情况没有被反复强调呢？害我纠结很久怎么在手机上写文章。
+
+$$\rhd$$
+
+###启用删除线
+
+又发现一个问题：默认状态下，Jekyll的Markdown处理器不支持删除线标记`~~`。要启用删除线标记，在`_config.yml`末尾加入
+
+	markdown:         redcarpet 
+	redcarpet:   
+	  extensions:     ["strikethrough"]
+
+删除线就启用了。然而这么做导致TeX语法不能正确parse，用到MathJax的地方全部乱套！我猜想可能是启用`strikethrough`的同时也启用了`highlight`，或者其它的什么东西。既然不能用Markdown，那回归本源，直接上HTML总该没问题了吧：
+
+	<del>删除我</del>
+	
+<del>各种悲催。</del>
+
+$$\rhd$$
