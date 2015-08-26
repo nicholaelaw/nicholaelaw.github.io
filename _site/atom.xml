@@ -4,7 +4,7 @@
  <title>三只猫的温暖</title>
  <link href="https://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="https://nicholaelaw.github.io/"/>
- <updated>2015-08-26T18:52:26+08:00</updated>
+ <updated>2015-08-26T18:56:01+08:00</updated>
  <id>https://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -126,7 +126,7 @@ Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.
 
 &lt;h3 id=&quot;section-2&quot;&gt;墙墙墙！&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;gem&lt;/code&gt;命令不支持我平时科学上网用的socks代理，所以要想办法将&lt;code&gt;gem&lt;/code&gt;命令的http请求转发到socks代理上。到网上搜了一圈，有人说用&lt;a href=&quot;http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/&quot;&gt;Polipo&lt;/a&gt;;然而我安装之后折腾半天居然不会用……又要被人耻笑了。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem&lt;/code&gt;命令不支持我平时科学上网用的socks代理，所以要想办法将&lt;code&gt;gem&lt;/code&gt;命令的http请求转发到socks代理上。到网上搜了一圈，有人说用&lt;a href=&quot;http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/&quot;&gt;Polipo&lt;/a&gt;；然而我安装之后折腾半天居然不会用……又要被人耻笑了。&lt;/p&gt;
 
 &lt;p&gt;继而看到有人说&lt;a href=&quot;http://www.privoxy.org/&quot;&gt;Privoxy&lt;/a&gt;，于是&lt;code&gt;brew&lt;/code&gt;安装上。在&lt;code&gt;/usr/local/etc/privoxy/config&lt;/code&gt;文件中加一句配置：&lt;/p&gt;
 

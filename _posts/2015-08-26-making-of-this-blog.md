@@ -34,7 +34,7 @@ title: 博客是怎样炼成的
 
 ###墙墙墙！
 
-`gem`命令不支持我平时科学上网用的socks代理，所以要想办法将`gem`命令的http请求转发到socks代理上。到网上搜了一圈，有人说用[Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/);然而我安装之后折腾半天居然不会用……又要被人耻笑了。
+`gem`命令不支持我平时科学上网用的socks代理，所以要想办法将`gem`命令的http请求转发到socks代理上。到网上搜了一圈，有人说用[Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/)；然而我安装之后折腾半天居然不会用……又要被人耻笑了。
 
 继而看到有人说[Privoxy](http://www.privoxy.org/)，于是`brew`安装上。在`/usr/local/etc/privoxy/config`文件中加一句配置：
 
