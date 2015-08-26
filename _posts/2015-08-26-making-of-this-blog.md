@@ -92,8 +92,7 @@ Privoxy的默认http代理端口是8118：
 
 ####**`/_includes/head.html`**
 
-这相当于一个header文件，如果要让一句代码在所有页面上都出现，就把它加到这里（或者单独建个html然后在`default.html`里`include`，一会儿就有）。我打算要在博客文章里写不少数学方面的东西，所以需要一个能清晰无损的呈现方式（OK, I don't *need* it, I **want** it）。从[What if?](http://whatif.xkcd.com)的的页面
-以及在xkcd论坛[求助](http://forums.xkcd.com/viewtopic.php?f=2&t=112510)中得知Randall使用了[MathJax](https://www.mathjax.org/)。摸到其主页上一看，还真是一枚神器:
+这相当于一个header文件，如果要让一句代码在所有页面上都出现，就把它加到这里（或者单独建个html然后在`default.html`里`include`，一会儿就有）。我打算要在博客文章里写不少数学方面的东西，需要一个清晰无损的呈现形式（OK, I don't *need* it, I **want** it）。从[What if?](http://whatif.xkcd.com)的页面以及在xkcd论坛[求助](http://forums.xkcd.com/viewtopic.php?f=2&t=112510)中得知Randall使用了[MathJax](https://www.mathjax.org/)。摸到其主页上一看，还真是一枚神器:
 
 $$f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z$$
 
