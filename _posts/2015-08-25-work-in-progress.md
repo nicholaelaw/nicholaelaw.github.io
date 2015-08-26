@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Work in Progress
+usemath: false
 comments: false
 ---
 

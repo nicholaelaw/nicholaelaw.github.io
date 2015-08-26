@@ -4,13 +4,325 @@
  <title>三只猫的温暖</title>
  <link href="https://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="https://nicholaelaw.github.io/"/>
- <updated>2015-08-26T14:09:32+08:00</updated>
+ <updated>2015-08-26T18:52:26+08:00</updated>
  <id>https://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
    <email>nicholaelaw@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>一个走路的问题</title>
+   <link href="https://nicholaelaw.github.io/problem/solution/2015/08/26/walking-back-to-happiness/"/>
+   <updated>2015-08-26T00:00:00+08:00</updated>
+   <id>https://nicholaelaw.github.io/problem/solution/2015/08/26/walking-back-to-happiness</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;原题&lt;/h2&gt;
+&lt;p&gt;来自&lt;a href=&quot;https://en.wikipedia.org/wiki/Shakuntala_Devi&quot;&gt;Shakuntala Devi&lt;/a&gt;编写的&lt;a href=&quot;https://books.google.com/books?id=F-idu9oxkdgC&amp;amp;printsec=frontcover#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;&lt;em&gt;Puzzels to Puzzle You&lt;/em&gt;&lt;/a&gt;一书，第23问”Walkin back to Happiness”：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A man I know, who lives in my neighborhood, travels to Chinsura everyday for his work. His wife drives him over to Howrah Station every morning and in the evening exactly at 6 p.m. she picks him up from the station and takes him home.&lt;/p&gt;
+
+  &lt;p&gt;One day he was let off at work an hour earlier, and so he arrived at the Howrah Station at 5 p.m. instead of at 6 p.m. He started walking home. However he met his wife enroute to the stationand got into the car. They drove home arriving 10 minutes earlier than usual.&lt;/p&gt;
+
+  &lt;p&gt;How long did the man have to walk, before he was picked up by his wife?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这道题在网上有许多版本，只是地名被换成了其它的名字。作者Devi老太是印度人，所以很自然地她的版本里的Chinsura和Howrah都是印度地名。背景不多说，勉强把题翻译成中文：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;有个男滴，住在双流，在郫县上班。每天早上他老婆开车送他到郫县的高铁站（有高铁还开什么车，你可能会问，他脑子不好使呗），然后晚上六点钟准时到高铁站接他回家（多和谐的家庭！）。&lt;/p&gt;
+
+  &lt;p&gt;有一天，介个男滴早了一个小时下班（老板不在？），他五点钟就到了高铁站。于是他二话不说（！）闷头就开始步行回家。走着走着，正好遇上从家里出发过来接他的老婆，于是就上了车，回了家。到家一看表，哎呀妈呀，比平常早了整整10分钟到家！&lt;/p&gt;
+
+  &lt;p&gt;问，介个男滴他走了好久才遇到他老婆？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;抛开他为什么要走路而不是坐高铁、公交回家这种理智的问题不谈，这道题本身还真的有点意思。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;解&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;友情提示：以下内容包含数学！阅读时请遵守国家相关法规&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;设此男家到火车站的距离为&lt;script type=&quot;math/tex&quot;&gt;d&lt;/script&gt;，男人走路的时间为&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;，男人步行速度为&lt;script type=&quot;math/tex&quot;&gt;v_{man}&lt;/script&gt;，老婆开车速度为&lt;script type=&quot;math/tex&quot;&gt;v_{car}&lt;/script&gt;。正常情况下夫妻俩从高铁站出发返家，耗时&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	t_{home}=\frac{d}{v_{car}}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;对于老婆来说，平时接老公（从家里出发那一刻起）用时&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	t_{wife}=\frac{2d}{v_{car}}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;今天老公走了一段路，所以到家的时间提前了10分钟：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	t&#39;_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}=t_{wife}-10
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;代入&lt;script type=&quot;math/tex&quot;&gt;(2)&lt;/script&gt;运算，得出&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	\frac{v_{man}}{v_{car}}\cdot x=5
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;但是对男人来说，今天五点钟就出发了，回家所用的时间是&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	t&#39;=x+\frac{d-v_{man}\cdot x}{v_{car}}=t_{home}+60-10
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;代入&lt;script type=&quot;math/tex&quot;&gt;(1)&lt;/script&gt;，计算得出&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+	x+\frac{d}{v_{car}}-\frac{v_{man}}{v_{car}}\cdot x &amp;=\frac{d}{v_{car}}+50\\
+	x--\frac{v_{man}}{v_{car}}\cdot x &amp;=50
+\end{aligned} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;将&lt;script type=&quot;math/tex&quot;&gt;(4)&lt;/script&gt;代入到上述结果中，得出&lt;script type=&quot;math/tex&quot;&gt;x=55&lt;/script&gt;。即男人走了55分钟（略凄凉）。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\square&lt;/script&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;吐槽&lt;/h2&gt;
+
+&lt;p&gt;最开始我解到&lt;script type=&quot;math/tex&quot;&gt;(4)&lt;/script&gt;就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。&lt;/p&gt;
+
+&lt;p&gt;这可怎么办，知其然而不知其所以然是最要命的。我只有一使劲——就有了上面的东西了。今后有空我还会把平时解过的一些有意思的题目发出来。拜。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>博客是怎样炼成的</title>
+   <link href="https://nicholaelaw.github.io/computer/programming/memo/2015/08/26/making-of-this-blog/"/>
+   <updated>2015-08-26T00:00:00+08:00</updated>
+   <id>https://nicholaelaw.github.io/computer/programming/memo/2015/08/26/making-of-this-blog</id>
+   <content type="html">&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。&lt;/p&gt;
+
+&lt;p&gt;平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的&lt;a href=&quot;http://whatif.xkcd.com&quot;&gt;What if?&lt;/a&gt;站点风格的影响，决定弄个博客。博客弄出来了，第一篇文章记下建站的过程，是再合适不过的了。&lt;sup id=&quot;fnref:note&quot;&gt;&lt;a href=&quot;#fn:note&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;准备工作&lt;/h2&gt;
+
+&lt;p&gt;第一步是选方案。以前玩日志、写博客的时候，基本都是小打小闹。QQ空间之流已然无法入眼。Wordpress给我的印象不是太好，可能是当初没弄透彻便放弃的缘故。之后就是买空间自己建站；但是太复杂可能又会半途而废。最后在网上搜索的时候看到有人推荐利用&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;的服务来写博客。空间不花钱而且以后很容易加上自己的域名。&lt;/p&gt;
+
+&lt;p&gt;看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用&lt;a href=&quot;http://blog.getpelican.com/&quot;&gt;Pelican&lt;/a&gt;。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;。&lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole/&quot;&gt;这个博客&lt;/a&gt;让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+
+&lt;p&gt;那就开干吧。我的目标是以&lt;a href=&quot;http://getpoole.com/&quot;&gt;Poole&lt;/a&gt;的&lt;a href=&quot;http://lanyon.getpoole.com/&quot;&gt;Lanyon&lt;/a&gt;主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装Jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install jekyll
+ERROR:  While executing gem (Gem::RemoteFetcher::FetchError)
+Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/blah)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;尼玛这是在跟我开玩笑吗？！&lt;a href=&quot;https://rubygems.org/&quot;&gt;Ruby Gems&lt;/a&gt;居然被墙了？无奈，先翻墙再说。&lt;/p&gt;
+
+&lt;p&gt;（懒得翻墙的，可以让&lt;code&gt;gem&lt;/code&gt;转向&lt;a href=&quot;http://ruby.taobao.org/&quot;&gt;国内镜像源&lt;/a&gt;下载。）&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;墙墙墙！&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;gem&lt;/code&gt;命令不支持我平时科学上网用的socks代理，所以要想办法将&lt;code&gt;gem&lt;/code&gt;命令的http请求转发到socks代理上。到网上搜了一圈，有人说用&lt;a href=&quot;http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/&quot;&gt;Polipo&lt;/a&gt;;然而我安装之后折腾半天居然不会用……又要被人耻笑了。&lt;/p&gt;
+
+&lt;p&gt;继而看到有人说&lt;a href=&quot;http://www.privoxy.org/&quot;&gt;Privoxy&lt;/a&gt;，于是&lt;code&gt;brew&lt;/code&gt;安装上。在&lt;code&gt;/usr/local/etc/privoxy/config&lt;/code&gt;文件中加一句配置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;forward-socks5 / 127.0.0.1:1080 .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意最后那个点很重要。&lt;code&gt;/&lt;/code&gt;代表所有http地址都要转发，&lt;code&gt;.&lt;/code&gt;代表没有要转发的http代理（只有socks）。写好配置，发动&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ privoxy /usr/local/etc/privoxy/config
+-bash: privoxy: command not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这……说明&lt;code&gt;brew&lt;/code&gt;没有做symlink。爬进&lt;code&gt;/usr/local/&lt;/code&gt;，终于找到在&lt;code&gt;/usr/local/etc/privoxy/&lt;/code&gt;下面。再次发动。&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll-1&quot;&gt;再一次，Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Privoxy的默认http代理端口是8118：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install jekyll -p http://127.0.0.1:8118
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;终于，没有再报错了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;施工&lt;/h2&gt;
+
+&lt;p&gt;到这里算是基本准备工作结束了。我已经抽掉了半包烟了，各种疲惫不堪。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;主体工程&lt;/h3&gt;
+&lt;p&gt;下载已经预制好的&lt;a href=&quot;http://lanyon.getpoole.com/&quot;&gt;Lanyon&lt;/a&gt;主题，解压到打算作为repo的目录下，先不着急修改，&lt;code&gt;cd&lt;/code&gt;到根目录下运行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在浏览器里访问&lt;code&gt;127.0.0.1:4000&lt;/code&gt;，看看刚刚建起来的网站雏形，和Lanyon的官方页面一模一样。接下来修改各种模板参数。&lt;/p&gt;
+
+&lt;h4 id=&quot;configyml&quot;&gt;&lt;strong&gt;&lt;code&gt;/_config.yml&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;两个小坑：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;url&lt;/code&gt; 博客地址，以&lt;code&gt;https&lt;/code&gt;开头，结尾不要有&lt;code&gt;/&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;baseurl&lt;/code&gt; 因为是直接建在User Page，所以为空&lt;sup id=&quot;fnref:burl&quot;&gt;&lt;a href=&quot;#fn:burl&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;。如果不是，设为project名。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;layoutsdefaulthtml&quot;&gt;&lt;strong&gt;&lt;code&gt;/_layouts/default.html&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;首先选择一个主题。在Lanyon的官方页面里介绍了Lanyon预置的各种配色以及可选的边栏布局，我直接全选了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;% raw %&amp;gt;&amp;lt;body class=&quot;theme-base-08 layout-reverse sidebar-overlay&quot;&amp;gt;&amp;lt;% endraw %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;先加这么一句，一会儿还要回来。&lt;/p&gt;
+
+&lt;h4 id=&quot;includesheadhtml&quot;&gt;&lt;strong&gt;&lt;code&gt;/_includes/head.html&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;这相当于一个header文件，如果要让一句代码在所有页面上都出现，就把它加到这里（或者单独建个html然后在&lt;code&gt;default.html&lt;/code&gt;里&lt;code&gt;include&lt;/code&gt;，一会儿就有）。我打算要在博客文章里写不少数学方面的东西，所以需要一个能清晰无损的呈现方式（OK, I don’t &lt;em&gt;need&lt;/em&gt; it, I &lt;strong&gt;want&lt;/strong&gt; it）。从&lt;a href=&quot;http://whatif.xkcd.com&quot;&gt;What if?&lt;/a&gt;的的页面
+以及在xkcd论坛&lt;a href=&quot;http://forums.xkcd.com/viewtopic.php?f=2&amp;amp;t=112510&quot;&gt;求助&lt;/a&gt;中得知Randall使用了&lt;a href=&quot;https://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt;。摸到其主页上一看，还真是一枚神器:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z&lt;/script&gt;
+
+&lt;p&gt;我几乎要忍不住大笑。实际安装很简单，将MathJax的脚本复制粘贴下来，就算完工了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;% raw %&amp;gt;
+&amp;lt;!-- Mathjax CDN --&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot;
+src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;% endraw %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;值得注意的是，上面实际上是远程调用了储存在MathJax服务器上的JS脚本，所以有时加载页面的速度会受到影响。同时考虑到国内网络的各种不稳定因素，所以也可以在本地安装MathJax，具体操作官网上有。&lt;sup id=&quot;fnref:math&quot;&gt;&lt;a href=&quot;#fn:math&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;includessidebarhtml&quot;&gt;&lt;strong&gt;&lt;code&gt;/_includes/sidebar.html&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;干掉各种多余的什么Download、GitHub这些项目，然后把&lt;code&gt;Home&lt;/code&gt;改成“首页”。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;配套&lt;/h2&gt;
+
+&lt;p&gt;目前首页和即本页面风格已经定下来了，接下来要完善一下配套的页面。除了主页我还另外做了3个页面：目录、关于和隔壁（也就是收藏的一些网站的链接和介绍）。只要在Front Matter&lt;sup id=&quot;fnref:frontmatter&quot;&gt;&lt;a href=&quot;#fn:frontmatter&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;里面注明&lt;code&gt;layout: page&lt;/code&gt;，Jekyll在生成网站的时候就会自动将文档加入到边栏里去。&lt;/p&gt;
+
+&lt;p&gt;这里我稍微做了点手脚，因为边栏项目除了首页是永远置顶之外，其它页面的排序都是按照各自文件名的字母排序来的。如果放任不管，就会造成目录（Archive）排在关于（About）之后，不太符合惯例。所以我在文件名前面加上了数字：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;文件名&lt;/th&gt;
+      &lt;th&gt;页面名&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;2-archive.md&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;目录&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;8-links.md&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;隔壁&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;9-about.md&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;关于&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;酱~妈妈再也不用担心我的边栏项目顺序乱了。&lt;/p&gt;
+
+&lt;p&gt;至于这些东西里面写什么，页面都在那，去看看就知道了。&lt;/p&gt;
+
+&lt;p&gt;到这里，这个小博客就算是建好了。接下来是Deploy。&lt;/p&gt;
+
+&lt;h2 id=&quot;github&quot;&gt;上传到GitHub&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;最原始的办法&lt;/h3&gt;
+
+&lt;p&gt;那就是命令行，进入根目录，然后&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git add --all
+$ git commit -m &quot;Initial commit&quot;
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;懒人的办法&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;git&lt;/code&gt;做了十几次之后终于厌烦了，下载&lt;a href=&quot;https://central.github.com/mac/latest&quot;&gt;GitHub for Mac&lt;/a&gt;，加入本地repo，push或者commit就行了。操作没什么难度，第一次用时还有教学，相当给力。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;评论、数据统计&lt;/h2&gt;
+
+&lt;p&gt;本来说这些玩意儿以后再说，不过看到人家都有了写好的教学，干脆就一次性解决了吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;google-analyticshttpwwwgooglecomanalytics&quot;&gt;添加&lt;a href=&quot;http://www.google.com/analytics&quot;&gt;Google Analytics&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;废话不多说，注册Google Analytics之后把tracking code保存到&lt;code&gt;/_includes/googleAnalytics.html&lt;/code&gt;，然后在&lt;code&gt;default.html&lt;/code&gt;里面加一句&lt;code&gt;include&lt;/code&gt;就可以了。&lt;/p&gt;
+
+&lt;p&gt;不过就我这个小小站的访问量，估计tracking有和没有其实区别不大：来访的人数两只手数绰绰有余了。所以现阶段这玩意儿只是个bling。&lt;/p&gt;
+
+&lt;h3 id=&quot;disqushttpwwwdisquscomcomments&quot;&gt;添加&lt;a href=&quot;http://www.disqus.com&quot;&gt;Disqus&lt;/a&gt;评论&lt;sup id=&quot;fnref:comments&quot;&gt;&lt;a href=&quot;#fn:comments&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;p&gt;将Disqus的Universal代码复制到&lt;code&gt;/_include/comments.html&lt;/code&gt;文件里：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% if page.comments %}
+&amp;lt;!-- Add Disqus comments. --&amp;gt;
+
+&amp;lt;!-- 代码粘到这里 --&amp;gt;
+
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在&lt;code&gt;/_layouts/default.html&lt;/code&gt;中的&lt;code&gt;{{ content }}&lt;/code&gt;这句后面加入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% include comments.html %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就大功告成了。之后就可以在Front Matter里面用&lt;code&gt;comments: true&lt;/code&gt;来开关评论了！&lt;/p&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;从开始折腾到本文收尾，烟抽了一整包，澡也没洗觉也没睡，满脸油光外面还冷飕飕地吹着风。昨晚没有下楼喂猫，不知道那货会不会今天直接不让我回家。&lt;/p&gt;
+
+&lt;p&gt;不过做成一件事，而且学到一些东西的感觉是满足的（饥肠辘辘的满足感）。哎不多说了我先去洗个澡觅点食……&lt;/p&gt;
+
+&lt;h2 id=&quot;todo&quot;&gt;Todo&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;本地化：Disqus、Google Analytics都是歪果仁的东西，国内用户少，而且有被墙的风险。考虑加入国内的什么微博微信之类的评论、分享服务。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;移动发文：Jekyll虽好，但是一个重大的问题就是依赖于ruby，需要提前build。而手机平板这类东西一般没有现成的ruby开发环境，所以在移动设备或者被人的电脑上发布文章可能会让人非常头疼。有点前景的就是Cloud IDE，也就是说写好了东西在云端编译然后直接发布到GitHub上。不过Cloud IDE有各种限制，可能还有收费、被墙的烦恼。所以，有待研究。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;分类，标签，方便查找。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-10&quot;&gt;注释&lt;/h2&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:note&quot;&gt;
+      &lt;p&gt;我知道目前为止这里一点也不闷骚。我写东西太纠结，不够流畅。 &lt;a href=&quot;#fnref:note&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:burl&quot;&gt;
+      &lt;p&gt;直接将User Page（也就是username.github.io）作为博客空间时&lt;code&gt;baseurl&lt;/code&gt;必须为空。同时要修改根目录的&lt;code&gt;index.html&lt;/code&gt;文件，找到&lt;code&gt;&amp;lt;a href=&quot;{{ site.baseurl }}/{{ post.url }}&quot;&amp;gt;&lt;/code&gt;这一行，把中间那个&lt;code&gt;/&lt;/code&gt;去掉。否则的话首页上的Permalink会废掉。 &lt;a href=&quot;#fnref:burl&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:math&quot;&gt;
+      &lt;p&gt;为了节约客户端资源，提高网页加载速度，我把MathJax的语句也单独拿出来存为一个文件，然后用和开关评论模块一样的方式，在需要的时候才加载。如果以后发现国内加载太慢的话，可能还会考虑在本地安装。 &lt;a href=&quot;#fnref:math&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:frontmatter&quot;&gt;
+      &lt;p&gt;Front Matter: 每个实际有内容的文档（也就是自己写的东西）开头用横线隔出来的一段参数。定义了这篇文档的性质和可选的参数（page/post或者其它什么鬼，标题是咩，以及各种自定义的开关）。 &lt;a href=&quot;#fnref:frontmatter&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:comments&quot;&gt;
+      &lt;p&gt;对于适用于国内的评论、分享机制，还在研究中。 &lt;a href=&quot;#fnref:comments&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Work in Progress</title>
