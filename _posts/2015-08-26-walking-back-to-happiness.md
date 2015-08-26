@@ -6,7 +6,7 @@ categories: problem solution
 title: 一个走路的问题
 ---
 ##原题
-来自[Shakuntala Devi](https://en.wikipedia.org/wiki/Shakuntala_Devi)编写的[*Puzzels to Puzzle You*](https://books.google.com/books?id=F-idu9oxkdgC&printsec=frontcover#v=onepage&q&f=false)一书，第23问"Walkin back to Happiness"：
+来自[Shakuntala Devi](https://en.wikipedia.org/wiki/Shakuntala_Devi)编写的[*Puzzels to Puzzle You*](https://books.google.com/books?id=F-idu9oxkdgC&printsec=frontcover#v=onepage&q&f=false)一书，第23问"Walking back to Happiness"：
 
 > A man I know, who lives in my neighborhood, travels to Chinsura everyday for his work. His wife drives him over to Howrah Station every morning and in the evening exactly at 6 p.m. she picks him up from the station and takes him home.
 > 
