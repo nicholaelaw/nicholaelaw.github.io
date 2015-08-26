@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      三只猫的温暖 &middot; 和一个人的自言自语
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+</head>
+
+  <!-- Load Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66780310-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+	<!-- Enable equation numbering -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+
+	<!-- Load Mathjax CDN -->
+ 	<script type="text/javascript"
+ 	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ 	</script>
+
+
+  <body class="theme-base-08 layout-reverse sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>各种无处安放的闷骚</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/2-archive/">目录</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/8-links/">隔壁</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/9-about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+
+    <!--<a class="sidebar-nav-item" href="/archive/v0.6.0.zip">Download</a>-->
+    <!--<a class="sidebar-nav-item" href="">GitHub project</a>-->
+    <span class="sidebar-nav-item">Currently v0.6.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">三只猫的温暖</a>
+            <small>和一个人的自言自语</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/problem/solution/2015/08/26/walking-back-to-happiness/">
+        一个走路的问题
+      </a>
+    </h1>
+
+    <span class="post-date">26 Aug 2015</span>
+
+    <h2 id="section">原题</h2>
+<p>来自<a href="https://en.wikipedia.org/wiki/Shakuntala_Devi">Shakuntala Devi</a>编写的<a href="https://books.google.com/books?id=F-idu9oxkdgC&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false"><em>Puzzels to Puzzle You</em></a>一书，第23问”Walkin back to Happiness”：</p>
+
+<blockquote>
+  <p>A man I know, who lives in my neighborhood, travels to Chinsura everyday for his work. His wife drives him over to Howrah Station every morning and in the evening exactly at 6 p.m. she picks him up from the station and takes him home.</p>
+
+  <p>One day he was let off at work an hour earlier, and so he arrived at the Howrah Station at 5 p.m. instead of at 6 p.m. He started walking home. However he met his wife enroute to the stationand got into the car. They drove home arriving 10 minutes earlier than usual.</p>
+
+  <p>How long did the man have to walk, before he was picked up by his wife?</p>
+</blockquote>
+
+<p>这道题在网上有许多版本，只是地名被换成了其它的名字。作者Devi老太是印度人，所以很自然地她的版本里的Chinsura和Howrah都是印度地名。背景不多说，勉强把题翻译成中文：</p>
+
+<blockquote>
+  <p>有个男滴，住在双流，在郫县上班。每天早上他老婆开车送他到郫县的高铁站（有高铁还开什么车，你可能会问，他脑子不好使呗），然后晚上六点钟准时到高铁站接他回家（多和谐的家庭！）。</p>
+
+  <p>有一天，介个男滴早了一个小时下班（老板不在？），他五点钟就到了高铁站。于是他二话不说（！）闷头就开始步行回家。走着走着，正好遇上从家里出发过来接他的老婆，于是就上了车，回了家。到家一看表，哎呀妈呀，比平常早了整整10分钟到家！</p>
+
+  <p>问，介个男滴他走了好久才遇到他老婆？</p>
+</blockquote>
+
+<p>抛开他为什么要走路而不是坐高铁、公交回家这种理智的问题不谈，这道题本身还真的有点意思。</p>
+
+<h2 id="section-1">解</h2>
+
+<p><strong>友情提示：以下内容包含数学！阅读时请遵守国家相关法规</strong></p>
+
+<p>设此男家到火车站的距离为<script type="math/tex">d</script>，男人走路的时间为<script type="math/tex">x</script>，男人步行速度为<script type="math/tex">v_{man}</script>，老婆开车速度为<script type="math/tex">v_{car}</script>。正常情况下夫妻俩从高铁站出发返家，耗时</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+	t_{home}=\frac{d}{v_{car}}
+\end{equation}</script>
+
+<p>对于老婆来说，平时接老公（从家里出发那一刻起）用时</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+	t_{wife}=\frac{2d}{v_{car}}
+\end{equation}</script>
+
+<p>今天老公走了一段路，所以到家的时间提前了10分钟：</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+	t'_{wife}=2\cdot\frac{d-v_{man}\cdot x}{v_{car}}=t_{wife}-10
+\end{equation}</script>
+
+<p>代入<script type="math/tex">(2)</script>运算，得出</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+	\frac{v_{man}}{v_{car}}\cdot x=5
+\end{equation}</script>
+
+<p>但是对男人来说，今天五点钟就出发了，回家所用的时间是</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+	t'=x+\frac{d-v_{man}\cdot x}{v_{car}}=t_{home}+60-10
+\end{equation}</script>
+
+<p>代入<script type="math/tex">(1)</script>，计算得出</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned}
+	x+\frac{d}{v_{car}}-\frac{v_{man}}{v_{car}}\cdot x &=\frac{d}{v_{car}}+50\\
+	x--\frac{v_{man}}{v_{car}}\cdot x &=50
+\end{aligned} %]]></script>
+
+<p>将<script type="math/tex">(4)</script>代入到上述结果中，得出<script type="math/tex">x=55</script>。即男人走了55分钟（略凄凉）。</p>
+
+<script type="math/tex; mode=display">\square</script>
+
+<h2 id="section-2">吐槽</h2>
+
+<p>最开始我解到<script type="math/tex">(4)</script>就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。</p>
+
+<p>这可怎么办，知其然而不知其所以然是最要命的。我只有一使劲——就有了上面的东西了。今后有空我还会把平时解过的一些有意思的题目发出来。拜。</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/computer/programming/memo/2015/08/26/making-of-this-blog/">
+        博客是怎样炼成的
+      </a>
+    </h1>
+
+    <span class="post-date">26 Aug 2015</span>
+
+    <h2 id="section">前言</h2>
+
+<p>本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。</p>
+
+<p>平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的<a href="http://whatif.xkcd.com">What if?</a>站点风格的影响，决定弄个博客。博客弄出来了，第一篇文章记下建站的过程，是再合适不过的了。<sup id="fnref:note"><a href="#fn:note" class="footnote">1</a></sup></p>
+
+<h2 id="section-1">准备工作</h2>
+
+<p>第一步是选方案。以前玩日志、写博客的时候，基本都是小打小闹。QQ空间之流已然无法入眼。Wordpress给我的印象不是太好，可能是当初没弄透彻便放弃的缘故。之后就是买空间自己建站；但是太复杂可能又会半途而废。最后在网上搜索的时候看到有人推荐利用<a href="https://pages.github.com/">GitHub Pages</a>的服务来写博客。空间不花钱而且以后很容易加上自己的域名。</p>
+
+<p>看上了GitHub，当然就要自己建站了。我接触到的第一位网友推荐用<a href="http://blog.getpelican.com/">Pelican</a>。不过因为对此一窍不通，我研究了许久也没搞懂怎么做。于是转向名气很大的<a href="http://jekyllrb.com">Jekyll</a>。<a href="http://joshualande.com/jekyll-github-pages-poole/">这个博客</a>让我眼前一亮：干净，极简的设计风格，而且貌似可以较大程度地定制。</p>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<p>那就开干吧。我的目标是以<a href="http://getpoole.com/">Poole</a>的<a href="http://lanyon.getpoole.com/">Lanyon</a>主题为基础，稍加修改后作为模板使用。我懒嘛，什么评论什么统计都是二期三期的项目了。首先安装Jekyll。注意，是在本地安装！在本地建设完成调试好了之后上传就好了。所以</p>
+
+<pre><code>$ gem install jekyll
+ERROR:  While executing gem (Gem::RemoteFetcher::FetchError)
+Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/blah)
+</code></pre>
+
+<p>尼玛这是在跟我开玩笑吗？！<a href="https://rubygems.org/">Ruby Gems</a>居然被墙了？无奈，先翻墙再说。</p>
+
+<p>（懒得翻墙的，可以让<code>gem</code>转向<a href="http://ruby.taobao.org/">国内镜像源</a>下载。）</p>
+
+<h3 id="section-2">墙墙墙！</h3>
+
+<p><code>gem</code>命令不支持我平时科学上网用的socks代理，所以要想办法将<code>gem</code>命令的http请求转发到socks代理上。到网上搜了一圈，有人说用<a href="http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/">Polipo</a>;然而我安装之后折腾半天居然不会用……又要被人耻笑了。</p>
+
+<p>继而看到有人说<a href="http://www.privoxy.org/">Privoxy</a>，于是<code>brew</code>安装上。在<code>/usr/local/etc/privoxy/config</code>文件中加一句配置：</p>
+
+<pre><code>forward-socks5 / 127.0.0.1:1080 .
+</code></pre>
+
+<p>注意最后那个点很重要。<code>/</code>代表所有http地址都要转发，<code>.</code>代表没有要转发的http代理（只有socks）。写好配置，发动</p>
+
+<pre><code>$ privoxy /usr/local/etc/privoxy/config
+-bash: privoxy: command not found
+</code></pre>
+
+<p>这……说明<code>brew</code>没有做symlink。爬进<code>/usr/local/</code>，终于找到在<code>/usr/local/etc/privoxy/</code>下面。再次发动。</p>
+
+<h3 id="jekyll-1">再一次，Jekyll</h3>
+
+<p>Privoxy的默认http代理端口是8118：</p>
+
+<pre><code>$ gem install jekyll -p http://127.0.0.1:8118
+</code></pre>
+
+<p>终于，没有再报错了。</p>
+
+<h2 id="section-3">施工</h2>
+
+<p>到这里算是基本准备工作结束了。我已经抽掉了半包烟了，各种疲惫不堪。</p>
+
+<h3 id="section-4">主体工程</h3>
+<p>下载已经预制好的<a href="http://lanyon.getpoole.com/">Lanyon</a>主题，解压到打算作为repo的目录下，先不着急修改，<code>cd</code>到根目录下运行</p>
+
+<pre><code>$ jekyll serve
+</code></pre>
+
+<p>然后在浏览器里访问<code>127.0.0.1:4000</code>，看看刚刚建起来的网站雏形，和Lanyon的官方页面一模一样。接下来修改各种模板参数。</p>
+
+<h4 id="configyml"><strong><code>/_config.yml</code></strong></h4>
+
+<p>两个小坑：</p>
+
+<ul>
+  <li><code>url</code> 博客地址，以<code>https</code>开头，结尾不要有<code>/</code>。</li>
+  <li><code>baseurl</code> 因为是直接建在User Page，所以为空<sup id="fnref:burl"><a href="#fn:burl" class="footnote">2</a></sup>。如果不是，设为project名。</li>
+</ul>
+
+<h4 id="layoutsdefaulthtml"><strong><code>/_layouts/default.html</code></strong></h4>
+
+<p>首先选择一个主题。在Lanyon的官方页面里介绍了Lanyon预置的各种配色以及可选的边栏布局，我直接全选了：</p>
+
+<pre><code>&lt;% raw %&gt;&lt;body class="theme-base-08 layout-reverse sidebar-overlay"&gt;&lt;% endraw %&gt;
+</code></pre>
+
+<p>先加这么一句，一会儿还要回来。</p>
+
+<h4 id="includesheadhtml"><strong><code>/_includes/head.html</code></strong></h4>
+
+<p>这相当于一个header文件，如果要让一句代码在所有页面上都出现，就把它加到这里（或者单独建个html然后在<code>default.html</code>里<code>include</code>，一会儿就有）。我打算要在博客文章里写不少数学方面的东西，所以需要一个能清晰无损的呈现方式（OK, I don’t <em>need</em> it, I <strong>want</strong> it）。从<a href="http://whatif.xkcd.com">What if?</a>的的页面
+以及在xkcd论坛<a href="http://forums.xkcd.com/viewtopic.php?f=2&amp;t=112510">求助</a>中得知Randall使用了<a href="https://www.mathjax.org/">MathJax</a>。摸到其主页上一看，还真是一枚神器:</p>
+
+<script type="math/tex; mode=display">f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z</script>
+
+<p>我几乎要忍不住大笑。实际安装很简单，将MathJax的脚本复制粘贴下来，就算完工了：</p>
+
+<pre><code>&lt;% raw %&gt;
+&lt;!-- Mathjax CDN --&gt;
+&lt;script type="text/javascript"
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;
+&lt;/script&gt;
+&lt;% endraw %&gt;
+</code></pre>
+
+<p>值得注意的是，上面实际上是远程调用了储存在MathJax服务器上的JS脚本，所以有时加载页面的速度会受到影响。同时考虑到国内网络的各种不稳定因素，所以也可以在本地安装MathJax，具体操作官网上有。<sup id="fnref:math"><a href="#fn:math" class="footnote">3</a></sup></p>
+
+<h4 id="includessidebarhtml"><strong><code>/_includes/sidebar.html</code></strong></h4>
+
+<p>干掉各种多余的什么Download、GitHub这些项目，然后把<code>Home</code>改成“首页”。</p>
+
+<h2 id="section-5">配套</h2>
+
+<p>目前首页和即本页面风格已经定下来了，接下来要完善一下配套的页面。除了主页我还另外做了3个页面：目录、关于和隔壁（也就是收藏的一些网站的链接和介绍）。只要在Front Matter<sup id="fnref:frontmatter"><a href="#fn:frontmatter" class="footnote">4</a></sup>里面注明<code>layout: page</code>，Jekyll在生成网站的时候就会自动将文档加入到边栏里去。</p>
+
+<p>这里我稍微做了点手脚，因为边栏项目除了首页是永远置顶之外，其它页面的排序都是按照各自文件名的字母排序来的。如果放任不管，就会造成目录（Archive）排在关于（About）之后，不太符合惯例。所以我在文件名前面加上了数字：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>文件名</th>
+      <th>页面名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>2-archive.md</code></td>
+      <td>目录</td>
+    </tr>
+    <tr>
+      <td><code>8-links.md</code></td>
+      <td>隔壁</td>
+    </tr>
+    <tr>
+      <td><code>9-about.md</code></td>
+      <td>关于</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>酱~妈妈再也不用担心我的边栏项目顺序乱了。</p>
+
+<p>至于这些东西里面写什么，页面都在那，去看看就知道了。</p>
+
+<p>到这里，这个小博客就算是建好了。接下来是Deploy。</p>
+
+<h2 id="github">上传到GitHub</h2>
+
+<h3 id="section-6">最原始的办法</h3>
+
+<p>那就是命令行，进入根目录，然后</p>
+
+<pre><code>$ git add --all
+$ git commit -m "Initial commit"
+$ git push -u origin master
+</code></pre>
+
+<h3 id="section-7">懒人的办法</h3>
+
+<p><code>git</code>做了十几次之后终于厌烦了，下载<a href="https://central.github.com/mac/latest">GitHub for Mac</a>，加入本地repo，push或者commit就行了。操作没什么难度，第一次用时还有教学，相当给力。</p>
+
+<h2 id="section-8">评论、数据统计</h2>
+
+<p>本来说这些玩意儿以后再说，不过看到人家都有了写好的教学，干脆就一次性解决了吧。</p>
+
+<h3 id="google-analyticshttpwwwgooglecomanalytics">添加<a href="http://www.google.com/analytics">Google Analytics</a></h3>
+
+<p>废话不多说，注册Google Analytics之后把tracking code保存到<code>/_includes/googleAnalytics.html</code>，然后在<code>default.html</code>里面加一句<code>include</code>就可以了。</p>
+
+<p>不过就我这个小小站的访问量，估计tracking有和没有其实区别不大：来访的人数两只手数绰绰有余了。所以现阶段这玩意儿只是个bling。</p>
+
+<h3 id="disqushttpwwwdisquscomcomments">添加<a href="http://www.disqus.com">Disqus</a>评论<sup id="fnref:comments"><a href="#fn:comments" class="footnote">5</a></sup></h3>
+<p>将Disqus的Universal代码复制到<code>/_include/comments.html</code>文件里：</p>
+
+<pre><code>{% if page.comments %}
+&lt;!-- Add Disqus comments. --&gt;
+
+&lt;!-- 代码粘到这里 --&gt;
+
+{% endif %}
+</code></pre>
+
+<p>然后在<code>/_layouts/default.html</code>中的<code>{{ content }}</code>这句后面加入</p>
+
+<pre><code>{% include comments.html %}
+</code></pre>
+
+<p>就大功告成了。之后就可以在Front Matter里面用<code>comments: true</code>来开关评论了！</p>
+
+<h2 id="section-9">感想</h2>
+
+<p>从开始折腾到本文收尾，烟抽了一整包，澡也没洗觉也没睡，满脸油光外面还冷飕飕地吹着风。昨晚没有下楼喂猫，不知道那货会不会今天直接不让我回家。</p>
+
+<p>不过做成一件事，而且学到一些东西的感觉是满足的（饥肠辘辘的满足感）。哎不多说了我先去洗个澡觅点食……</p>
+
+<h2 id="todo">Todo</h2>
+
+<ul>
+  <li>
+    <p>本地化：Disqus、Google Analytics都是歪果仁的东西，国内用户少，而且有被墙的风险。考虑加入国内的什么微博微信之类的评论、分享服务。</p>
+  </li>
+  <li>
+    <p>移动发文：Jekyll虽好，但是一个重大的问题就是依赖于ruby，需要提前build。而手机平板这类东西一般没有现成的ruby开发环境，所以在移动设备或者被人的电脑上发布文章可能会让人非常头疼。有点前景的就是Cloud IDE，也就是说写好了东西在云端编译然后直接发布到GitHub上。不过Cloud IDE有各种限制，可能还有收费、被墙的烦恼。所以，有待研究。</p>
+  </li>
+  <li>
+    <p>分类，标签，方便查找。</p>
+  </li>
+</ul>
+
+<h2 id="section-10">注释</h2>
+<div class="footnotes">
+  <ol>
+    <li id="fn:note">
+      <p>我知道目前为止这里一点也不闷骚。我写东西太纠结，不够流畅。 <a href="#fnref:note" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:burl">
+      <p>直接将User Page（也就是username.github.io）作为博客空间时<code>baseurl</code>必须为空。同时要修改根目录的<code>index.html</code>文件，找到<code>&lt;a href="{{ site.baseurl }}/{{ post.url }}"&gt;</code>这一行，把中间那个<code>/</code>去掉。否则的话首页上的Permalink会废掉。 <a href="#fnref:burl" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:math">
+      <p>为了节约客户端资源，提高网页加载速度，我把MathJax的语句也单独拿出来存为一个文件，然后用和开关评论模块一样的方式，在需要的时候才加载。如果以后发现国内加载太慢的话，可能还会考虑在本地安装。 <a href="#fnref:math" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:frontmatter">
+      <p>Front Matter: 每个实际有内容的文档（也就是自己写的东西）开头用横线隔出来的一段参数。定义了这篇文档的性质和可选的参数（page/post或者其它什么鬼，标题是咩，以及各种自定义的开关）。 <a href="#fnref:frontmatter" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:comments">
+      <p>对于适用于国内的评论、分享机制，还在研究中。 <a href="#fnref:comments" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/08/25/work-in-progress/">
+        Work in Progress
+      </a>
+    </h1>
+
+    <span class="post-date">25 Aug 2015</span>
+
+    <p><img src="/assets/doors.jpg" alt="under construction?" /></p>
+
+<p>This blog is still under construction! Move along.</p>
+
+<p>博客建设中，谢绝围观。</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+
+        
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+  </body>
+</html>
