@@ -6,6 +6,6 @@ comments: false
 
 ![under construction?](/assets/doors.jpg)
 
-This blog is still under construction! Go away.
+This blog is still under construction! Move along.
 
-这个博客还在建设中，请走远。
+博客建设中，谢绝围观。
