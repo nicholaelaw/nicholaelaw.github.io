@@ -1,8 +1,13 @@
 ---
 layout: post
-usemath: true
+permalink: making-of-this-blog
 comments: true
-categories: computer programming memo
+usemath: true
+tags:
+ - computer
+ - programming
+ - memo
+ - tinker
 title: 博客是怎样炼成的
 ---
 
@@ -11,6 +16,8 @@ title: 博客是怎样炼成的
 本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。
 
 平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的[What if?](http://whatif.xkcd.com)站点风格的影响，决定弄个博客。博客弄出来了，第一篇文章记下建站的过程，是再合适不过的了。[^note]
+
+<!--excerpt-->
 
 [^note]: 我知道目前为止这里一点也不闷骚。我写东西太纠结，不够流畅。
 

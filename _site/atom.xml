@@ -4,7 +4,7 @@
  <title>三只猫的温暖</title>
  <link href="https://nicholaelaw.github.io/atom.xml" rel="self"/>
  <link href="https://nicholaelaw.github.io/"/>
- <updated>2015-08-26T22:14:20+08:00</updated>
+ <updated>2015-08-27T01:40:19+08:00</updated>
  <id>https://nicholaelaw.github.io</id>
  <author>
    <name>nicholaelaw</name>
@@ -13,10 +13,81 @@
 
  
  <entry>
+   <title>博客不见鸟</title>
+   <link href="https://nicholaelaw.github.io/maintenance"/>
+   <updated>2015-08-27T01:40:19+08:00</updated>
+   <id>https://nicholaelaw.github.io/maintenance</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/doors.jpg&quot; alt=&quot;under construction?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This blog is missing and its owner is out looking.&lt;/p&gt;
+
+&lt;p&gt;博客外出，如有捡到者请联系博主。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>博客的长期演进</title>
+   <link href="https://nicholaelaw.github.io/long-term-evolution"/>
+   <updated>2015-08-27T01:39:58+08:00</updated>
+   <id>https://nicholaelaw.github.io/long-term-evolution</id>
+   <content type="html">&lt;p&gt;作为一个理想主义者，博客里凡是有看不顺眼的地方，我都会想办法解决。这里收集了一些小东西，相当于修修补补的手记。&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;让首页仅显示文章预览&lt;/h3&gt;
+
+&lt;p&gt;Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章已经很长，全篇显示会显得比较臃肿，也不方便浏览。于是就有了split-excerpt这个组合。&lt;/p&gt;
+
+&lt;p&gt;在&lt;code&gt;index.html&lt;/code&gt;加载&lt;code&gt;{{ post.content }}&lt;/code&gt;的地方，替换成如下语句：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{ post.content | split:&#39;&amp;lt;!--excerpt--&amp;gt;&#39; | first }}	
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在每篇文章合适的位置插入&lt;code&gt;&amp;lt;!--excerpt--&amp;gt;&lt;/code&gt;标志，这样一来首页上就只会显示该标志之前的内容。&lt;/p&gt;
+
+&lt;p&gt;但是问题来了，首页看起来是内容丰富多了，可是感觉都是没写完的文章：缺少一个“more”按钮。在&lt;code&gt;index.html&lt;/code&gt;里修改过的地方后面再加一句：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&amp;gt;
+  &amp;lt;p style=&quot;text-align:center&quot;&amp;gt;\(\{\)&amp;lt;b&amp;gt;继续看&amp;lt;/b&amp;gt;\(\}\)
+&amp;lt;/p&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样，首页上每一条文章节选的后面都会有一个连接，提示可以点进去看全文了。&lt;/p&gt;
+
+&lt;p&gt;……这又造成了一个问题：那些在首页就能完整显示的短文章下面，也会有个“继续看”的链接。革命尚未成功啊。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\rhd&lt;/script&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;国内社交软件分享&lt;/h3&gt;
+
+&lt;p&gt;之前在&lt;a href=&quot;/making-of-this-blog/&quot;&gt;建博&lt;/a&gt;的时候提到过，想加入国内网站常见的那种条状物。在网上搜索了一下，居然轻松找到：&lt;a href=&quot;http://www.jiathis.com/&quot;&gt;JiaThis&lt;/a&gt;。这名字起的，朴实，接地气。JiaThis提供了一次性解决问题的方案，不用注册，直接将提供的代码嵌入到合适的位置，就行了：&lt;/p&gt;
+
+&lt;!-- JiaThis Button BEGIN --&gt;
+&lt;div class=&quot;jiathis_style&quot;&gt;
+	&lt;span class=&quot;jiathis_txt&quot;&gt;分享到：&lt;/span&gt;
+	&lt;a class=&quot;jiathis_button_tools_1&quot;&gt;&lt;/a&gt;
+	&lt;a class=&quot;jiathis_button_tools_2&quot;&gt;&lt;/a&gt;
+	&lt;a class=&quot;jiathis_button_tools_3&quot;&gt;&lt;/a&gt;
+	&lt;a class=&quot;jiathis_button_tools_4&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://www.jiathis.com/share&quot; class=&quot;jiathis jiathis_txt jiathis_separator jtico jtico_jiathis&quot; target=&quot;_blank&quot;&gt;更多&lt;/a&gt;
+	&lt;a class=&quot;jiathis_counter_style&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://v3.jiathis.com/code/jia.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;!-- JiaThis Button END --&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;除了字有点小，图标有点丑（不清晰）以外，还是挺不错的。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\rhd&lt;/script&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>一个走路的问题</title>
-   <link href="https://nicholaelaw.github.io/problem/solution/2015/08/26/walking-back-to-happiness/"/>
+   <link href="https://nicholaelaw.github.io/walking-back-to-happiness"/>
    <updated>2015-08-26T00:00:00+08:00</updated>
-   <id>https://nicholaelaw.github.io/problem/solution/2015/08/26/walking-back-to-happiness</id>
+   <id>https://nicholaelaw.github.io/walking-back-to-happiness</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;原题&lt;/h2&gt;
 &lt;p&gt;来自&lt;a href=&quot;https://en.wikipedia.org/wiki/Shakuntala_Devi&quot;&gt;Shakuntala Devi&lt;/a&gt;编写的&lt;a href=&quot;https://books.google.com/books?id=F-idu9oxkdgC&amp;amp;printsec=frontcover#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;&lt;em&gt;Puzzels to Puzzle You&lt;/em&gt;&lt;/a&gt;一书，第23问”Walking back to Happiness”：&lt;/p&gt;
 
@@ -29,6 +100,8 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;这道题在网上有许多版本，只是地名被换成了其它的名字。作者Devi老太是印度人，所以很自然地她的版本里的Chinsura和Howrah都是印度地名。背景不多说，勉强把题翻译成中文：&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;有个男滴，住在双流，在郫县上班。每天早上他老婆开车送他到郫县的高铁站（有高铁还开什么车，你可能会问，他脑子不好使呗），然后晚上六点钟准时到高铁站接他回家（多和谐的家庭！）。&lt;/p&gt;
@@ -96,14 +169,16 @@
  
  <entry>
    <title>博客是怎样炼成的</title>
-   <link href="https://nicholaelaw.github.io/computer/programming/memo/2015/08/26/making-of-this-blog/"/>
+   <link href="https://nicholaelaw.github.io/making-of-this-blog"/>
    <updated>2015-08-26T00:00:00+08:00</updated>
-   <id>https://nicholaelaw.github.io/computer/programming/memo/2015/08/26/making-of-this-blog</id>
+   <id>https://nicholaelaw.github.io/making-of-this-blog</id>
    <content type="html">&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;本人比较懒，行动力也比较差。所以很多时候有些想法却迟迟不能去做，为此深感自责。渐渐地，我变成了自己不喜欢的那种人。&lt;/p&gt;
 
 &lt;p&gt;平时会时不时地写一些东西，比如解题的过程，比如和猫咪互动的随感。非常琐碎但是自己又很珍惜，总想找个地方存起来。受到Randall Munroe的&lt;a href=&quot;http://whatif.xkcd.com&quot;&gt;What if?&lt;/a&gt;站点风格的影响，决定弄个博客。博客弄出来了，第一篇文章记下建站的过程，是再合适不过的了。&lt;sup id=&quot;fnref:note&quot;&gt;&lt;a href=&quot;#fn:note&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;准备工作&lt;/h2&gt;
 

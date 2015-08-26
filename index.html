@@ -15,7 +15,10 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.content | split:'<!--excerpt-->' | first }}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <p style="text-align:center">\(\{\)<b>继续看</b>\(\}\)
+    </p></a>
   </div>
   {% endfor %}
 </div>

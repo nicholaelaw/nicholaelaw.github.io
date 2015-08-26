@@ -1,8 +1,12 @@
 ---
 layout: post
-usemath: true
+permalink: walking-back-to-happiness
 comments: true
-categories: problem solution
+usemath: true
+tag:
+ - problem
+ - solution
+ - puzzle
 title: 一个走路的问题
 ---
 ##原题
@@ -15,6 +19,8 @@ title: 一个走路的问题
 > How long did the man have to walk, before he was picked up by his wife?
 
 这道题在网上有许多版本，只是地名被换成了其它的名字。作者Devi老太是印度人，所以很自然地她的版本里的Chinsura和Howrah都是印度地名。背景不多说，勉强把题翻译成中文：
+
+<!--excerpt-->
 
 > 有个男滴，住在双流，在郫县上班。每天早上他老婆开车送他到郫县的高铁站（有高铁还开什么车，你可能会问，他脑子不好使呗），然后晚上六点钟准时到高铁站接他回家（多和谐的家庭！）。
 > 
