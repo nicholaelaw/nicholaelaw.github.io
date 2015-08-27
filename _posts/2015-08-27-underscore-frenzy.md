@@ -54,7 +54,7 @@ When there's only a single inline math with a single underscore in the entire pa
 
 renders as
 
-> Let the velocity be \\( v_{eeny} \\). Eeny runs _very_ fast.
+> Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
 Both the math and the emphasis works. If, however, there's multiple inline maths with underscore in the paragraph, the math breaks:
 
