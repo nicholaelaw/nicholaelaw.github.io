@@ -48,7 +48,7 @@ is presented as "Eeny is a _fast_ runner." To prevent the document becoming FUBA
 
 ###The Problem
 
-When there's only a single inline math with a single underscore in the entire paragraph, it's fine:
+When there is a single underscore used in inline math, it is fine as long as it's the _only_ underscore in the paragraph:
 
 	Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
@@ -56,7 +56,7 @@ renders as
 
 > Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
-Both the math and the emphasis works. If, however, there's multiple inline maths with underscore in the paragraph, the math breaks:
+If, however, there's multiple inline maths with underscore in the paragraph, the math breaks:
 
 	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
 
