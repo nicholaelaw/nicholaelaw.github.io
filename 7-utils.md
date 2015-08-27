@@ -1,14 +1,14 @@
 ---
 layout: page
 usemath: true
-title: 参考
+title: 参考 &bcong; Handy
 ---
 
 * [Disqus](http://www.disqus.com/)
 * [**Google Analytics**](http://www.google.com/analytics)[^bold]
 * [HTML Code Table](http://www.ascii.cl/htmlcodes.htm)
 * [\\(\LaTeX\\) Mathematical Symbols](/assets/LaTeX-Mathematical-Symbols.pdf)
-* [HTML Symbols, Entities, Characters, and Codes](http://http://htmlarrows.com/)
+* [HTML Symbols, Entities, Characters, and Codes](http://htmlarrows.com/)
 * [**w3school**](http://www.w3schools.com/)
 * [JiaThis](http://www.jiathis.com/)
 * [Octopress](http://octopress.org/)

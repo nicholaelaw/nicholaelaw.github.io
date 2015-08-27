@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于
+title: 关于 &bcong; About
 ---
 
 I will always remember his warmth.

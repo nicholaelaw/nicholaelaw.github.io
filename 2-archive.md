@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 目录
+title: 目录 &bcong; All Posts
 ---
 
 ## 全部文章
