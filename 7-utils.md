@@ -20,8 +20,20 @@ presentation: if there are no or two underscores inside an inline math expressio
 
 	\\( v_{this}+v_{that} \\)
 
-renders to \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: \\( v_{this} \\), and \\( v_{eeny}+v_{meeny}+v_{miny} \\).
+renders to \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: 
 
+	\\( v_{this} \\)
 
+gives \\( v_{this} \\), and
+
+	\\( v_{eeny}+v_{meeny}+v_{miny} \\)
+	
+gives \\( v_{eeny}+v_{meeny}+v_{miny} \\). Furthermore, it gets ugly when you use two single-underscore-inline-math in one sentence:
+
+	\\( v_{eeny} \\) and \\( v_{meeny}+v_{miny}+v_{moe} \\)
+
+gives \\( v_{eeny} \\) and \\( v_{meeny}+v_{miny}+v_{moe} \\).
+
+In my experience this behaviour occurs only on GitHub rendered pages. Neither of my Markdown editor (MacDown) nor my local Jekyll installation had any problem with it.
 
 [^bold]: 粗体表示经测试已撞墙的网站。
