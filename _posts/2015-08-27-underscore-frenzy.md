@@ -30,7 +30,9 @@ Incorrect:
 
 I made some changes and the problem went away. So I went to sleep. The next day, through much tinkering and experimenting I found that it was a bit more than a simple mistake.
 
-So here's my formal complaint to GitHub, on their mistreating of the underscore sign.
+So here's my formal complaint to GitHub, on their mistreating of the underscore sign.[^bug]
+
+[^bug]: I have filed a bug report after this post went online.
 
 ###Background
 
