@@ -56,7 +56,15 @@ renders as
 
 > Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
-If, however, there's multiple inline maths with underscore in the paragraph, the math breaks:
+If, however, an underscore in inline math is not the only one in the paragraph, the math breaks:
+
+	Let the velocity be \\( v_{eeny} \\). Eeny runs _very_ fast.
+
+renders as
+
+> Let the velocity be \\( v_{eeny} \\). Eeny runs _very_ fast.
+
+Another example:
 
 	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
 
