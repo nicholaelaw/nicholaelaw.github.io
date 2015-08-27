@@ -24,7 +24,7 @@ renders as
 
 > Let the velocity be \\( v_{this} \\).
 
-If, however, there's multiple underscores in the paragraph, regardless of whether it's inline math, the math breaks:
+If, however, there's multiple underscores in the paragraph, the math breaks:
 
 	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
 
@@ -32,19 +32,10 @@ renders as
 
 > Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\).
 
- \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: 
+It seems that the underscores are being treated as Markdown Highlight marks. However it only recognize the first two underscores in the paragraph, and the rest is left untouched and un-rendered:
 
-	\\( v_{this} \\)
+> Let the velocities _be_ \\( v_{eeny} \\) and \\( v_{meeny} \\). There's also \\( v_{miny} \\) and \\( v_{moe} \\).
 
-gives \\( v_{this} \\), and
-
-	\\( v_{eeny}+v_{meeny}+v_{miny} \\)
-	
-gives \\( v_{eeny}+v_{meeny}+v_{miny} \\). Furthermore, it gets ugly when you use two single-underscore-inline-math in one sentence:
-
-	\\( v_{eeny} \\) and \\( v_{meeny}+v_{miny}+v_{moe} \\)
-
-gives \\( v_{eeny} \\) and \\( v_{meeny}+v_{miny}+v_{moe} \\).
 
 In my experience this behaviour occurs only on GitHub rendered pages. Neither of my Markdown editor (MacDown) nor my local Jekyll installation had any problem with it.
 
