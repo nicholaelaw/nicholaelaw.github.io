@@ -50,7 +50,7 @@ is presented as "Eeny is a _fast_ runner." To prevent the document becoming FUBA
 
 When there's only a single inline math with a single underscore in the entire paragraph, it's fine:
 
-	Let the velocity be \\( v_{eeny} \\). Eeny runs _very_ fast.
+	Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
 renders as
 
