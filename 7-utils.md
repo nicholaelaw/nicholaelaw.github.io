@@ -16,4 +16,12 @@ title: 参考
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/)
 * [favicon.cc](http://www.favicon.cc/)
 
+presentation: if there are no or two underscores inside an inline math expression, it's fine:
+
+	\\( v_{this}+v_{that} \\)
+
+renders to \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: \\( v_{this} \\), and \\( v_{eeny}+v_{meeny}+v_{miny} \\).
+
+
+
 [^bold]: 粗体表示经测试已撞墙的网站。
