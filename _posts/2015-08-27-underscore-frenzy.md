@@ -32,7 +32,7 @@ I made some changes and the problem went away. So I went to sleep. The next day,
 
 So here's my formal complaint to GitHub, on their mistreating of the underscore sign.[^bug]
 
-[^bug]: I have filed a bug report after this post went online.
+[^bug]: I have filed a bug report after this post went online. If they fix the issue I will have to replace those examples with images.
 
 <!--excerpt-->
 
@@ -89,7 +89,7 @@ So after checking and experimenting back and forth I think I've found the source
 My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in syntax highlighting, but it renders correctly. 
 
 <a href="/assets/macdown-syntax-highlighting-wrong.jpg">
-<img title="MacDown Screenshot"
+<img title="Wrong emphasis, ma'am"
     src="/assets/macdown-syntax-highlighting-wrong.jpg"
     style="width:600px; height:284px;"
     border="0" alt="Wrong emphasis, ma'am" />
