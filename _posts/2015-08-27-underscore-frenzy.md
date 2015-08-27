@@ -34,6 +34,8 @@ So here's my formal complaint to GitHub, on their mistreating of the underscore 
 
 [^bug]: I have filed a bug report after this post went online.
 
+<!--excerpt-->
+
 ###Background
 
 This blog, like many other on [GitHub Pages](https://pages.github.com/), is power by [Jekyll](http://jekyllrb.com/). The posts are written in Markdown syntax, with maths in [\\( \LaTeX \\)](http://www.latex-project.org/) and rendered by [MathJax](https://www.mathjax.org/). In \\( \LaTeX \\) a subscript is indicated by the underscore sign:
@@ -56,7 +58,7 @@ renders as
 
 > Let the velocity be \\( v_{eeny} \\). Eeny runs very fast.
 
-If, however, an underscore in inline math is not the only one in the paragraph, the math breaks:
+If, however, an underscore in inline math is not the only one in the paragraph, the emphasis _might_ break while the math goes tits-up:
 
 	Let the velocity be \\( v_{eeny} \\). Eeny runs _very_ fast.
 
@@ -94,6 +96,5 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
 </a>
 
 My local Jekyll installation also gives me correct rendering. So it seems to me that something went wrong on GitHub's side. A simple workaround is to use displayed math delimiters `\\[``\\]` and `$$`. Normally I wouldn't do this because these are for displayed math, and in \\( \LaTeX \\) it would break the sentence if used inline. Well I guess MathJax cannot enforce that rule on webpages.
-
 
 So the conclusion is that when GitHub is processing the Markdown syntax, `\\(``\\)` enclosed expressions are not properly escaped. While it is a small thing I still hope GitHub team would fix it. Like I said before, I'm a bit obsessive with this kind of things.
