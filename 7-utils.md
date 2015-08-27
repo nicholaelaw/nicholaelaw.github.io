@@ -16,11 +16,23 @@ title: 参考
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/)
 * [favicon.cc](http://www.favicon.cc/)
 
-presentation: if there are no or two underscores inside an inline math expression, it's fine:
+Problem presentation: if only a single underscore is used in inline math expressions in the paragraph, it's fine:
 
-	\\( v_{this}+v_{that} \\)
+	Let the velocity be \\( v_{eeny} \\).
 
-renders to \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: 
+renders as
+
+> Let the velocity be \\( v_{this} \\).
+
+If, however, there's multiple underscores in the paragraph, regardless of whether it's inline math, the math breaks:
+
+	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
+
+renders as
+
+> Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\).
+
+ \\( v_{this}+v_{that} \\). However if there is an odd number of underscores inside an inline math expression, then it's trouble: 
 
 	\\( v_{this} \\)
 
