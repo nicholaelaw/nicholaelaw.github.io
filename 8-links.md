@@ -10,6 +10,6 @@ Webcomic by Randall Munroe. I hold a deep respect for his stick-figure-manipulat
 ###[What if?](what-if.xkcd.com)
 Another thing by Randall. I love it so much I have to list it separately.
 
-###[Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html)
-Tutorial on how to solve the pain-in-the-ass cube.
+###[In the Pipeline](http://blogs.sciencemag.org/pipeline/)
+Derek Lowe's commentary on drug discovery and the pharma industry.
 

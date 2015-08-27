@@ -11,9 +11,16 @@ tags:
 title: 博客的长期演进
 ---
 
-作为一个理想主义者，博客里凡是有看不顺眼的地方，我都会想办法解决。这里收集了一些小东西，相当于修修补补的手记。
+这个系列的文章收集了平时维护博客时遇到的各种小问题、hack以及一些想法。
+
+* [让首页仅显示文章预览]({{site.baseurl}}{{page.url}}/#让首页仅显示文章预览)
+* [国内社交软件分享]({{site.baseurl}}{{page.url}}/#国内社交软件分享)
+* [加入`.gitignore`]({{site.baseurl}}{{page.url}}/#加入`.gitignore`)
+* [启用删除线]({{site.baseurl}}{{page.url}}/#启用删除线)
 
 <!--excerpt-->
+
+<div id='让首页仅显示文章预览'/>
 
 ###让首页仅显示文章预览
 
@@ -40,6 +47,8 @@ Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章�
 
 $$\rhd$$
 
+<div id='国内社交软件分享'/>
+
 ###国内社交软件分享
 
 之前在[建博](/making-of-this-blog/)的时候提到过，想加入国内网站常见的那种条状物。在网上搜索了一下，居然轻松找到：[JiaThis](http://www.jiathis.com/)。这名字起的，朴实，接地气。JiaThis提供了一次性解决问题的方案，不用注册，直接将提供的代码嵌入到合适的位置，就行了：
@@ -62,13 +71,17 @@ $$\rhd$$
 
 $$\rhd$$
 
-###加入`.gitignore`
+<div id='加入`.gitignore`'/>
+
+###加入.gitignore
 
 为了节省GitHub资源，有些不必要上传的东西可以加入到`.gitignore`文件里；GitHub甚至有个repo专门收集各种工作环境下的[`.gitignore`](https://github.com/github/gitignore)文档。对于Jekyll来说，自动生成的`_site`文件夹是不必上传的。因为传说中GitHub Pages本身就会忽略其内容，根据源文件编译生成网站。
 
 由此我又得出了另外一个重要结论，那就是既然在GitHub Pages上使用Jekyll无需在本地build，那么在任何地方、任何设备上，只要能够将写好的文档push到GitHub，就算是发布了？为啥这个情况没有被反复强调呢？害我纠结很久怎么在手机上写文章。
 
 $$\rhd$$
+
+<div id='启用删除线'/>
 
 ###启用删除线
 
@@ -86,4 +99,4 @@ $$\rhd$$
 
 $$\rhd$$
 
-###Problem with some \\(\LaTeX\\) syntax on GitHub pages.
+###

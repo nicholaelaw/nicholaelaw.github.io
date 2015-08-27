@@ -15,5 +15,6 @@ title: 参考 &bcong; Handy
 * [Tags in Jekyll](http://charliepark.org/tags-in-jekyll/)
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/)
 * [favicon.cc](http://www.favicon.cc/)
+* [Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html)
 
 [^bold]: 粗体表示经测试已撞墙的网站。
