@@ -13,5 +13,7 @@ title: 参考
 * [JiaThis](http://www.jiathis.com/)
 * [Octopress](http://octopress.org/)
 * [Tags in Jekyll](http://charliepark.org/tags-in-jekyll/)
+* [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/)
+* [favicon.cc](http://www.favicon.cc/)
 
 [^bold]: 粗体表示经测试已撞墙的网站。
