@@ -16,28 +16,4 @@ title: 参考
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/)
 * [favicon.cc](http://www.favicon.cc/)
 
-Problem presentation: if only a single underscore is used in inline math expressions in the paragraph, it's fine:
-
-	Let the velocity be \\( v_{eeny} \\).
-
-renders as
-
-> Let the velocity be \\( v_{eeny} \\).
-
-If, however, there's multiple underscores in the paragraph, the math breaks:
-
-	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
-
-renders as
-
-> Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\).
-
-It seems that the underscores are being treated as Markdown Highlight marks, even though it shouldn't be:
-
-> Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\). There's also \\( v_{miny} \\) and \\( v_{moe} \\).
->
-> Let the velocity _be_ \\( v_{eeny} \\).
-
-In my experience this behaviour occurs only on GitHub rendered pages. Neither of my Markdown editor (MacDown) nor my local Jekyll installation had any problem with it.
-
 [^bold]: 粗体表示经测试已撞墙的网站。
