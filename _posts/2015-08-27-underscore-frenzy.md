@@ -68,11 +68,11 @@ renders as
 
 Another example:
 
-	Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\)
+	Let the _velocities_ be \\( v_{eeny} \\) and \\( v_{meeny} \\)
 
 renders as
 
-> Let the velocities be \\( v_{eeny} \\) and \\( v_{meeny} \\).
+> Let the _velocities_ be \\( v_{eeny} \\) and \\( v_{meeny} \\).
 
 It seems that the underscores in inline math are being treated as Markdown emphasis, even though it shouldn't be:
 
