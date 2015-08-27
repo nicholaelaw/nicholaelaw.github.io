@@ -18,14 +18,14 @@ Correct:
 
 <img title="Math Done Right"
     src="/assets/math-correct.jpg"
-    style="width:600px; height:116px;"
+    style="width:600px"
     border="0" alt="Math done right" />
     
 Incorrect:
 
 <img title="Math Done Wrong"
     src="/assets/math-wrong.jpg"
-    style="width:600px; height:116px;"
+    style="width:600px;"
     border="0" alt="Math done wrong" />
 
 I made some changes and the problem went away. So I went to sleep. The next day, through much tinkering and experimenting I found that it was a bit more than a simple mistake.
@@ -91,10 +91,17 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
 <a href="/assets/macdown-syntax-highlighting-wrong.jpg">
 <img title="Wrong emphasis, ma'am"
     src="/assets/macdown-syntax-highlighting-wrong.jpg"
-    style="width:600px; height:284px;"
+    style="width:600px"
     border="0" alt="Wrong emphasis, ma'am" />
 </a>
 
-My local Jekyll installation also gives me correct rendering. So it seems to me that something went wrong on GitHub's side. A simple workaround is to use displayed math delimiters `\\[``\\]` and `$$`. Normally I wouldn't do this because these are for displayed math, and in \\( \LaTeX \\) it would break the sentence if used inline. Well I guess MathJax cannot enforce that rule on webpages.
+My local Jekyll installation also gives me correct rendering:
+
+<img title="Good work, Dr. Jekyll."
+    src="/assets/local-jekyll-render.jpg"
+    style="width:600px"
+    border="0" alt="Good work, Dr. Jekyll." />
+
+So it seems to me that something went wrong on GitHub's side. A simple workaround is to use displayed math delimiters `\\[``\\]` and `$$`. Normally I wouldn't do this because these are for displayed math, and in \\( \LaTeX \\) it would break the sentence if used inline. Well I guess MathJax cannot enforce that rule on webpages.
 
 So the conclusion is that when GitHub is processing the Markdown syntax, `\\(``\\)` enclosed expressions are not properly escaped. While it is a small thing I still hope GitHub team would fix it. Like I said before, I'm a bit obsessive with this kind of things.
