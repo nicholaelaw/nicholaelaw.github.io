@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: content/
 title: 目录 &bcong; All Posts
 ---
 

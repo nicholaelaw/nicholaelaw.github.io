@@ -2,7 +2,7 @@
 layout: post
 permalink: walking-back-to-happiness
 comments: true
-usemath: true
+use-math: true
 tag:
  - problem
  - solution

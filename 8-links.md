@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: links/
 title: 隔壁 &bcong; Links
 ---
 

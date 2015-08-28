@@ -1,6 +1,7 @@
 ---
 layout: page
-usemath: true
+permalink: handy/
+use-math: true
 title: 参考 &bcong; Handy
 ---
 

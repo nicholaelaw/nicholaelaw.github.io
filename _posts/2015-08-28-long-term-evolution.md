@@ -2,7 +2,7 @@
 layout: post
 permalink: long-term-evolution
 comments: true
-usemath: true
+use-math: true
 tags:
  - computer
  - programming

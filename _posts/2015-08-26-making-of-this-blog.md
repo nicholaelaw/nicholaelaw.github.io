@@ -2,7 +2,7 @@
 layout: post
 permalink: making-of-this-blog
 comments: true
-usemath: true
+use-math: true
 tags:
  - computer
  - programming

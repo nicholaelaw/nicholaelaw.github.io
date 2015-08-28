@@ -2,8 +2,8 @@
 layout: post
 permalink: maintenance
 comments: false
-usemath: false
-noexcerpt: true
+use-math: false
+no-excerpt: true
 title: 博客不见鸟
 ---
 

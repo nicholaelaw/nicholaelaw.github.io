@@ -2,7 +2,7 @@
 layout: post
 permalink: an-underscored-frenzy
 comments: true
-usemath: true
+use-math: true
 tags:
  - bugs
  - tinker
