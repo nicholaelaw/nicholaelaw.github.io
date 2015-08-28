@@ -17,5 +17,6 @@ title: 参考 &bcong; Handy
 * [Favicon Generator. For real.](http://realfavicongenerator.net/){:target="_blank"}
 * [Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html){:target="_blank"}
 * [sublime text 2 下的Markdown写作](http://www.jianshu.com/p/378338f10263){:target="_blank"}
+* [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。
