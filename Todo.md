@@ -8,3 +8,4 @@
 * 在某处显示日期、时间？
 * Tag Cloud/Categories, sort of.
 * Insite search
+* JiaThis的名字明显是由国外的同类网站AddThis变化而来，说不上是原创。
