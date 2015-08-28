@@ -9,6 +9,7 @@ tag:
  - puzzle
 title: 一个走路的问题
 ---
+
 ##原题
 来自[Shakuntala Devi](https://en.wikipedia.org/wiki/Shakuntala_Devi)编写的[*Puzzels to Puzzle You*](https://books.google.com/books?id=F-idu9oxkdgC&printsec=frontcover#v=onepage&q&f=false)一书，第23问"Walking back to Happiness"：
 
@@ -77,6 +78,6 @@ $$\square$$
 
 ##吐槽
 
-一开始我解到$$(3)$$就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。
+一开始我解到\\( (3) \\)就解不动了。心想这未知数怎么都比公式多，怎么可能解得出答案来。在网上搜了一圈，没看到有人把解题过程发出来的。倒是有个哥们在YouTube上放了个讲解的视频。可是，哥们英语太烂能听懂的词用一只手就能数出来……最后他给了个答案，55分钟。
 
 这可怎么办，知其然而不知其所以然是最要命的。我只有一使劲——就有了上面的东西了。今后有空我还会把平时解过的一些有意思的题目发出来。拜。

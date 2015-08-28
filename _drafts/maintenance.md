@@ -3,7 +3,7 @@ layout: post
 permalink: maintenance
 comments: false
 usemath: false
-showall: true
+noexcerpt: true
 title: 博客不见鸟
 ---
 

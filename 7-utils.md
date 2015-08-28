@@ -16,5 +16,6 @@ title: 参考 &bcong; Handy
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/){:target="_blank"}
 * [Favicon Generator. For real.](http://realfavicongenerator.net/){:target="_blank"}
 * [Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html){:target="_blank"}
+* [sublime text 2 下的Markdown写作](http://www.jianshu.com/p/378338f10263){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

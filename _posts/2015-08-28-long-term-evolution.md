@@ -46,13 +46,15 @@ Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章�
 
 ……这又造成了一个问题：那些在首页就能完整显示的短文章下面，也会有个“继续看”的链接。革命尚未成功啊。[^excerpt]
 
-[^excerpt]: 解决办法：在Front Matter里加入变量`showall`，然后在`index.html`里进行判断，如果Front Matter中有`showall: true`则直接显示全文，同时不显示“继续看”。如果没有（默认为`false`），则显示摘要。
+[^excerpt]: 解决办法：在Front Matter里加入变量`noexcerpt`，然后在`index.html`里进行判断，如果Front Matter中有`noexcerpt: true`则直接显示全文，同时不显示“继续看”。如果没有（默认为`false`），则显示摘要。
 
 $$\rhd$$
 
 <div id='国内社交软件分享'/>
 
-###国内社交软件分享
+###国内社交软件分享[^jiathis]
+
+[^jiathis]: 后来在网上又搜到了[AddThis](http://www.addthis.com/)，才发现JiaThis的名字根本就是跟人家学的。AddThis的图标看着都特干净，美观整齐，大小合适。最可惜的是AddThis貌似没有微博、微信这些国内现在最流行的社交软件，而且貌似有撞墙的嫌疑。算了，另外想办法吧。实在不行的话，自己找几个好看的图标试试能不能给它换掉。
 
 之前在[建博](/making-of-this-blog/)的时候提到过，想加入国内网站常见的那种条状物。在网上搜索了一下，居然轻松找到：[JiaThis](http://www.jiathis.com/)。这名字起的，朴实，接地气。JiaThis提供了一次性解决问题的方案，不用注册，直接将提供的代码嵌入到合适的位置，就行了：
 
