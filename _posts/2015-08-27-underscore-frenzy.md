@@ -32,7 +32,7 @@ I made some changes and the problem went away. So I went to sleep. The next day,
 
 So here's my formal complaint to GitHub, on their mistreating of the underscore sign.[^bug]
 
-[^bug]: I have filed a bug report after this post went online. If they fix the issue I will have to replace those examples with images.
+[^bug]: I have filed a bug report after this post went online. If they fix the issue I will have to replace those examples with images. **Update 08-28**: James at GitHub got back to me, it appears that I had omitted a few recommended steps when deploying Jekyll to GitHub Pages. The inconsistent rendering is a result of version mismatch between local dependencies and GitHub's. Understandably, any updates on GitHub's side are subject to security review, so GitHub's packages are a few versions older behind mine. Best hope is to wait for them to update their dependencies, it seems.
 
 <!--excerpt-->
 
