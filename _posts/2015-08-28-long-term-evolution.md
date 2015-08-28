@@ -17,6 +17,7 @@ title: 博客的长期演进
 * [国内社交软件分享]({{site.baseurl}}{{page.url}}/#国内社交软件分享)
 * [加入`.gitignore`]({{site.baseurl}}{{page.url}}/#加入`.gitignore`)
 * [启用删除线]({{site.baseurl}}{{page.url}}/#启用删除线)
+* [给网站加上图标]({{site.baseurl}}{{page.url}}/#给网站加上图标)
 
 <!--excerpt-->
 
@@ -99,4 +100,30 @@ $$\rhd$$
 
 $$\rhd$$
 
-###
+<div id="给网站加上图标"/>
+
+###给网站加上图标
+
+给博客定制个图标吧！Lanyon默认的是个“L”：
+
+<img title="Lanyon Favicon"
+    src="/assets/lanyon-default-favicon-apple.png"
+    style="width:152px; height:152px"
+    border="0" alt="L"/>
+
+虽说看着还不错，但一个默认的图标终归没有辨识度。打开Illustrator，自己做一个吧。我把原始文件的尺寸设为\\( 1024\times 1024\\)，这样生成downsize的时候效果会好一些。怎么做，做成什么样，都看个人喜好，我就不多说了。
+
+做好底稿后，需要生成一大串各种大小的图标文件。人肉做的话，也行……但是我找到一个可以说是专业级的图标生成网站：[Real Favicon Generator](http://realfavicongenerator.net/){:target="_blank"}。不仅给你生成普通浏览器用的图标，连Android、iOS添加到主屏幕的图标都有！各种舒畅啊。
+
+最后秀一个本博图标的大图：
+
+<img title="博客Favicon"
+    src="/assets/favicon-cutout-1024.png"
+    style="width:80%"
+    border="0" alt="L"/>
+
+哈哈哈哈……[^laugh]
+
+[^laugh]:此处充满了各种得意。
+
+$$\rhd$$

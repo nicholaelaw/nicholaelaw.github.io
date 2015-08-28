@@ -188,5 +188,5 @@ $$f(a)=\frac{1}{2\pi i}\oint_{\gamma}{\frac{f(z)}{z-a}}\mathrm{d}z$$
 ##注释
 [^frontmatter]: Front Matter: 每个实际有内容的文档（也就是自己写的东西）开头用横线隔出来的一段参数。定义了这篇文档的性质和可选的参数（page/post或者其它什么鬼，标题是咩，以及各种自定义的开关）。
 [^math]: 为了节约客户端资源，提高网页加载速度，我把MathJax的语句也单独拿出来存为一个文件，然后用和开关评论模块一样的方式，在需要的时候才加载。如果以后发现国内加载太慢的话，可能还会考虑在本地安装。
-[^comments]: 对于适用于国内的评论、分享机制，还在研究中。
+[^comments]: <del>对于适用于国内的评论、分享机制，还在研究中。</del>
 [^burl]: 直接将User Page（也就是username.github.io）作为博客空间时`baseurl`必须为空。同时要修改根目录的`index.html`文件，找到`{% raw %}<a href="{{ site.baseurl }}/{{ post.url }}">{% endraw %}`这一行，把中间那个`/`去掉。否则的话首页上的Permalink会废掉。
