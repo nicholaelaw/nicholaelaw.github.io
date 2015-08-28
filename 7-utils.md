@@ -14,7 +14,7 @@ title: 参考 &bcong; Handy
 * [Octopress](http://octopress.org/){:target="_blank"}
 * [Tags in Jekyll](http://charliepark.org/tags-in-jekyll/){:target="_blank"}
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/){:target="_blank"}
-* [favicon.cc](http://www.favicon.cc/){:target="_blank"}
+* [Favicon Generator. For real.](http://realfavicongenerator.net/){:target="_blank"}
 * [Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

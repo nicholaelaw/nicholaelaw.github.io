@@ -4,12 +4,12 @@ title: 隔壁 &bcong; Links
 ---
 
 
-###[xkcd](www.xkcd.com)
+###[xkcd](http://www.xkcd.com){:target="_blank"}
 Webcomic by Randall Munroe. I hold a deep respect for his stick-figure-manipulation techniques.
 
-###[What if?](what-if.xkcd.com)
+###[What if?](http://what-if.xkcd.com){:target="_blank"}
 Another thing by Randall. I love it so much I have to list it separately.
 
-###[In the Pipeline](http://blogs.sciencemag.org/pipeline/)
+###[In the Pipeline](http://blogs.sciencemag.org/pipeline/){:target="_blank"}
 Derek Lowe's commentary on drug discovery and the pharma industry.
 
