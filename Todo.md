@@ -9,3 +9,4 @@
 * Tag Cloud/Categories, sort of.
 * Insite search
 * JiaThis的名字明显是由国外的同类网站AddThis变化而来，说不上是原创。
+* [用Sublime Text编辑Markdown](http://www.jianshu.com/p/378338f10263)
