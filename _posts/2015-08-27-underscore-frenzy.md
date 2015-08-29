@@ -14,25 +14,35 @@ In one episode of inspecting and messing around the blog's math, I encountered a
 
 The problem arose when I was checking my blog before I went to bed one night. I am a little obsessive with _correctly_ presenting my ideas. It appears that a few maths I wrote on the blog isn't rendering correctly: instead of a beautifully rendered math expression, I got raw \\( \LaTeX \\) syntax staring at me. It feels naked.
 
-Correct:
-
-<img title="Math Done Right"
-    src="/assets/math-correct.jpg"
-    style="width:600px"
-    border="0" alt="Math done right" />
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="This looks pretty."
+        src="/assets/math-correct.jpg" 
+        alt="This looks pretty."
+        style="margin-bottom:0;"/>
+    <figcaption style="color: black; ">
+            &rdsh; Correctly rendered.</figcaption>
+    </figure>
+</div>
     
-Incorrect:
-
-<img title="Math Done Wrong"
-    src="/assets/math-wrong.jpg"
-    style="width:600px;"
-    border="0" alt="Math done wrong" />
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="This isn't right."
+        src="/assets/math-wrong.jpg" 
+        alt="This isn't right."
+        style="margin-bottom:0;"/>
+    <figcaption style="color: black; ">
+            &rdsh; SOMETHING IS WRONG!!!!</figcaption>
+    </figure>
+</div>
 
 I made some changes and the problem went away. So I went to sleep. The next day, through much tinkering and experimenting I found that it was a bit more than a simple mistake.
 
 So here's my formal complaint to GitHub, on their mistreating of the underscore sign.[^bug]
 
-[^bug]: I have filed a bug report after this post went online. If they fix the issue I will have to replace those examples with images. **Update 08-28**: James at GitHub got back to me, it appears that I had omitted a few recommended steps when deploying Jekyll to GitHub Pages. The inconsistent rendering is a result of version mismatch between local dependencies and GitHub's. Understandably, any updates on GitHub's side are subject to security review, so GitHub's packages are a few versions older behind mine. Best hope is to wait for them to update their dependencies, it seems.
+[^bug]: I have filed a bug report after this post went online. If they fix the issue I will have to replace those examples with images.
 
 <!--excerpt-->
 
@@ -88,20 +98,38 @@ So after checking and experimenting back and forth I think I've found the source
 
 My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in syntax highlighting, but it renders correctly. 
 
-<a href="/assets/macdown-syntax-highlighting-wrong.jpg">
-<img title="Wrong emphasis, ma'am"
-    src="/assets/macdown-syntax-highlighting-wrong.jpg"
-    style="width:600px"
-    border="0" alt="Wrong emphasis, ma'am" />
-</a>
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <a href="/assets/macdown-syntax-highlighting-wrong.jpg">
+    <img title="Wrong emphasis, ma'am"
+        src="/assets/macdown-syntax-highlighting-wrong.jpg" 
+        alt="Wrong emphasis, ma'am"
+        style="margin-bottom:0;"/>
+    </a>
+    <figcaption style="color: black; ">
+        &rdsh; So much gold. Click the image to see the gold <i>more closely</i>.</figcaption>
+    </figure>
+</div>
 
 My local Jekyll installation also gives me correct rendering:
 
-<img title="Good work, Dr. Jekyll."
-    src="/assets/local-jekyll-render.jpg"
-    style="width:600px"
-    border="0" alt="Good work, Dr. Jekyll." />
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="It's pretty until it leaves me."
+        src="/assets/local-jekyll-render.jpg" 
+        alt="It's pretty until it leaves me."
+        style="margin-bottom: 0;"/>
+    <figcaption style="color: black; ">
+        &rdsh; Good work, Dr. Jekyll</figcaption>
+    </figure>
+</div>
 
 So it seems to me that something went wrong on GitHub's side. A simple workaround is to use displayed math delimiters `\\[``\\]` and `$$`. Normally I wouldn't do this because these are for displayed math, and in \\( \LaTeX \\) it would break the sentence if used inline. Well I guess MathJax cannot enforce that rule on webpages.
 
 So the conclusion is that when GitHub is processing the Markdown syntax, `\\(``\\)` enclosed expressions are not properly escaped. While it is a small thing I still hope GitHub team would fix it. Like I said before, I'm a bit obsessive with this kind of things.
+
+$$\square$$
+
+**Update 08-28**: James at GitHub got back to me, it appears that I had omitted a few recommended steps when deploying Jekyll to GitHub Pages. In short, this is because GitHub Pages is running older sofware on their servers. Understandably, any updates on GitHub's side are subject to security review, so GitHub's packages are a few versions behind my local setup. Best hope is to wait for them to update their dependencies, it seems.

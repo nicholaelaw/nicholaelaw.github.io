@@ -110,10 +110,18 @@ $$\rhd$$
 
 给博客定制个图标吧！Lanyon默认的是个“L”：
 
-<img title="Lanyon Favicon"
-    src="/assets/lanyon-default-favicon-apple.png"
-    style="width:152px; height:152px"
-    border="0" alt="L"/>
+<div style="position: relative; max-width: 152px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="Poole's Theme, Lanyon"
+        src="/assets/lanyon-default-favicon-apple.png" 
+        alt="Poole's Theme, Lanyon"
+        style="margin-bottom:0;"/>
+        <figcaption style="color: black;
+            text-align: center;">
+            Lanyon</figcaption>
+    </figure>
+</div>
 
 虽说看着还不错，但一个默认的图标终归没有辨识度。打开Illustrator，自己做一个吧。我把原始文件的尺寸设为\\( 1024\times 1024\\)，这样downsize的时候效果会好一些。怎么做，做成什么样，都看个人喜好，我就不多说了。
 
@@ -121,10 +129,18 @@ $$\rhd$$
 
 最后秀一个本博图标的大图：
 
-<img title="博客Favicon"
-    src="/assets/favicon-cutout-1024.png"
-    style="width:80%"
-    border="0" alt="L"/>
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="三喵暖"
+        src="/assets/favicon-cutout-1024.png" 
+        alt="三喵暖"
+        style="margin-bottom:0;"/>
+        <figcaption style="color: black;
+            text-align: center;">
+            三喵暖</figcaption>
+    </figure>
+</div>
 
 哈哈哈哈……[^laugh]
 
