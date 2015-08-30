@@ -21,7 +21,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
         src="/assets/math-correct.jpg" 
         alt="This looks pretty."
         style="margin-bottom:0;"/>
-    <figcaption style="color: black; ">
+    <figcaption>
             &rdsh; Correctly rendered.</figcaption>
     </figure>
 </div>
@@ -33,7 +33,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
         src="/assets/math-wrong.jpg" 
         alt="This isn't right."
         style="margin-bottom:0;"/>
-    <figcaption style="color: black; ">
+    <figcaption>
             &rdsh; SOMETHING IS WRONG!!!!</figcaption>
     </figure>
 </div>
@@ -107,7 +107,7 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
         alt="Wrong emphasis, ma'am"
         style="margin-bottom:0;"/>
     </a>
-    <figcaption style="color: black; ">
+    <figcaption>
         &rdsh; So much gold. Click the image to see the gold <i>more closely</i>.</figcaption>
     </figure>
 </div>
@@ -121,7 +121,7 @@ My local Jekyll installation also gives me correct rendering:
         src="/assets/local-jekyll-render.jpg" 
         alt="It's pretty until it leaves me."
         style="margin-bottom: 0;"/>
-    <figcaption style="color: black; ">
+    <figcaption>
         &rdsh; Good work, Dr. Jekyll</figcaption>
     </figure>
 </div>

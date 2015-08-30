@@ -117,7 +117,8 @@ $$\rhd$$
         src="/assets/lanyon-default-favicon-apple.png" 
         alt="Poole's Theme, Lanyon"
         style="margin-bottom:0;"/>
-        <figcaption style="color: black;
+        <figcaption style="color: white;
+            background-color: black;
             text-align: center;">
             Lanyon</figcaption>
     </figure>
@@ -137,6 +138,7 @@ $$\rhd$$
         alt="三喵暖"
         style="margin-bottom:0;"/>
         <figcaption style="color: black;
+            background-color: white;
             text-align: center;">
             三喵暖</figcaption>
     </figure>

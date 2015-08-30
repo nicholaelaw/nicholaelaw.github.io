@@ -1,0 +1,20 @@
+/* Custom Styles for nicholaelaw.github.io 
+ * Status: Experimental
+ * 
+ */
+
+/* Container for placing centered images */
+.img-container {
+    position: relative; max-width: 400px; margin: 0 auto; 
+}
+
+/* pretty button */
+.prettyButton {
+    margin-left: 0; 
+    margin-right: 0; 
+    max-width: 100%;
+}
+
+.prettyButton:hover {
+    background-color: #225879;
+}

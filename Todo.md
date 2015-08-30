@@ -8,3 +8,5 @@
 * 在某处显示日期、时间？
 * Tag Cloud/Categories, sort of.
 * Insite search
+* Import old blog from wordpress.com
+* Make a gallery, although GitHub Pages may not be very suitable for an image heavy blog.

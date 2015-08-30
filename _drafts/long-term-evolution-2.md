@@ -156,3 +156,13 @@ $$\rhd$$
 $$\rhd$$
 
 [^CSS]: 详见[CSS How-to](http://www.w3schools.com/css/css_howto.asp){:target="_blank"}。CSS可以作为外部文件，或者放在HTML的`head`中，或者做为inline表达式。
+
+###从旧博客迁移数据
+
+很久很久以前，有个东西叫做[Windows Live空间](https://en.wikipedia.org/wiki/Windows_Live_Spaces){:target="_blank"}。那时，一只年轻的家猫也曾经把他的各种破事写成文字，发上网去。在我的记忆中，那个时候这是一件很时髦的事情。多年以后重新开始写东西，决定把以前写的也一并转移过来。
+
+安装Jekyll-import
+解决nokogiri的编译问题
+在wordpress.com导出网站的xml文档
+import
+手动调整，发布旧文
