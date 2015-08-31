@@ -4,6 +4,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 old_posts/
+experimental/
 
 # Compiled source #
 ###################
