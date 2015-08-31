@@ -19,21 +19,21 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 
 <!--Pretty Button Example-->
 
-Pretty Button Example: 
+##Pretty Button Example: 
 
 <a href="" class="act">Show</a>
 <div class="collapsibleContent">
   <div class="imgContainer" style="border-radius: 35px; background-color: #AC4142;">
-      <figure class="prettyButton" style="border-radius: 35px;">
-      <a href="http://nicholaelaw.github.io" target="_blank">
-      <img title="三喵暖"
-          src="/assets/images/favicon-white-1024.png" 
-          alt="三喵暖"
-          style="margin-bottom:0;"/></a>
-      <figcaption style="color: #FFFFFF; background-color: rgba(256,256,256,0.5);
-          text-align: center;">
-          三喵暖</figcaption>
-      </figure>
+    <figure class="prettyButton" style="border-radius: 35px;">
+    <a href="http://nicholaelaw.github.io" target="_blank">
+    <img title="三喵暖"
+        src="/assets/images/favicon-white-1024.png" 
+        alt="三喵暖"
+        style="margin-bottom:0;"/></a>
+    <figcaption style="color: #FFFFFF; background-color: rgba(256,256,256,0.5);
+        text-align: center;">
+        三喵暖</figcaption>
+    </figure>
   </div>
 </div>
 
