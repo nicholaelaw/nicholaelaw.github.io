@@ -1,6 +1,6 @@
 # Custom site-wide options
 # Created because Jekyll does not auto-regenerate on changes to default config file.
 # These options control the include process located in head.html and default.html.
-devMode: true
+devMode: false
 javaScript: true
 extraCSS: true
