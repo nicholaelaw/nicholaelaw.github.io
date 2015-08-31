@@ -3,16 +3,20 @@ layout: page
 permalink: playground/
 hide-page: true
 comments: false
-use-math: true
+use-math: false
 title: 操场 &bcong; Playground
 ---
 This is the place I test things before they go online.
 
 Last build date: {{ site.time | date_to_rfc822 }}
 
+{% if site.data.options.devMode %}
+  Success!
+{% else %}
+  Failed!
+{% endif %}
+
 Currently loading custom style sheet `/public/css/nicholaelaw.css`
- 
-<link rel="stylesheet" href="/public/css/nicholaelaw.css">
 
     {% raw %}
     {% for gallery in site.data.galleries %}
@@ -56,13 +60,12 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   });
 </script>
 
-
 <!--Gallery/Image Display Example-->
 
 ##Expermental Image Display Routine
 
 <div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure style="width: 200px;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
@@ -74,11 +77,8 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     </a>
     <figcaption itemprop="caption description">Image caption  1</figcaption>
   </figure>
+
 </div>
-
-<style>
-
-</style>
 
 <!--Original PhotoSwipe Example-->
 
@@ -101,6 +101,13 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   </figure>
 
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
+    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
+  </figure>
+
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
     <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
@@ -112,6 +119,12 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
+  </figure>
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
+    <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <figcaption itemprop="caption description">Image caption  6</figcaption>
   </figure>
 
 </div>
@@ -137,8 +150,6 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 </div>
 
 {% include pswpRoot.html %}
-
-<script src="{{ site.baseurl }}/public/js/initPhotoSwipeFromDOM.js"></script>
 
 
 

@@ -18,8 +18,23 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-  <!--link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css"-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Load custom CSS if extraCSS is true (site-wide) -->
+  {% if site.data.options.extraCSS %}
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/photoswipe/photoswipe.css"> 
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+         In the folder of skin CSS file there are also:
+         - .png and .svg icons sprite, 
+         - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/photoswipe/default-skin.css"> 
+  {% endif %}
+  
+  <!-- Load preloading JavaScript -->
+  {% include addonJS-pre.html %}
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="/public/favicon/apple-touch-icon-57x57.png?v=3">

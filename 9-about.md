@@ -16,3 +16,54 @@ I will always remember his warmth.
 </div>
 
 如有疑问，请大声提问。如有建议，猛击[这里](mailto:nicholaelaw+blog@gmail.com)。
+
+##Stuff used in building of this blog:
+
+<style>
+.imgDisplaySpecial {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.imgDisplaySpecial img {
+  width: 100%;
+  height: auto;
+}
+.imgDisplaySpecial figure {
+  display: block;
+  float: left;
+  margin: 0 30px 20px 0;
+  width: 128px;
+  border: 1px solid black;
+}
+.imgDisplaySpecial figcaption {
+  display: none;
+}
+</style>
+
+<div class="imgDisplaySpecial">
+  <figure style="padding: 10px 0 0 0;">
+    <a href="https://github.com/" target="_blank" itemprop="contentUrl">
+    <img title="Hosted on GitHub"
+      src="/assets/images/GitHub-Logo-m.png" itemprop="logo" alt="Hosted on GitHub" />
+    </a>
+  </figure>
+  <figure style="padding: 8px 0 0 0;">
+    <a href="http://jekyllrb.com/" target="_blank" itemprop="contentUrl">
+    <img title="Powered by Jekyll"
+      src="/assets/images/jekyll-logo-m.png" itemprop="logo" alt="Powered by Jekyll" />
+    </a>
+  </figure>
+  <figure style="padding: 25px 0 0 0;">
+    <a href="http://www.mathjax.org" target="_blank" itemprop="contentUrl">
+    <img title="Math Powered by MathJax"
+  	  src="http://cdn.mathjax.org/mathjax/badge/mj_logo.png" itemprop="logo" alt="Math Powered by MathJax" />
+    </a>
+  </figure>
+  <figure style="padding: 25px 0 0 0;">
+    <a href="http://photoswipe.com/" style="text-decoration: none;" target="_blank" itemprop="contentUrl">
+    <img  title="Galleries built using PhotoSwipe"
+  	  src="/assets/images/photoswipe-logo.png" itemprop="logo" alt="Galleries built using PhotoSwipe" />
+    </a>
+  </figure>
+</div>

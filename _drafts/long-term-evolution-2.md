@@ -30,7 +30,7 @@ Permalink：我在给页面[^page]设置permalink的时候发现一个怪问题�
 
 翻译：目前Jekyll目前支持末尾没有`/`或者扩展名的permalink，不过这要求网页服务器的兼容。
 
-按照这个逻辑，正儿八经规规矩矩地设permalink的时候，其实都应该带上`/`或者文件扩展名咯？那么我开始遇到的页面变成下载文件的问题就好解释了，就是因为我设置的permalink后面没有带`/`或者扩展名。那么新的问题又来了，我设置permalink的方式都是从别人写的东西里学来的，而且所有的博文的permalink都没有带`/`或者扩展名，为什么它们就能正常显示呢？这东西难免让我觉得有点莫名其妙。难道说Jekyll处理页面和处理博文的方式有些细微的差别，导致了这种情况？
+按照这个逻辑，正儿八经规规矩矩地设permalink的时候，其实都应该带上`/`或者文件扩展名咯？那么我开始遇到的页面变成下载文件的问题就好解释了，就是因为我设置的permalink后面没有带`/`或者扩展名。那么新的问题又来了，我的设置方式都是从别人写的东西里学来的，而且所有的博文的permalink都没有带`/`或者扩展名，为什么它们就能正常显示呢？这东西难免让我觉得有点莫名其妙。难道说Jekyll处理页面和处理博文的方式有些细微的差别，导致了这种情况？
 
 我百思不得其解。
 
@@ -107,7 +107,7 @@ $$\rhd$$
 
 <div style="position: relative; max-width: 400px; 
     margin: 0 auto;">
-<img src="/assets/images/github_logo.png" 
+<img src="/assets/images/github-logo.png" 
     style="border-radius: 0.5em; 
     box-shadow: 0px 0px 0.5em #000000; 
     width: 100%;"/>
@@ -141,7 +141,7 @@ $$\rhd$$
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="I claim fair use."
-        src="/assets/images/github_logo.png" 
+        src="/assets/images/github-logo.png" 
         alt="I claim fair use."
         style="border: 1px solid black; margin-bottom:0;"/>
     <figcaption style="color: #ac4142;

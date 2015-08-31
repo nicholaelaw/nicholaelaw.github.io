@@ -98,19 +98,21 @@ So after checking and experimenting back and forth I think I've found the source
 
 My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in syntax highlighting, but it renders correctly. 
 
-<div style="position: relative; max-width: 600px; margin: 0 auto;">
-    <figure style="margin-left: 0; margin-right: 0;
-        max-width: 100%;">
-    <a href="/assets/images/macdown-syntax-highlighting-wrong.jpg">
-    <img title="Wrong emphasis, ma'am"
-        src="/assets/images/macdown-syntax-highlighting-wrong.jpg" 
-        alt="Wrong emphasis, ma'am"
-        style="margin-bottom:0;"/>
+<div class="imgDisplay" style="position: relative; float: none; max-width: 600px; margin: 0 auto;" 
+  itemscope itemtype="http://schema.org/ImageGallery">
+  <figure style="width: 600px; margin-bottom: 1rem; float: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="contentUrl" data-size="1267x600">
+    <img style="margin-bottom: 0;" src="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="thumbnail" alt="Wrong emphasis, ma'am" />
     </a>
-    <figcaption>
+    <figcaption itemprop="caption description">Wrong emphasis, ma'am</figcaption>
+    <figcaption style="display: block;">
         &rdsh; So much gold. Click the image to see the gold <i>more closely</i>.</figcaption>
     </figure>
+  </figure>
 </div>
+
+{% include pswpRoot.html %}
+
 
 My local Jekyll installation also gives me correct rendering:
 

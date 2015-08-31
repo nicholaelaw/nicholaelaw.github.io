@@ -3,15 +3,6 @@
 
   {% include head.html %}
 
-  <!--include Google Analytics tracking code-->
-  {% include googleAnalytics.html %}
-
-  <!--include jQuery framework-->
-  {% include jquery.html %}
-
-  <!--include PhotoSwipe-->
-  {% include photoswipe.html %}
-
   <body class="theme-base-08 layout-reverse sidebar-overlay">
 
     {% include sidebar.html %}
@@ -22,19 +13,23 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a href="{{ site.baseurl }}/" title="首页 &bcong; Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
       </div>
 
+
+
       <div class="container content">
         {{ content }}
 
-        <!--include commenting-->
-        {% include comments.html %}
+        <!-- Load postloading JavaScript -->
+        {% include addonJS-post.html %}
+
       </div>
     </div>
+
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
@@ -55,9 +50,6 @@
         }, false);
       })(document);
     </script>
-
-  <!-- include MathJax -->
-  {% include MathJax.html %}
 
   </body>
 </html>
