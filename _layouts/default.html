@@ -5,8 +5,11 @@
 
   <!--include Google Analytics tracking code-->
   {% include googleAnalytics.html %}
+
+  <!--include jQuery framework-->
   {% include jquery.html %}
-  <!--include photoswipe-->
+
+  <!--include PhotoSwipe-->
   {% include photoswipe.html %}
 
   <body class="theme-base-08 layout-reverse sidebar-overlay">
@@ -27,6 +30,8 @@
 
       <div class="container content">
         {{ content }}
+
+        <!--include commenting-->
         {% include comments.html %}
       </div>
     </div>
@@ -51,6 +56,7 @@
       })(document);
     </script>
 
+  <!-- include MathJax -->
   {% include MathJax.html %}
 
   </body>
