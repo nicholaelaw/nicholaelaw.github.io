@@ -2,8 +2,12 @@
 <html lang="en-us">
 
   {% include head.html %}
+
+  <!--include Google Analytics tracking code-->
   {% include googleAnalytics.html %}
-  {% include MathJax.html %}
+  <!-- % include jQuery.html % -->
+  <!--include photoswip-->
+  {% include photoswipe.html %}
 
   <body class="theme-base-08 layout-reverse sidebar-overlay">
 
@@ -46,6 +50,8 @@
         }, false);
       })(document);
     </script>
+
+  {% include mathjax.html %}
 
   </body>
 </html>

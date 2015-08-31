@@ -5,7 +5,7 @@ permalink: shit-hole-on-wed
 comments: true
 categories:
 - Old Entries
-title: A Shit Hole on Wednesday/星期三的噩梦
+title: A Shit Hole on Wednesday 星期三的噩梦
 ---
 [噩梦般的作业（PDF文档！）](/assets/docs/M773A5-original.pdf)
 

@@ -6,8 +6,14 @@ use-math: false
 no-excerpt: true
 title: 博客不见鸟
 ---
-
-![under construction?](/assets/doors.jpg)
+<div style="position: relative; max-width: 600px; margin: 0 auto;">
+    <figure style="margin-left: 0; margin-right: 0;
+        max-width: 100%;">
+    <img title="Outta the door"
+        src="/assets/photos/doors.jpg" 
+        alt="Outta the door"/>
+    </figure>
+</div>
 
 This blog is missing and its owner is out looking.
 

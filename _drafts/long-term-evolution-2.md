@@ -107,7 +107,7 @@ $$\rhd$$
 
 <div style="position: relative; max-width: 400px; 
     margin: 0 auto;">
-<img src="/assets/github_logo.png" 
+<img src="/assets/images/github_logo.png" 
     style="border-radius: 0.5em; 
     box-shadow: 0px 0px 0.5em #000000; 
     width: 100%;"/>
@@ -141,7 +141,7 @@ $$\rhd$$
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="I claim fair use."
-        src="/assets/github_logo.png" 
+        src="/assets/images/github_logo.png" 
         alt="I claim fair use."
         style="border: 1px solid black; margin-bottom:0;"/>
     <figcaption style="color: #ac4142;
@@ -166,3 +166,23 @@ $$\rhd$$
 在wordpress.com导出网站的xml文档
 import
 手动调整，发布旧文
+
+###添加照片、相册
+
+搜索找到文章[Generation an Image Gallery with Jekyll and Lightbox 2](http://christianspecht.de/2014/03/08/generating-an-image-gallery-with-jekyll-and-lightbox2/){:target="_blank"}，[Lightbox](http://lokeshdhakar.com/projects/lightbox2/) by Lokesh Dhakar不错
+
+Lightbox需要[jQuery](https://jquery.com/){:target="_blank"}，尽管提供了打包好的`lightbox-plus-jquery.js`，但是我有感觉以后会用到jQuery的地方会有很多，应该现在就安装，以后会省不少事。
+
+官网：安装jQuery用[Bower](http://bower.io/){:target="_blank"}，安装Bower要用[node](https://nodejs.org/){:target="_blank"}，[npm](https://www.npmjs.com/){:target="_blank"}和git。其中npm包含在node的安装包里面。各种坑啊。
+
+安装node时又出问题：官网的安装包把node装到了`/usr/local/lib`这种需要sudo的地方，是一种十分不负责任的作法。没法，手动删除了所有安装的文件，然后按照[这篇文章](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/){:target="_blank"}的说明重新来过。大坑啊。
+
+折腾了两个小时后，我决定放弃bower，直接下载jQuery。Damn you for having me jumping through hoops for nothing, jQuery.
+
+将Lightbox组建插入，试验了一下，感觉不够流畅。决定考察考察[Jssor Slider](http://www.jssor.com/index.html){:target="_blank"}。但是最终发现我要找的不是slider（放幻灯），而是一个既能在文章中插入显示图片（viewer），又能单独成为一个幻灯页的东西。同时，这个解决方案应该有比较良好的浏览器和设备支持（比如触控滑动翻页，lightbox就没有）。我觉得我找到了，它就是[PhotoSwipe](http://photoswipe.com/){:target="_blank"}。从介绍上来看，真的是各种优秀。另一个看着不错的是[Gamma Gallery](http://tympanus.net/Development/GammaGallery/){:target="_blank"}。
+
+目前可以确定的是，一张图片必须有两个版本，一个缩略图，一个原图。主要还是从带宽的角度考虑的。
+
+###学习JavaScript
+
+PhotoSwipe看起来真的好牛B、好漂亮，但是它不是一个简单的JavaScript插件，要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。

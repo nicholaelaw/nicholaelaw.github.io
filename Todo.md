@@ -9,4 +9,4 @@
 * Tag Cloud/Categories, sort of.
 * Insite search
 * Import old blog from wordpress.com
-* Make a gallery, although GitHub Pages may not be very suitable for an image heavy blog.
+* <del>Make a gallery, although GitHub Pages may not be very suitable for an image heavy blog.</del> 修改、调整PhotoSwipe，将分享链接改为微博、微信等，初步整理一个可用的脚本和模板。

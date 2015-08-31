@@ -1,0 +1,9 @@
+# data file for image galleries
+- id: Test-Gallery
+  description: Fact finding test
+  imagefolder: /assets/photos/
+  images:
+  - name: the-little-one.jpg
+    text: I miss his warmth
+  - name: doors.jpg
+    text: He went through that door

@@ -114,7 +114,7 @@ $$\rhd$$
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="Poole's Theme, Lanyon"
-        src="/assets/lanyon-default-favicon-apple.png" 
+        src="/assets/images/lanyon-default-favicon-apple.png" 
         alt="Poole's Theme, Lanyon"
         style="margin-bottom:0;"/>
         <figcaption style="color: white;
@@ -134,7 +134,7 @@ $$\rhd$$
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="三喵暖"
-        src="/assets/favicon-cutout-1024.png" 
+        src="/assets/images/favicon-cutout-1024.png" 
         alt="三喵暖"
         style="margin-bottom:0;"/>
         <figcaption style="color: black;

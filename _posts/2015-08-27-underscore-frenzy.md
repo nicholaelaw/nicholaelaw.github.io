@@ -18,7 +18,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="This looks pretty."
-        src="/assets/math-correct.jpg" 
+        src="/assets/images/math-correct.jpg" 
         alt="This looks pretty."
         style="margin-bottom:0;"/>
     <figcaption>
@@ -30,7 +30,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="This isn't right."
-        src="/assets/math-wrong.jpg" 
+        src="/assets/images/math-wrong.jpg" 
         alt="This isn't right."
         style="margin-bottom:0;"/>
     <figcaption>
@@ -101,9 +101,9 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
 <div style="position: relative; max-width: 600px; margin: 0 auto;">
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
-    <a href="/assets/macdown-syntax-highlighting-wrong.jpg">
+    <a href="/assets/images/macdown-syntax-highlighting-wrong.jpg">
     <img title="Wrong emphasis, ma'am"
-        src="/assets/macdown-syntax-highlighting-wrong.jpg" 
+        src="/assets/images/macdown-syntax-highlighting-wrong.jpg" 
         alt="Wrong emphasis, ma'am"
         style="margin-bottom:0;"/>
     </a>
@@ -118,7 +118,7 @@ My local Jekyll installation also gives me correct rendering:
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="It's pretty until it leaves me."
-        src="/assets/local-jekyll-render.jpg" 
+        src="/assets/images/local-jekyll-render.jpg" 
         alt="It's pretty until it leaves me."
         style="margin-bottom: 0;"/>
     <figcaption>
