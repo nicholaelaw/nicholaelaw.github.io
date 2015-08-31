@@ -10,11 +10,12 @@ This is the place I test things before they go online.
 
 Currently loading custom style sheet `/public/css/nicholaelaw.css`
  
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
+<link rel="stylesheet" href="/public/css/nicholaelaw.css">
 
+    {% raw %}
     {% for gallery in site.data.galleries %}
     - [{{ gallery.description }}]({{ site.baseurl }}/{{ gallery.id }})
-    {% endfor %}
+    {% endfor %}{% endraw %}
 
 <div class="img-container" style="border-radius: 35px; 
     background-color: #AC4142;">
