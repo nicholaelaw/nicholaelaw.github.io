@@ -186,3 +186,29 @@ Lightbox需要[jQuery](https://jquery.com/){:target="_blank"}，尽管提供了�
 ###学习JavaScript
 
 PhotoSwipe看起来真的好牛B、好漂亮，但是它不是一个简单的JavaScript插件，要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。
+
+###GitHub对大小写的挑剔
+
+在整理文件结构和命名的时候，我决定需要`_include`文件夹下面的文件名统一用小写。于是把`MathJax.html`改成了`mathjax.html`，并且把`default.html`中的`include`语句也一并修改。结果，push的时候GitHub死活说我include不存在的文件。不对啊，我本地build的时候一点问题都没有呢。害我一顿找，大规模的清理了一遍，尝试各种修改，还是不行。始终就是那句话：
+
+>The page build failed with the following error: 
+>
+>A file was included in `_layouts/default.html` that is a symlink or does not exist in your `_includes` directory. For more information, see https://help.github.com/articles/page-build-failed-file-is-a-symlink. 
+>
+>If you have any questions you can contact us by replying to this email. 
+
+就在蛋越来越疼的时候，我在网页里打开repo，想检查一下GitHub服务器上的`_include`文件夹和我本地的文件夹到底有什么不同。结果发现，我的桌面版GitHub在push的时候根本没有检测到`MathJax.html`的文件名发生了变化：它根本没有把改成小写的文件名传上去，导致我引用的时候是小写，而文件名依然是大写。这也难怪，OS X的默认文件系统是不区分大小写的，所以桌面版的GitHub无法看到文件名的大小写发生了变化。而GitHub服务器肯定是要区分的（多半是ext4之类）。所以造成了这种局面。
+
+我对GitHub的唯一的意见，就是错误信息不够详细，无法准确定位出问题的地方。我给support反馈了我的经历：
+
+>Hi there,
+>
+>After careful examination on my local files as well as what’s been pushed to GitHub, I discovered the reason of this build failure:
+>
+>I’ve recently changed the name of the file `MathJax.html` into `mathjax.html` (just the name, content unchanged), as well as its reference in `default.html`. But GitHub desktop did not pickup the filename change and I did not notice. So apparently the file on GitHub server is still named `MathJax.html`. Therefore causing a build failure.
+>
+>My feedback is that GitHub should include a little bit more detail in the error message, like line number of the fault location. Maybe implement some checks in the desktop app to check for filename change (I know it’s unlikely), or at least mention the possibility of a situation like mine in your support article.
+
+>Regards,
+>Yifeng
+

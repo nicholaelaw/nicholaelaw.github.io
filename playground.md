@@ -17,39 +17,71 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     - [{{ gallery.description }}]({{ site.baseurl }}/{{ gallery.id }})
     {% endfor %}{% endraw %}
 
-<div class="img-container" style="border-radius: 35px; 
-    background-color: #AC4142;">
-    <figure class="prettyButton" style="border-radius: 35px;">
-    <a href="http://nicholaelaw.github.io" target="_blank">
-    <img title="三喵暖"
-        src="/assets/images/favicon-white-1024.png" 
-        alt="三喵暖"
-        style="margin-bottom:0;"/>
-    </a>
-    <figcaption style="color: #FFFFFF;
-        background-color: rgba(256,256,256,0.5);
-        text-align: center;">
-        三喵暖</figcaption>
-    </figure>
+<!--Pretty Button Example-->
+Pretty Button Example: <a href="" class="act">Show</a>
+<div class="collapsibleContent">
+  <div class="imgContainer" style="border-radius: 35px; 
+      background-color: #AC4142;">
+      <figure class="prettyButton" style="border-radius: 35px;">
+      <a href="http://nicholaelaw.github.io" target="_blank">
+      <img title="三喵暖"
+          src="/assets/images/favicon-white-1024.png" 
+          alt="三喵暖"
+          style="margin-bottom:0;"/>
+      </a>
+      <figcaption style="color: #FFFFFF;
+          background-color: rgba(256,256,256,0.5);
+          text-align: center;">
+          三喵暖</figcaption>
+      </figure>
+  </div>
 </div>
 
-    <div style="position: relative; max-width: 600px; margin: 0 auto;">
-        <figure style="margin-left: 0; margin-right: 0;
-            max-width: 100%;">
-        <img title="三喵暖"
-            src="/assets/images/favicon-cutout-1024.png" 
-            alt="三喵暖"
-            style="margin-bottom:0;"/>
-            <figcaption style="color: black;
-                background-color: white;
-                text-align: center;">
-                三喵暖</figcaption>
-        </figure>
-    </div>
+<script>
+  $(".act").click(function(){
+      
+      var val = $(this).text();
 
-<h2>First gallery:</h2>
+  if (val == "Show") {
+      $(".collapsibleContent").css('height', '100%');
+      $(this).text("Hide");
+  } else {
+      $(".collapsibleContent").css('height', '0');
+      $(this).text("Show");
+  }
+    return false;
+  });
+</script>
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+<!--Gallery/Image Display Example-->
+
+##Expermental Image Display Routine
+
+<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
+    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
+  </figure>
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
+    <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
+    </a>
+    <figcaption itemprop="caption description">Image caption  1</figcaption>
+  </figure>
+</div>
+
+<style>
+
+</style>
+
+<!--Original PhotoSwipe Example-->
+
+##First gallery:
+
+<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
 
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
@@ -76,14 +108,14 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
-    <figcaption itemprop="caption description">一辈子的遗憾</figcaption>
+    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
   </figure>
 
 </div>
 
 <h2>Second gallery:</h2>
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
 
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
@@ -173,24 +205,6 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 
 </div>
 
-<style>
-.my-gallery {
-  width: 100%;
-  float: left;
-}
-.my-gallery img {
-  width: 100%;
-  height: auto;
-}
-.my-gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
-}
-.my-gallery figcaption {
-  display: none;
-}
 </style>
 
 <script src="/public/js/initPhotoSwipeFromDOM.js"></script>

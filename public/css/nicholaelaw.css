@@ -3,8 +3,33 @@
  * 
  */
 
+/* collapsible content */
+.collapsibleContent {
+  height: 0;    
+  overflow: hidden;
+}
+
+/* photoswipe image gallery */
+.imgDisplay {
+  width: 100%;
+  float: left;
+}
+.imgDisplay img {
+  width: 100%;
+  height: auto;
+}
+.imgDisplay figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.imgDisplay figcaption {
+  display: none;
+}
+
 /* Container for placing centered images */
-.img-container {
+.imgContainer {
     position: relative; max-width: 400px; margin: 0 auto; 
 }
 
