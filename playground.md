@@ -72,10 +72,10 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   </figure>
 
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-    <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
+    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
-    <figcaption itemprop="caption description">Image caption 4</figcaption>
+    <figcaption itemprop="caption description">一辈子的遗憾</figcaption>
   </figure>
 
 </div>
