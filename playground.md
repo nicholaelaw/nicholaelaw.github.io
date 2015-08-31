@@ -20,6 +20,7 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 <!--Pretty Button Example-->
 
 Pretty Button Example: 
+
 <a href="" class="act">Show</a>
 <div class="collapsibleContent">
   <div class="imgContainer" style="border-radius: 35px; background-color: #AC4142;">
