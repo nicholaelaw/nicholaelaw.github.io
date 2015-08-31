@@ -100,7 +100,7 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
 
 <div class="imgDisplay" style="position: relative; float: none; max-width: 600px; margin: 0 auto;" 
   itemscope itemtype="http://schema.org/ImageGallery">
-  <figure style="width: 600px; margin-bottom: 1rem; float: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <figure style="width: 100%; margin-bottom: 1rem; float: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="contentUrl" data-size="1267x600">
     <img style="margin-bottom: 0;" src="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="thumbnail" alt="Wrong emphasis, ma'am" />
     </a>
