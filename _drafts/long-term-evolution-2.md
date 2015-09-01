@@ -8,6 +8,7 @@ tags:
  - programming
  - memo
  - tinker
+ - lte
 title: 博客的长期演进II
 ---
 
@@ -221,3 +222,7 @@ PhotoSwipe看起来真的好牛B、好漂亮，但是它不是一个简单的Jav
     {% endraw %}
 
 就能记录下当前网站的Build时间，在线测试的时候很有用。
+
+###注释和PhotoSwipe
+
+貌似注释（Footnote）和PhotoSwipe的框架不是很合拍，如果一篇文章以一堆图片结尾，那么第一条注释的序号会放错位置。解决办法就是在图片的容器后插入一个空白字符`&nbsp;`，这样注释就能够正常显示了。不知道这是Jekyll注释的问题，还是PhotoSwipe容器与序号列表`li`的问题。

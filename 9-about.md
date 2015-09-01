@@ -19,6 +19,8 @@ I will always remember his warmth.
 
 ##Stuff used in building of this blog:
 
+<!--special classes for listing badges -->
+
 <style>
 .imgDisplaySpecial {
   position: relative;
@@ -32,9 +34,9 @@ I will always remember his warmth.
 .imgDisplaySpecial figure {
   display: block;
   float: left;
-  margin: 0 30px 20px 0;
+  margin: 0 20px 20px 0;
   width: 128px;
-  border: 1px solid black;
+  height: 64px;
 }
 .imgDisplaySpecial figcaption {
   display: none;
@@ -42,25 +44,25 @@ I will always remember his warmth.
 </style>
 
 <div class="imgDisplaySpecial">
-  <figure style="padding: 10px 0 0 0;">
+  <figure style="padding: 5px 0 0 0;">
     <a href="https://github.com/" target="_blank" itemprop="contentUrl">
     <img title="Hosted on GitHub"
       src="/assets/images/GitHub-Logo-m.png" itemprop="logo" alt="Hosted on GitHub" />
     </a>
   </figure>
-  <figure style="padding: 8px 0 0 0;">
+  <figure style="padding: 3px 0 0 0;">
     <a href="http://jekyllrb.com/" target="_blank" itemprop="contentUrl">
     <img title="Powered by Jekyll"
       src="/assets/images/jekyll-logo-m.png" itemprop="logo" alt="Powered by Jekyll" />
     </a>
   </figure>
-  <figure style="padding: 25px 0 0 0;">
+  <figure style="padding: 20px 0 0 0;">
     <a href="http://www.mathjax.org" target="_blank" itemprop="contentUrl">
     <img title="Math Powered by MathJax"
   	  src="http://cdn.mathjax.org/mathjax/badge/mj_logo.png" itemprop="logo" alt="Math Powered by MathJax" />
     </a>
   </figure>
-  <figure style="padding: 25px 0 0 0;">
+  <figure style="padding: 20px 0 0 0;">
     <a href="http://photoswipe.com/" style="text-decoration: none;" target="_blank" itemprop="contentUrl">
     <img  title="Galleries built using PhotoSwipe"
   	  src="/assets/images/photoswipe-logo.png" itemprop="logo" alt="Galleries built using PhotoSwipe" />

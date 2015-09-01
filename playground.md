@@ -80,6 +80,13 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 
 </div>
 
+<style>
+.imgDisplay figure {
+  height: 180px;
+}
+</style>
+
+
 <!--Original PhotoSwipe Example-->
 
 ##First gallery:

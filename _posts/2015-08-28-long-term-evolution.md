@@ -8,6 +8,7 @@ tags:
  - programming
  - memo
  - tinker
+ - lte
 title: 博客的长期演进
 ---
 
