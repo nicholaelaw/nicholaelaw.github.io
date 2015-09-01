@@ -58,7 +58,7 @@ I installed Chrome, some ALSA OSS audio packages to get the sounds working (volu
 
 ###Discovering QuantLib
 
-But it didn’t appear overly interesting to me. But having discovered R could potentially save me tons of work in MATLAB and C++ projects, I decided to have those packages installed on my Windows host, too.
+It didn’t appear overly interesting to me. But having discovered R could potentially save me tons of work in MATLAB and C++ projects, I decided to have those packages installed on my Windows host, too.
 
 All went well, installing packages in R involves just a few clicks here and there. But something weird struck me: under Windows, R couldn’t find any package named RQuantLib. I looked through the list, typed a few commands, and RQuantLib is just not there. Considering the mechanism of CRAN, and the fact that the package is available on Debian through a simple command `install.packages(‘RQuantLib’)`, this was totally unexpected. How is it possible? Off to Googling!
 
@@ -99,7 +99,7 @@ I don’t need this, but I wouldn’t mind to have it installed. So I went with 
 
 ###Building QuantLib
 
-The rest of building Boost went almost fine. Still a few .lib’s and .dll’s are not showing up but they are not necessary to my task. Now I’m more than eager to get to the real objective.
+The rest of building Boost went almost fine. Still a few `.lib`’s and `.dll`’s are not showing up but they are not necessary to my task. Now I’m more than eager to get to the real objective.
 
 The current version of QuantLib is not prepared for Visual Studio 2010. In fact it won’t even build in VS2010. Every file has pre-compiler instructions that stop the compiler if the compiler version does not match. I had to go through the SVN repository and grab the trunk, which is VS2010-ready, as well as not release-ready.
 

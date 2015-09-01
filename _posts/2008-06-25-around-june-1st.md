@@ -24,7 +24,7 @@ title: Around June 1st
 
 说什么都没有其实也有点夸张了，只是这个时候雪已不多，而登顶还未开放。只好在village里面转了转，再上到半山腰挨会儿冻，最后去附近的几个湖边看看，就算结束了。
 
-<div class="imgDisplay" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplayH" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/06012008020-1024x768.jpg" itemprop="contentUrl" data-size="1024x768">
     <img src="/assets/old/06012008020-300x225.jpg" itemprop="thumbnail" alt="Whistler街景1" />
@@ -75,7 +75,7 @@ title: Around June 1st
 
 五月份某几天练手：
 
-<div class="imgDisplay" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplayH" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC03040-1024x768.jpg" itemprop="contentUrl" data-size="1024x768">
     <img src="/assets/old/DSC03040-300x225.jpg" itemprop="thumbnail" alt="Twilight" />

@@ -82,70 +82,32 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   </figure>
 </div>
 
-<style>
-.imgDisplay figure {
-  height: 180px;
-}
-</style>
+###Experiment on equal-height thumbnails
 
-
-<!--Original PhotoSwipe Example-->
-
-##First gallery:
-
-<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplayH" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-    <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
+    <a href="/assets/old/DSC02385.jpg" itemprop="contentUrl" data-size="447x597">
+    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" alt="我在想如果照的是信号灯的正面会不会好点。" />
     </a>
-    <figcaption itemprop="caption description">Image caption  1</figcaption>
+    <figcaption itemprop="caption description">我在想如果照的是信号灯的正面会不会好点。</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-    <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+    <a href="/assets/old/DSC02403.jpg" itemprop="contentUrl" data-size="600x450">
+    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" alt="可能颜色不到位，可是怎么才到位呢？" />
     </a>
-    <figcaption itemprop="caption description">Image caption 2</figcaption>
+    <figcaption itemprop="caption description">可能颜色不到位，可是怎么才到位呢？</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
-    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
+    <a href="/assets/old/DSC02409.jpg" itemprop="contentUrl" data-size="600x450">
+    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" alt="拍这张的时候很累。" />
     </a>
-    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
+    <figcaption itemprop="caption description">拍这张的时候很累。</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-    <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+    <a href="/assets/old/DSC02411.jpg" itemprop="contentUrl" data-size="600x450">
+    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" alt="拍这张的时候很刺眼。" />
     </a>
-    <figcaption itemprop="caption description">Image caption 3</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
-    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-    <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">Image caption  6</figcaption>
-  </figure>
-</div>
-
-<h2>Second gallery:</h2>
-
-<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-    <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">Image caption 2.1</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-    <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">Image caption 2.2</figcaption>
+    <figcaption itemprop="caption description">拍这张的时候很刺眼。</figcaption>
   </figure>
 </div>
 <p class="tiny">&nbsp;</p>

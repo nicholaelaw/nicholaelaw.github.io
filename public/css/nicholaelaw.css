@@ -52,7 +52,33 @@
   display: none;
 }
 
-/* photoswipe image gallery */
+/* photoswipe image gallery 
+ * for equal-height thumbnail slide
+ */
+.imgDisplayH {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 0.7rem;
+}
+.imgDisplayH img {
+  width: auto;
+  height: 100%;
+}
+.imgDisplayH figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  height: 128px;
+  width: auto;
+}
+.imgDisplayH figcaption {
+  display: none;
+}
+
+/* photoswipe image gallery 
+ * for equal-width thumbnail slide
+ */
 .imgDisplay {
   width: 100%;
   float: left;
