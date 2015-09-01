@@ -10,6 +10,9 @@ This is the place I test things before they go online.
 
 Last build date: {{ site.time | date_to_rfc822 }}
 
+<p class="tiny">This is tiny class text</p>
+<small>This is small text</small>
+
 {% if site.data.options.devMode %}
   Success!
 {% else %}
@@ -77,7 +80,6 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     </a>
     <figcaption itemprop="caption description">Image caption  1</figcaption>
   </figure>
-
 </div>
 
 <style>
@@ -92,35 +94,30 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 ##First gallery:
 
 <div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
     <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">Image caption  1</figcaption>
   </figure>
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
     <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">Image caption 2</figcaption>
   </figure>
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
   </figure>
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
     <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">Image caption 3</figcaption>
   </figure>
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
@@ -133,30 +130,30 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
     </a>
     <figcaption itemprop="caption description">Image caption  6</figcaption>
   </figure>
-
 </div>
 
 <h2>Second gallery:</h2>
 
 <div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
     <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">Image caption 2.1</figcaption>
   </figure>
-
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
     <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
     </a>
     <figcaption itemprop="caption description">Image caption 2.2</figcaption>
   </figure>
-
 </div>
+<p class="tiny">&nbsp;</p>
 
 {% include pswpRoot.html %}
 
-
+<div class="mapContainer">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37117.37047820854!2d-122.90857069939362!3d50.10410773648331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1441119013585" width="700" height="350" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
+</div>
 

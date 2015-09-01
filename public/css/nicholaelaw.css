@@ -3,16 +3,60 @@
  * 
  */
 
+/* tiny text */
+.tiny {
+  font-size: 0.1rem;
+}
+
 /* collapsible content */
 .collapsibleContent {
   height: 0;    
   overflow: hidden;
 }
 
+/* Stuff to deal with pesky iframe */
+.mapContainer {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+.mapContainer iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* photoswipe centered image display 
+ * Need to specify width of images
+ * as well as to calculate the width of 
+ * the container.
+ */
+.imgDisplayS {
+  position: relative;
+  margin: 0 auto;
+}
+.imgDisplayS img {
+  width: 100%;
+  height: auto;
+}
+.imgDisplayS figure {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.imgDisplayS figcaption {
+  display: none;
+}
+
 /* photoswipe image gallery */
 .imgDisplay {
   width: 100%;
   float: left;
+  margin-bottom: 0.7rem;
 }
 .imgDisplay img {
   width: 100%;
