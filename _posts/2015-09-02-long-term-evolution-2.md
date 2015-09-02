@@ -13,14 +13,15 @@ title: 博客的长期演进II
 ---
 
 这个系列的文章收集了平时维护博客时遇到的各种小问题、hack以及一些想法。
-
+Í
 * [隐藏页面和Permalink]({{site.baseurl}}{{page.url}}/#隐藏页面和Permalink)
 * [CSS一知半解：图片置中]({{site.baseurl}}{{page.url}}/#CSS一知半解：图片置中)
-* [添加照片、相册]({{site.baseurl}}{{page.url}}/#添加照片、相册)
+* [添加照片、相册，`node.js`的正确安装方法]({{site.baseurl}}{{page.url}}/#添加照片、相册，`node.js`的正确安装方法)
 * [学习JavaScript]({{site.baseurl}}{{page.url}}/#学习JavaScript)
 * [GitHub对大小写的挑剔]({{site.baseurl}}{{page.url}}/#GitHub对大小写的挑剔)
 * [加入Build Timestamp]({{site.baseurl}}{{page.url}}/#加入Build Timestamp)
 * [注释和PhotoSwipe的和睦相处]({{site.baseurl}}{{page.url}}/#注释和PhotoSwipe的和睦相处)
+* [Responsive `iframe`]({{site.baseurl}}{{page.url}}/#Responsive `iframe`)
 
 <!--excerpt-->
 
@@ -163,11 +164,11 @@ $$\rhd$$
 
 [^CSS]: 详见[CSS How-to](http://www.w3schools.com/css/css_howto.asp){:target="_blank"}。CSS可以作为外部文件，或者放在HTML的`head`中，或者做为inline表达式。
 
-<div id='添加照片、相册'/>
+<div id='添加照片、相册，`node.js`的正确安装方法'/>
 
-###添加照片、相册
+###添加照片、相册，`node.js`的正确安装方法
 
-搜索找到文章[Generation an Image Gallery with Jekyll and Lightbox 2](http://christianspecht.de/2014/03/08/generating-an-image-gallery-with-jekyll-and-lightbox2/){:target="_blank"}，[Lightbox](http://lokeshdhakar.com/projects/lightbox2/) by Lokesh Dhakar不错
+搜索找到文章[Generating an Image Gallery with Jekyll and Lightbox 2](http://christianspecht.de/2014/03/08/generating-an-image-gallery-with-jekyll-and-lightbox2/){:target="_blank"}，觉得[Lightbox](http://lokeshdhakar.com/projects/lightbox2/)看着还不错。
 
 Lightbox需要[jQuery](https://jquery.com/){:target="_blank"}，尽管提供了打包好的`lightbox-plus-jquery.js`，但是我有感觉以后会用到jQuery的地方会有很多，应该现在就安装，以后会省不少事。
 
@@ -177,9 +178,19 @@ Lightbox需要[jQuery](https://jquery.com/){:target="_blank"}，尽管提供了�
 
 折腾了两个小时后，我决定放弃bower，直接下载jQuery。Damn you for having me jumping through hoops for nothing, jQuery.
 
-将Lightbox组建插入，试验了一下，感觉不够流畅。决定考察考察[Jssor Slider](http://www.jssor.com/index.html){:target="_blank"}。但是最终发现我要找的不是slider（放幻灯），而是一个既能在文章中插入显示图片（viewer），又能单独成为一个幻灯页的东西。同时，这个解决方案应该有比较良好的浏览器和设备支持（比如触控滑动翻页，lightbox就没有）。我觉得我找到了，它就是[PhotoSwipe](http://photoswipe.com/){:target="_blank"}。从介绍上来看，真的是各种优秀。还有同门小弟[Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/){:target="_blank"}，也是小巧轻便美观大方，不过缺少移动设备的支持。还有另一个看着不错的是[Gamma Gallery](http://tympanus.net/Development/GammaGallery/){:target="_blank"}。
+将Lightbox组建插入，试验了一下，感觉不够流畅。试验Lightbox花费了不少时间，所以我决定先反思一下到底要实现什么样的效果，再在现有的解决办法里筛选。
 
-目前可以确定的是，一张图片必须有两个版本，一个缩略图，一个原图。主要还是从带宽的角度考虑的。
+我觉得，在目前的环境下，朋友们主要都用手机上网。正儿八经的PC在一般家庭里已经越来越少；可以说在一个接入互联网的家庭里，电脑已经不再是必需品。只要有一个无线路由加一台移动设备就行了。在这种环境下网站就应该能够适应在移动终端上的显示、操作和阅读模式。如果我在网站上放一张漂亮的照片，电脑上浏览没有问题，可是在手机上看就必须上下左右地来回翻，或者说要将图片下载到手机里才能看到原图的话，那么在试图查看图片的时候读者注意力的就已经被分散了。这个逻辑，也是当下流行的概念Responsive Design的一种解释吧。
+
+我的想法是，呈现图片的手段必须：
+
+1. 既能以Slide（幻灯）的方式连续展示多张图片，又能居中展示一张图片；
+2. 能够适应不同的终端，在电脑上展示OK，在手机、平板上展示也OK；
+3. 不能太复杂，因为我又懒又蠢。
+
+于是我继续看，[Jssor Slider](http://www.jssor.com/index.html){:target="_blank"}看着很华丽，美观。不过我要找的不是单纯的slider，所以先放一边。接着，我看到了[PhotoSwipe](http://photoswipe.com/){:target="_blank"}。从介绍上来看，我的各项要求应该都能满足，而且还支持触控操作。还有同门小弟[Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/){:target="_blank"}，也是小巧轻便美观大方，不过缺少移动设备的支持。另一个看着不错的是[Gamma Gallery](http://tympanus.net/Development/GammaGallery/){:target="_blank"}，但因为此时我已经决定深入研究PhotoSwipe，所以并没有细看。
+
+下载，解压缩，按照指引设置。可是PhotoSwipe不是单纯的JavaScript插件，拿过来就能用。PhotoSwipe更像是一个library，提供了呈现图片的必要基础而已；最后一公里也就是最终呈现照片的代码，需要自己写。我靠。
 
 $$\rhd$$
 
@@ -187,7 +198,11 @@ $$\rhd$$
 
 ###学习JavaScript
 
-PhotoSwipe看起来真的好牛B、好漂亮，但是它不是一个简单的JavaScript插件，要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。
+PhotoSwipe看起来真的好牛B、好漂亮，但是要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。
+
+打开[w3school](http://www.w3schools.com/){:target="_blank"}网站，从JavaScript第一章开始读。同时把PhotoSwipe官方的示例复制下来，放到我的[操场]({{site.baseurl}}{{page.url}}/playground/)上，动手。
+
+JavaScript入门以后，虽然还不能写出完整的代码，但至少已经能够读懂别人写的代码了。这时我也成功地把官网的示例原样复制了出来。虽然只是copy-paste，但是对于对`HTML5-CSS3-JS`一窍不通的人来说，还是费了不少功夫。
 
 $$\rhd$$
 
@@ -238,10 +253,20 @@ $$\rhd$$
 
 ###注释和PhotoSwipe的和睦相处
 
-貌似注释（Footnote）和PhotoSwipe的框架不是很合拍，如果一篇文章以一堆图片结尾，那么第一条注释的序号会放错位置。解决办法就是在图片的容器后插入一个空白字符`&nbsp;`，这样注释就能够正常显示了。不知道这是Jekyll注释的问题，还是PhotoSwipe容器与序号列表`li`的问题。
+貌似注释（Footnote）和PhotoSwipe的框架不是很合拍，如果一篇文章以一个slide结尾，那么第一条注释的序号会放错位置。解决办法就是在图片的容器后（容器之外）插入一个空白字符`&nbsp;`，让它单独一行，这样注释就能够正常显示了。不知道这是Jekyll在parse注释时的问题，还是PhotoSwipe容器与序号列表`li`的问题。
+
+$$\rhd$$
+
+<div id='Responsive `iframe`'/>
 
 ###Responsive `iframe`
 
-See [Making Embedded Content Work In Responsive Design](http://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/){:target="_blank"}
+在导入旧博文的时候，遇到有一篇游记嵌入了一个古早版本的地图。当时应该还没有Bing Maps，可是嵌入的图片上却有Live的标记；不知道是什么情况。抱着原样复制的想法，我去找了同一个地点的Bing Maps，以及Google Maps。嵌入后却发现地图模块的大小并不受容器控制，而且嵌入地图用的`iframe`并不接受`style="..."`这样的inline CSS。我的反应是，这是什么鬼东西！
+
+还好，对付`iframe`这种老古董，早已有人给出了解决办法。[Making Embedded Content Work In Responsive Design](http://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/){:target="_blank"}这篇文章里清晰地描述了如何通过（非inline）CSS来调整`iframe`的大小。也就是说，让它变得Responsive。
+
+具体的代码文章中写的很清楚，我就不窃取过来了。大概的原理就是给包含`iframe`的`<div>`容器加上CSS，再给`<div>`容器中的`iframe`也加上CSS。也就是说要定义`.videoContainer` class和`.videoContainer iframe`的CSS。这样它就服服帖帖地任你改变大小了。
+
+遗憾的是，我发现嵌入式的地图不太靠谱，容易误触导致原本设定好显示的区域直接无踪影。解过我最后在Google地图上截了一张图了事。
 
 $$\square$$

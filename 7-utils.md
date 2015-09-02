@@ -20,5 +20,16 @@ title: 参考 &bcong; Handy
 * [sublime text 2 下的Markdown写作](http://www.jianshu.com/p/378338f10263){:target="_blank"}
 * [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
 * [Online JavaScript Compression Tool](http://jscompress.com/){:target="_blank"}
+* [Google Closure Compiler](http://closure-compiler.appspot.com/home){:target="_blank"}
+* [Minify your CSS](http://cssminifier.com/){:target="_blank"}
+* [SUPER SCROLL ORAMA](http://johnpolacek.github.io/superscrollorama/){:target="_blank"}
+* [jQuery Scroll Path](http://joelb.me/scrollpath/){:target="_blank"}
+* [List.js](http://www.listjs.com/){:target="_blank"}
+* [Charts.js](http://www.chartjs.org/){:target="_blank"}
+* [Font Awesome](http://fontawesome.io/){:target="_blank"}
+* [Font Awesome Cheatsheet](/assets/docs/Font Awesome Cheatsheet.pdf){:target="_blank"}
+* [Toolbar.js](http://paulkinzett.github.io/toolbar/){:target="_blank"}
+* [jQuery QRCode](http://jeromeetienne.github.io/jquery-qrcode/){:target="_blank"}
+* [Jekyll: Better Related Posts](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

@@ -6,17 +6,134 @@ comments: false
 use-math: false
 title: 操场 &bcong; Playground
 ---
-This is the place I test things before they go online.
+
+<i class="fa fa-spinner fa-pulse"></i>This is the place I test things before they go online.
+<i class="fa fa-spinner fa-pulse"></i>
 
 Last build date: {{ site.time | date_to_rfc822 }}
+
+## QR Code generation
+<div id='qrcollapse' data-collapse>
+  <p id='qrbtn'>扫一扫</p>
+  <div id="qrcode" style="position: absolute; max-width: 300px; max-height: 300px; padding: 1rem; background-color: white; border: 1px solid black; border-radius: 5px;"></div>
+</div>
+<script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
+<script>
+$('#qrbtn').click(function(){
+  $('#qrcode').empty();
+  $('#qrcode').qrcode({
+    width: 256,
+    height: 256,
+    text: '{{ page.url }}'
+  })
+});
+</script>
+
+<div id="relatedposts" data-collapse>
+  <h2>Better Related Posts</h2>
+  <code>
+{% raw %}
+{% assign hasSimilar = '' %}
+{% for post in site.related_posts %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.tags %}
+        {% for thisTag in page.tags %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <h4>Similar Posts</h4>
+                <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                    {% if post.series %}
+                        (Series: {{ post.series }})
+                    {% endif %}
+                    </a>
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </ul>
+{% endif %}
+{% endraw %}
+  </code>
+</div>
+
+## <i class="fa fa-fighter-jet"></i>Font Awesome
+
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css">
+<div class="list-group">
+  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
+  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+</div>
+
+## List.js
+
+<div id="users">
+  <h3>Basic example of List.js in action</h3>
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">Sort by name</button>
+  <button class="sort" data-sort="born">Sort by year born</button>
+  <div class="list">
+    <div>
+      <h3 class="name">Jonny Strömberg</h3>
+      <p class="born">1990</p>
+    </div>
+    <div>
+      <h3 class="name">Jonas Arnklint</h3>
+      <p class="born">1985</p>
+    </div>
+    <div>
+      <h3 class="name">Martina Elm</h3>
+      <p class="born">1986</p>
+    </div>
+    <div>
+      <h3 class="name">Gustaf Lindqvist</h3>
+      <p class="born">1983</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="/public/js/list.js"></script>
+<script>
+var options = {
+  valueNames: [ 'name', 'born' ]
+};
+
+var userList = new List('users', options);
+</script>
+
+
+## [jQuery Collapse](http://webcloud.se/jQuery-Collapse/){:target="_blank"}
+
+<div id="demo" data-collapse>
+  <h2>Fruits</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Pear</li>
+    <li>Orange</li>
+    <li>Banana</li>
+  </ul>
+  <h2>Info</h2>
+  <div>
+    <p>You can use any container you like (in this case a div element)</p>
+  </div>
+</div>
+
+<script src="/public/js/jquery-collapse-with-storage.min.js"></script>
 
 <p class="tiny">This is tiny class text</p>
 <small>This is small text</small>
 
 {% if site.data.options.devMode %}
-  Success!
+  devMode On
 {% else %}
-  Failed!
+  devMode Off
 {% endif %}
 
 Currently loading custom style sheet `/public/css/nicholaelaw.css`
