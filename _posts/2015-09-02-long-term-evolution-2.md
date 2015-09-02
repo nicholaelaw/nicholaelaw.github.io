@@ -13,7 +13,7 @@ title: 博客的长期演进II
 ---
 
 这个系列的文章收集了平时维护博客时遇到的各种小问题、hack以及一些想法。
-Í
+
 * [隐藏页面和Permalink]({{site.baseurl}}{{page.url}}/#隐藏页面和Permalink)
 * [CSS一知半解：图片置中]({{site.baseurl}}{{page.url}}/#CSS一知半解：图片置中)
 * [添加照片、相册，`node.js`的正确安装方法]({{site.baseurl}}{{page.url}}/#添加照片、相册，`node.js`的正确安装方法)
@@ -114,7 +114,7 @@ $$\rhd$$
 
 <div style="position: relative; max-width: 400px; 
     margin: 0 auto;">
-<img src="/assets/images/github-logo.png" 
+<img src="/assets/images/GitHub-Logo.png" 
     style="border-radius: 0.5em; 
     box-shadow: 0px 0px 0.5em #000000; 
     width: 100%;"/>
@@ -148,7 +148,7 @@ $$\rhd$$
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
     <img title="I claim fair use."
-        src="/assets/images/github-logo.png" 
+        src="/assets/images/GitHub-Logo.png" 
         alt="I claim fair use."
         style="border: 1px solid black; margin-bottom:0;"/>
     <figcaption style="color: #ac4142;
