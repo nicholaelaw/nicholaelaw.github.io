@@ -4,11 +4,16 @@ permalink: long-term-evolution
 comments: true
 use-math: true
 tags:
- - computer
- - programming
- - memo
- - tinker
- - lte
+- 计算机
+- computer
+- 编程
+- programming
+- 备忘
+- memo
+- 折腾
+- tinker
+- 长期演进
+- lte
 title: 博客的长期演进
 ---
 

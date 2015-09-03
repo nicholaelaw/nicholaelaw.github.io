@@ -3,10 +3,16 @@ layout: post
 permalink: an-underscored-frenzy
 comments: true
 use-math: true
+use-pswp: true
 tags:
- - bugs
- - tinker
- - github
+- 计算机
+- computer
+- bugs
+- 编程
+- programming
+- 折腾
+- tinker
+- github
 title: An Underscored Frenzy
 ---
 
@@ -98,8 +104,7 @@ So after checking and experimenting back and forth I think I've found the source
 
 My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in syntax highlighting, but it renders correctly. 
 
-<div class="imgDisplay" style="position: relative; float: none; max-width: 600px; margin: 0 auto;" 
-  itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure style="width: 100%; margin-bottom: 1rem; float: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="contentUrl" data-size="1267x600">
     <img style="margin-bottom: 0;" src="/assets/images/macdown-syntax-highlighting-wrong.jpg" itemprop="thumbnail" alt="Wrong emphasis, ma'am" />
@@ -110,9 +115,6 @@ My Markdown editor [MacDown](http://macdown.uranusjr.com/) encounters this in sy
     </figure>
   </figure>
 </div>
-
-{% include pswpRoot.html %}
-
 
 My local Jekyll installation also gives me correct rendering:
 

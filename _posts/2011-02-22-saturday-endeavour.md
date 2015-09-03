@@ -2,6 +2,7 @@
 layout: post
 permalink: Saturday-Endeavour
 comments: true
+use-pswp: true
 date: 2011-02-22 13:34:26.000000000 +08:00
 categories:
 - Computer Stuff
@@ -11,15 +12,19 @@ tags:
 - C++
 - Debian
 - MPI
+- 编程
 - Programming
+- 折腾
+- tinker
+- 计算机
+- computer
 - QuantLib
-- Saturday
 - SVN
 - Visual Studio
 title: Saturday Endeavour
 ---
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/0220-console-997x554.png" itemprop="contentUrl" data-size="997x554" >
     <img src="/assets/old/0220-console-997x554.png" itemprop="thumbnail" 
@@ -135,5 +140,4 @@ I checked out what seems to be a pre-release 1.1 branch of QuantLib source, and 
 
 I dug deeper on Boost usage and am now preparing to rewrite part of my CreditMetrics project using the more advanced components Boost offers. Still a long way to go, for sure.
 
-{% include pswpRoot.html %}
 

@@ -34,7 +34,7 @@
  * Need to specify width of images
  * as well as to calculate the width of 
  * the container.
- */
+
 .imgDisplayS {
   position: relative;
   margin: 0 auto;
@@ -51,10 +51,10 @@
 .imgDisplayS figcaption {
   display: none;
 }
-
+ */
 /* photoswipe image gallery 
  * for equal-height thumbnail slide
- */
+
 .imgDisplayH {
   width: 100%;
   float: left;
@@ -70,15 +70,14 @@
   float: left;
   margin: 0 5px 5px 0;
   height: 120px;
-  width: auto;
 }
 .imgDisplayH figcaption {
   display: none;
 }
-
+ */
 /* photoswipe image gallery 
  * for equal-width thumbnail slide
- */
+
 .imgDisplay {
   width: 100%;
   float: left;
@@ -98,13 +97,70 @@
 .imgDisplay figcaption {
   display: none;
 }
+ */
 
-/* Container for placing centered images */
-.imgContainer {
-    position: relative; max-width: 400px; margin: 0 auto; 
+/* photoswipe image gallery 
+ * common container class
+ * for easy js invoking*/
+ .imgDisplay {}
+ .imgDisplay figure {}
+ .imgDisplay img {}
+ .imgDisplay figcaption {}
+
+.monoh, .monow {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 0.7rem;
+}
+.monod {
+  position: relative;
+  margin: 0 auto;
+}
+.monoh figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  height: 120px;
+  width: auto;
+}
+.monow figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+  height: auto;
+}
+.monod figure {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.monoh img {
+  width: auto;
+  height: 100%;
+}
+.monow img, .monod img {
+  width: 100%;
+  height: auto;
+}
+.monoh figcaption, .monow figcaption, .monod figcaption {
+  display: none;
 }
 
-/* pretty button */
+/* !!!!DEFUNCT!!!
+ * Container for placing centered images
+.imgContainer {
+    position: relative; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+ */
+
+/* Experimental
+ * pretty button 
+ */
 .prettyButton {
     margin-left: 0; 
     margin-right: 0; 

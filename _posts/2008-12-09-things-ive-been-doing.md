@@ -2,9 +2,18 @@
 layout: post
 permalink: Things-Ive-been-doing
 comments: true
+use-pswp: true
 date: 2008-12-09 04:31:22.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 作业
+- homework
+- webcomic
+- 吐槽
+- rant
+- 日常
+- daily life
 title: Things I’ve been doing
 ---
 
@@ -24,7 +33,7 @@ Sorry for my uncalibrated sense of humor, I meant chaos, but that would just rui
 
 ###A Whole Slew of ANALysis
 
-<div class="imgDisplayS" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/homework-727x437.jpg" itemprop="contentUrl" data-size="727x437" >
     <img src="/assets/old/homework-400x240.jpg" itemprop="thumbnail" 
@@ -41,7 +50,7 @@ I’m taking a course called MATH 320: Real Analysis I this term. Of course you 
 
 ###The Part of Excel I’ve Never Used
 
-<div class="imgDisplayS" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/ExcelDE-722x661.jpg" itemprop="contentUrl" data-size="727x661" >
     <img src="/assets/old/ExcelDE-400x366.jpg" itemprop="thumbnail" 
@@ -54,7 +63,7 @@ I’m taking a course called MATH 320: Real Analysis I this term. Of course you 
 
 Really, I just can’t pretend that I knew Excel can do DE’s (Differential Equations). No, not solving it silly. It merely plots the solution once you’ve got that and managed to convert the delicate mathematical expressions into that long, long string of formulae with incredible complexity. For example, the following expression
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/a-monster-math-848x72.jpg" itemprop="contentUrl" data-size="848x72" >
     <img src="/assets/old/a-monster-math-848x72.jpg" itemprop="thumbnail" 
@@ -83,7 +92,7 @@ Headache[^headache], isn’t it?
 
 God knows how I stumbled upon this addictive little webcomic, but it does prove my eccentric (or, dare I say, geeky) sense of humor. With the numerous “your mom” jokes and metaphorical mathematics and linux loves, I just can’t stop watching. Well, it may not be bad thing at all.
 
-<div class="imgDisplayS" style="max-width: 454px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 454px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/heard-a-webcast-454x480.jpg" itemprop="contentUrl" data-size="454x480" >
     <img src="/assets/old/heard-a-webcast-454x480.jpg" itemprop="thumbnail" 
@@ -100,7 +109,7 @@ My poor imitation of my favorite webcomic. Oh where is the last of my sanity?
 
 ###Tablet PC, Tablet PC, Tablet PC
 
-<div class="imgDisplayS" style="max-width: 515px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 515px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/Fujitsu-stylistic-515x480.jpg" itemprop="contentUrl" data-size="515x480" >
     <img src="/assets/old/Fujitsu-stylistic-515x480.jpg" itemprop="thumbnail" 
@@ -123,7 +132,7 @@ If you’ve been watching recent currency rate, you probably know that the Canad
 
 ###Dad Has an iPhone
 
-<div class="imgDisplayS" style="max-width: 315px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 315px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/iPhone-315x482.jpg" itemprop="contentUrl" data-size="315x482" >
     <img src="/assets/old/iPhone-315x482.jpg" itemprop="thumbnail" 
@@ -152,5 +161,3 @@ Besides that, he likes it.
 
 Arghhh….I forgot to post this!
 
-
-{% include pswpRoot.html %}

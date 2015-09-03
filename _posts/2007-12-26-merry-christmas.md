@@ -6,6 +6,13 @@ no-excerpt: true
 date: 2007-12-26 11:29:55.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 剩蛋
+- Christmas
+- 莫名其妙
+- random
+- 吐槽
+- rant
 title: Merry Christmas
 ---
 圣诞节。

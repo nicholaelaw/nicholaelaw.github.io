@@ -6,6 +6,13 @@ no-excerpt: true
 date: 2010-11-09 19:54:05.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 剩蛋
+- Christmas
+- 吐槽
+- rant
+- 短文
+- short
 title: Christmas’ coming
 ---
 

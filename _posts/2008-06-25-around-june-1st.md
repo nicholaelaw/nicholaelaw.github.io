@@ -2,14 +2,23 @@
 layout: post
 permalink: Around-June-1st
 comments: true
+use-pswp: true
 date: 2008-06-25 06:09:11.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- photo
+- travel
+- 照片
+- 旅行
+- photoshop
+- 全景
+- panorama
 title: Around June 1st
 ---
 终于有心情更新这里了，这次的主题还是照片。我终于说服自己停止浪费时间，还是留下点什么吧。
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/images/maps-whistler-1024x486.png" itemprop="contentUrl" data-size="1024x486" >
     <img src="/assets/images/maps-whistler-600x285.png" itemprop="thumbnail" alt="Satellite view of Whistler." />
@@ -24,7 +33,7 @@ title: Around June 1st
 
 说什么都没有其实也有点夸张了，只是这个时候雪已不多，而登顶还未开放。只好在village里面转了转，再上到半山腰挨会儿冻，最后去附近的几个湖边看看，就算结束了。
 
-<div class="imgDisplayH" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monoh" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/06012008020-1024x768.jpg" itemprop="contentUrl" data-size="1024x768">
     <img src="/assets/old/06012008020-300x225.jpg" itemprop="thumbnail" alt="Whistler街景1" />
@@ -49,7 +58,7 @@ title: Around June 1st
 
 还是湖边风光比较美，至少，穿着单衣不会觉得很奇怪。下面送上两张湖边的全景。图片很大，点击可以下载（编辑过的）原图。
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/LostLakeCorrected-1600x570.jpg" itemprop="contentUrl" data-size="1600x570" >
     <img src="/assets/old/LostLakeCorrected-600x214.jpg" itemprop="thumbnail" alt="Panorama view at Lost Lake" />
@@ -60,7 +69,7 @@ title: Around June 1st
 
 上面这张是在Lost Lake照的，地图里湖泊的南岸。
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/AltaLakeCorrected-1600x694.jpg" itemprop="contentUrl" data-size="1600x694" >
     <img src="/assets/old/AltaLakeCorrected-600x260.jpg" itemprop="thumbnail" alt="Panorama view at Alta Lake" />
@@ -75,7 +84,7 @@ title: Around June 1st
 
 五月份某几天练手：
 
-<div class="imgDisplayH" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monoh" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC03040-1024x768.jpg" itemprop="contentUrl" data-size="1024x768">
     <img src="/assets/old/DSC03040-300x225.jpg" itemprop="thumbnail" alt="Twilight" />
@@ -104,7 +113,7 @@ title: Around June 1st
 
 前两天无聊用Photoshop勾轮廓：
 
-<div class="imgDisplay" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monow" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC03313-576x768.jpg" itemprop="contentUrl" data-size="576x768">
     <img src="/assets/old/DSC03313-300x400.jpg" itemprop="thumbnail" alt="A leave." />
@@ -119,5 +128,3 @@ title: Around June 1st
   </figure>
 </div>
 <p class="tiny">&nbsp;</p>
-
-{% include pswpRoot.html %}

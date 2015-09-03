@@ -6,6 +6,11 @@ no-excerpt: true
 date: 2006-05-31 12:09:02.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 短文
+- short
+- 莫名其妙
+- random
 title: I Feel Your Stress
 ---
 楼下的花开了，好香。[^origin]

@@ -1,25 +1,25 @@
-<!-- For JavaScript Components that have to loaded before page display -->
+<!-- For JavaScript Components that have to be loaded before page display -->
 
 <!-- Load these only if JavaScript usage is enabled (site-wide) -->
 {% if site.data.options.javaScript %}
+  {% if page.use-jquery %}
+    {% if site.data.options.devMode != true %}
 
-{% if site.data.options.devMode != true %}
+      <!-- jQuery: compressed js if devMode is not enabled -->
+      <!-- Load jQuery from local-->
+      <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js"></script>
+      <!-- or, load from Microsoft CDN -->
+      <!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script-->
+      <!-- or, load from Google CDN -->
+      <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+      <!-- or, load from jQuery CDN -->
+      <!--script src="//code.jquery.com/jquery-1.11.3.min.js"></script-->
 
-  <!-- jQuery: compressed js if devMode is not enabled -->
-  <!-- Load jQuery from local-->
-  <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js"></script>
-  <!-- or, load from Microsoft CDN -->
-  <!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script-->
-  <!-- or, load from Google CDN -->
-  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
-  <!-- or, load from jQuery CDN -->
-  <!--script src="//code.jquery.com/jquery-1.11.3.min.js"></script-->
+    {% else %}
 
-{% else %}
+      <!-- jQuery: load uncompressed js if devMode is enabled -->
+      <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.js"></script>
 
-  <!-- jQuery: load uncompressed js if devMode is enabled -->
-  <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.js"></script>
-
-{% endif %}
-
+    {% endif %}
+  {% endif %}
 {% endif %}

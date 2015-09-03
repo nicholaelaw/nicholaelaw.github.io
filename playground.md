@@ -4,6 +4,8 @@ permalink: playground/
 hide-page: true
 comments: false
 use-math: false
+use-pswp: true
+use-jquery: true
 title: 操场 &bcong; Playground
 ---
 
@@ -12,7 +14,7 @@ title: 操场 &bcong; Playground
 
 Last build date: {{ site.time | date_to_rfc822 }}
 
-## QR Code generation
+##QR Code generation
 <div id='qrcollapse' data-collapse>
   <p id='qrbtn'>扫一扫</p>
   <div id="qrcode" style="position: absolute; max-width: 300px; max-height: 300px; padding: 1rem; background-color: white; border: 1px solid black; border-radius: 5px;"></div>
@@ -20,8 +22,7 @@ Last build date: {{ site.time | date_to_rfc822 }}
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
 <script>
 $('#qrbtn').click(function(){
-  $('#qrcode').empty();
-  $('#qrcode').qrcode({
+  $('#qrcode').empty().qrcode({
     width: 256,
     height: 256,
     text: '{{ page.url }}'
@@ -31,8 +32,8 @@ $('#qrbtn').click(function(){
 
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>
-  <code>
-{% raw %}
+<code>
+{% raw %} 
 {% assign hasSimilar = '' %}
 {% for post in site.related_posts %}
     {% assign postHasSimilar = false %}
@@ -182,9 +183,20 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 
 <!--Gallery/Image Display Example-->
 
-##Expermental Image Display Routine
+##Expermental on single Image Display Routine
 
-<div class="imgDisplay" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/assets/images/maps-whistler-1024x486.png" itemprop="contentUrl" data-size="1024x486" >
+    <img src="/assets/images/maps-whistler-600x285.png" itemprop="thumbnail" alt="Satellite view of Whistler." />
+    </a>
+    <figcaption itemprop="caption description">Satellite view of Whistler.<br/><p class="tiny">Imagery ©2015 DigitalGlobe, Province of British Columbia, Map data ©2015 Google</p></figcaption>
+  </figure>
+</div>
+
+##Expermental on fixed-width Image Display Routine
+
+<div class="imgDisplay monow" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
@@ -199,9 +211,9 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   </figure>
 </div>
 
-###Experiment on equal-height thumbnails
+##Experiment on fixed-height thumbnails
 
-<div class="imgDisplayH" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monoh" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02385.jpg" itemprop="contentUrl" data-size="447x597">
     <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" alt="我在想如果照的是信号灯的正面会不会好点。" />
@@ -229,7 +241,7 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 </div>
 <p class="tiny">&nbsp;</p>
 
-{% include pswpRoot.html %}
+##Maps Container
 
 <div class="mapContainer">
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37117.37047820854!2d-122.90857069939362!3d50.10410773648331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1441119013585" width="700" height="350" frameborder="0" style="border:0" allowfullscreen>

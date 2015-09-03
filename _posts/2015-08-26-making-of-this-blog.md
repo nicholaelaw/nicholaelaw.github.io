@@ -4,10 +4,14 @@ permalink: making-of-this-blog
 comments: true
 use-math: true
 tags:
- - computer
- - programming
- - memo
- - tinker
+- 计算机
+- computer
+- 编程
+- programming
+- 备忘
+- memo
+- 折腾
+- tinker
 title: 博客是怎样炼成的
 ---
 

@@ -6,6 +6,11 @@ no-excerpt: true
 date: 2006-09-19 02:08:09.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 莫名其妙
+- random
+- 短文
+- short
 title: I Hate Mondays
 ---
 

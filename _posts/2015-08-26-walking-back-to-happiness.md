@@ -4,9 +4,10 @@ permalink: walking-back-to-happiness
 comments: true
 use-math: true
 tag:
- - problem
- - solution
- - puzzle
+- 解题
+- problem
+- solution
+- puzzle
 title: 一个走路的问题
 ---
 
@@ -62,7 +63,7 @@ $$\begin{equation}
 但是对男人来说，今天五点钟就出发了，回家所用的时间是
 
 $$\begin{equation*}
-	t'=x+\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{home}+60-10
+	t'_{home}=x+\frac{d-v_{man}\cdot x}{v_{car}}\triangleq t_{home}+60-10
 \end{equation*}$$
 
 代入\\((1)\\)，计算得出

@@ -2,14 +2,21 @@
 layout: post
 permalink: Rebuilding-A-Monster-RAID-5-Array
 comments: true
+use-pswp: true
 date: 2011-02-22 12:55:09.000000000 +08:00
 tags:
-- hard drive
+- 存储
+- storage
+- 阵列
 - RAID
+- 计算机
+- computer
+- 折腾
+- tinker
 title: Rebuilding A Monster RAID 5 Array
 ---
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/current-gaia1-757x456.png" itemprop="contentUrl" data-size="757x456" >
     <img src="/assets/old/current-gaia1-757x456.png" itemprop="thumbnail" 
@@ -30,7 +37,7 @@ Since I don’t have a backup device (bad practice!) to save all those bits on t
 
 Having garnered enough courage, I unplugged the first drive. It’s been a naughty boy, constantly running on 50 degrees Celsius, and it is suspected to occasionally give the entire array a little lockup. So it must go.
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/wd-drive-800x532.jpg" itemprop="contentUrl" data-size="800x532" >
     <img src="/assets/old/wd-drive-800x532.jpg" itemprop="thumbnail" 
@@ -43,7 +50,7 @@ Having garnered enough courage, I unplugged the first drive. It’s been a naugh
 
 I must say I was surprised an “enterprise” level hard drive runs this hot. Never mind. Now enter the new guy:
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/new-guy-800x532.jpg" itemprop="contentUrl" data-size="800x532" >
     <img src="/assets/old/new-guy-800x532.jpg" itemprop="thumbnail" 
@@ -56,7 +63,7 @@ I must say I was surprised an “enterprise” level hard drive runs this hot. N
 
 Quite a drive. I like Hitachi drives. Even though they had a bad name at a time. I’ve never had a Hitachi drive fail on me, and I own 3 of them. On the contrary, I’ve had 2 out of 4 WD drives fail on me shortly after warranty expired. After that I’ve gradually phased out all WD drives in my system. Ok enough bitching let’s get down to business.
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/drive-1-unplugged1-737x167.png" itemprop="contentUrl" data-size="737x167" >
     <img src="/assets/old/drive-1-unplugged1-737x167.png" itemprop="thumbnail" 
@@ -69,7 +76,7 @@ Quite a drive. I like Hitachi drives. Even though they had a bad name at a time.
 
 The controller gave out a nasty cry when I pulled out the drive. I swapped the rail and put the new drive in. Now it is rebuilding all those precious bits.
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/rebuild-11-757x173.png" itemprop="contentUrl" data-size="757x173" >
     <img src="/assets/old/rebuild-11-757x173.png" itemprop="thumbnail" 
@@ -100,5 +107,4 @@ By tonight, all eight drives would have been replaced. I’ll post a benchmark o
 
 [^continue]: I eventually replaced all of the drives with 2TB ones. I get 800MB/s throughput on a good day.
 
-{% include pswpRoot.html %}
 

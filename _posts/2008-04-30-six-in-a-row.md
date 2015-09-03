@@ -6,6 +6,11 @@ no-excerpt: true
 date: 2008-04-30 09:06:26.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 吐槽
+- rant
+- 纪念日
+- anniversary
 title: Six in a Row
 ---
 好久没有动笔，这里显得格外生疏。今天又是四月二十九日，由于时差而变得模糊不清的纪念日。

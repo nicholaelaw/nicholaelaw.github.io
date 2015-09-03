@@ -4,9 +4,12 @@ permalink: migrating-from-wordpress
 comments: true
 use-math: true
 tags:
- - wordpress
- - jekyll
- - blog
+- wordpress
+- jekyll
+- 博客
+- blog
+- 折腾
+- tinker
 title: 从Wordpress迁移到Jekyll
 ---
 

@@ -3,14 +3,20 @@ layout: post
 permalink: Getting-Adobe-Acrobat-X-Context-Menu-Back
 comments: true
 no-excerpt: true
+use-pswp: true
 date: 2011-02-21 03:45:32.000000000 +08:00
 tags:
 - acrobat
+- 右键菜单
 - context menu
+- 计算机
+- computer
+- 折腾
+- tinker
 title: Getting Adobe Acrobat X Context Menu Back
 ---
 
-<div class="imgDisplayS" style="max-width: 341px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 341px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/acrobat-context-menu-341x233.png" itemprop="contentUrl" data-size="341x233" >
     <img src="/assets/old/acrobat-context-menu-341x233.png" itemprop="thumbnail" 
@@ -25,7 +31,7 @@ Somehow the “Combine supported files in Acrobat” context menu went missing o
 
 Luckily there is a solution readily available from Adobe forums: under command prompt, navigate to `<acrobat install folder>\Acrobat Elements\`, then register `ContextMenu64.dll`. A reboot is not required, to my surprise.
 
-<div class="imgDisplayS" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/windows-cmd-690x128.png" itemprop="contentUrl" data-size="690x128" >
     <img src="/assets/old/windows-cmd-690x128.png" itemprop="thumbnail" 
@@ -42,4 +48,3 @@ For easy copy-paste:
 
 Whatever screwed up my system, damn you, damn you to hades.
 
-{% include pswpRoot.html %}

@@ -19,4 +19,5 @@ author:
   email:             nicholaelaw@gmail.com
 
 # Custom vars
-version:             0.9
+version:             0.92
+build:				 {{ site.time | date_to_rfc822 }}

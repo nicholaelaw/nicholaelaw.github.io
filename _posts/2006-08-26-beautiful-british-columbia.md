@@ -6,6 +6,11 @@ no-excerpt: true
 date: 2006-08-26 01:26:23.000000000 +08:00
 categories:
 - Old Entries
+tags:
+- 吐槽
+- rant
+- 短文
+- short
 title: Beautiful British Columbia
 ---
 
