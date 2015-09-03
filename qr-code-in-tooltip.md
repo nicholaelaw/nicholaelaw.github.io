@@ -57,6 +57,10 @@ Steps:
 3. Use Tooltipster to make a tooltip, set desired options, and in `functionReady` part EMPTY the container and call `qrcode` to put the code in it;
 4. Profit!
 
+## Caveats
+
+Be sure to set the container and the tooltip to the correct size! Otherwise the tooltip will have positioning issues.
+
 ## The code:
 
 	<a href="#" onclick="return false;" id="sharebtn" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/processing/qrbackground.png'/></div><figcaption>Scan the QR code on your mobile device!</figcaption>"><i class="fa fa-qrcode" ></i></a>
