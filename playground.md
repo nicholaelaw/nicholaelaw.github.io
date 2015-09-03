@@ -12,27 +12,59 @@ title: 操场 &bcong; Playground
 <i class="fa fa-spinner fa-pulse"></i>This is the place I test things before they go online.
 <i class="fa fa-spinner fa-pulse"></i>
 
+<!-- Activated scripts & CSS-->
+<script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="/public/js/list.js"></script>
+<script type="text/javascript" src="/public/js/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery-collapse-with-storage.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster.css"/>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-noir.css"/>
+
+
 Last build date: {{ site.time | date_to_rfc822 }}
+
+##jQuery Tooltipster for Displaying Current URL as QR Code
+
+Hover or tap at it: <i id="sharebtn" class="fa fa-qrcode" title="<div id='qrcode2' style='width: 256px; height: 256px;'><img src='/assets/processing/qrbackground.png'/></div>"></i>
+<script>
+  $(document).ready(function() {
+    $('#sharebtn').tooltipster({
+      theme: 'tooltipster-noir',
+      contentAsHTML: true,
+      trigger: 'click',
+      maxwidth: 256,
+      functionReady: function() {
+        $('#qrcode2').empty().qrcode({
+          width: 256,
+          height: 256,
+          text: window.location.href
+        });
+      }
+    });
+    $('#sharebtn').tooltipster('reposition');
+  });
+</script>
+
 
 ##QR Code generation
 <div id='qrcollapse' data-collapse>
   <p id='qrbtn'>扫一扫</p>
   <div id="qrcode" style="position: absolute; max-width: 300px; max-height: 300px; padding: 1rem; background-color: white; border: 1px solid black; border-radius: 5px;"></div>
 </div>
-<script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
 <script>
 $('#qrbtn').click(function(){
   $('#qrcode').empty().qrcode({
     width: 256,
     height: 256,
-    text: '{{ page.url }}'
-  })
+    text: '{{site.baseurl}}{{page.url}}'
+  });
 });
 </script>
 
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>
-<code>
+<code><pre>
 {% raw %} 
 {% assign hasSimilar = '' %}
 {% for post in site.related_posts %}
@@ -61,12 +93,12 @@ $('#qrbtn').click(function(){
     </ul>
 {% endif %}
 {% endraw %}
-  </code>
+</pre></code>
 </div>
 
 ## <i class="fa fa-fighter-jet"></i>Font Awesome
 
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css">
+
 <div class="list-group">
   <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
   <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
@@ -100,7 +132,6 @@ $('#qrbtn').click(function(){
     </div>
   </div>
 </div>
-<script type="text/javascript" src="/public/js/list.js"></script>
 <script>
 var options = {
   valueNames: [ 'name', 'born' ]
@@ -126,7 +157,6 @@ var userList = new List('users', options);
   </div>
 </div>
 
-<script src="/public/js/jquery-collapse-with-storage.min.js"></script>
 
 <p class="tiny">This is tiny class text</p>
 <small>This is small text</small>
