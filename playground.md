@@ -8,9 +8,9 @@ use-pswp: true
 use-jquery: true
 title: 操场 &bcong; Playground
 ---
+Last build date: {{ site.time | date_to_rfc822 }}
 
-<i class="fa fa-spinner fa-pulse"></i>This is the place I test things before they go online.
-<i class="fa fa-spinner fa-pulse"></i>
+## This is the place I test things before they go online. 
 
 <!-- Activated scripts & CSS-->
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
@@ -19,33 +19,11 @@ title: 操场 &bcong; Playground
 <script type="text/javascript" src="/public/js/jquery-collapse-with-storage.min.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-noir.css"/>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-shadow.css"/>
 
+## Finished Experiments:
 
-Last build date: {{ site.time | date_to_rfc822 }}
-
-##jQuery Tooltipster for Displaying Current URL as QR Code
-
-Hover or tap at it: <i id="sharebtn" class="fa fa-qrcode" title="<div id='qrcode2' style='width: 256px; height: 256px;'><img src='/assets/processing/qrbackground.png'/></div>"></i>
-<script>
-  $(document).ready(function() {
-    $('#sharebtn').tooltipster({
-      theme: 'tooltipster-noir',
-      contentAsHTML: true,
-      trigger: 'click',
-      maxwidth: 256,
-      functionReady: function() {
-        $('#qrcode2').empty().qrcode({
-          width: 256,
-          height: 256,
-          text: window.location.href
-        });
-      }
-    });
-    $('#sharebtn').tooltipster('reposition');
-  });
-</script>
-
+* [QR code in a tooltip]({{site.baseurl}}/qr-code-in-tooltip/)
 
 ##QR Code generation
 <div id='qrcollapse' data-collapse>
@@ -57,7 +35,7 @@ $('#qrbtn').click(function(){
   $('#qrcode').empty().qrcode({
     width: 256,
     height: 256,
-    text: '{{site.baseurl}}{{page.url}}'
+    text: 'http://nicholaelaw.github.io/%E4%B8%80%E4%B8%AA%E6%9C%88%E7%9A%84%E6%B1%89%E5%AF%86%E5%B0%94%E9%A1%BF'
   });
 });
 </script>

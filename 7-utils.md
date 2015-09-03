@@ -29,6 +29,7 @@ title: 参考 &bcong; Handy
 * [Font Awesome](http://fontawesome.io/){:target="_blank"}
 * [Font Awesome Cheatsheet](/assets/docs/Font Awesome Cheatsheet.pdf){:target="_blank"}
 * [Toolbar.js](http://paulkinzett.github.io/toolbar/){:target="_blank"}
+* [Tooltipster](http://iamceege.github.io/tooltipster/){:target="_blank"}
 * [jQuery QRCode](http://jeromeetienne.github.io/jquery-qrcode/){:target="_blank"}
 * [Jekyll: Better Related Posts](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/){:target="_blank"}
 
