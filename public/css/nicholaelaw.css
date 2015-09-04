@@ -30,75 +30,6 @@
     height: 100%;
 }
 
-/* photoswipe centered image display 
- * Need to specify width of images
- * as well as to calculate the width of 
- * the container.
-
-.imgDisplayS {
-  position: relative;
-  margin: 0 auto;
-}
-.imgDisplayS img {
-  width: 100%;
-  height: auto;
-}
-.imgDisplayS figure {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-.imgDisplayS figcaption {
-  display: none;
-}
- */
-/* photoswipe image gallery 
- * for equal-height thumbnail slide
-
-.imgDisplayH {
-  width: 100%;
-  float: left;
-  clear: both;
-  margin-bottom: 0.7rem;
-}
-.imgDisplayH img {
-  width: auto;
-  height: 100%;
-}
-.imgDisplayH figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  height: 120px;
-}
-.imgDisplayH figcaption {
-  display: none;
-}
- */
-/* photoswipe image gallery 
- * for equal-width thumbnail slide
-
-.imgDisplay {
-  width: 100%;
-  float: left;
-  clear: both;
-  margin-bottom: 0.7rem;
-}
-.imgDisplay img {
-  width: 100%;
-  height: auto;
-}
-.imgDisplay figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
-}
-.imgDisplay figcaption {
-  display: none;
-}
- */
-
 /* photoswipe image gallery 
  * common container class
  * for easy js invoking*/
@@ -107,6 +38,10 @@
  .imgDisplay img {}
  .imgDisplay figcaption {}
 
+/* Classes for single image display,
+ * fixed-width slide and
+ * fixed-height slide galleries
+ */
 .monoh, .monow {
   width: 100%;
   float: left;

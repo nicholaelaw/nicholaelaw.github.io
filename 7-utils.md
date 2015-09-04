@@ -32,5 +32,8 @@ title: 参考 &bcong; Handy
 * [Tooltipster](http://iamceege.github.io/tooltipster/){:target="_blank"}
 * [jQuery QRCode](http://jeromeetienne.github.io/jquery-qrcode/){:target="_blank"}
 * [Jekyll: Better Related Posts](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/){:target="_blank"}
+* [jQuery Collapse](http://webcloud.se/jQuery-Collapse/){:target="_blank"}
+* [**QArt Coder**](http://research.swtch.com/qr/draw){:target="_blank"}
+* [OS X Shell Scripting Primer](/assets/docs/OSXShellScriptingPrimer.pdf){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

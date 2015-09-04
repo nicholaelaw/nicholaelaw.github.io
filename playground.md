@@ -23,7 +23,18 @@ Last build date: {{ site.time | date_to_rfc822 }}
 
 ## Finished Experiments:
 
-* [QR code in a tooltip]({{site.baseurl}}/qr-code-in-tooltip/)
+* [QR code in a tooltip]({{site.baseurl}}/demo-qr-code-in-tooltip/)
+* [PhotoSwipe Gallery]({{site.baseurl}}/demo-photoswipe-gallery/)
+* [iFrame Containers]({{site.baseurl}}/demo-iframe-containers/)
+
+## FA as list mark
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-check"></i>Coffee</li>
+  <li><i class="fa-li fa fa-check"></i>Tea</li>
+  <li><i class="fa-li fa fa-check"></i>Coca Cola</li>
+  <li><i class="fa-li fa fa-spinner fa-pulse"></i>Burp</li>
+  <li><i class="fa-li fa fa-refresh fa-pulse"></i>Mountain Dew</li>
+</ul>
 
 ##QR Code generation
 <div id='qrcollapse' data-collapse>
@@ -189,70 +200,4 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
   });
 </script>
 
-<!--Gallery/Image Display Example-->
-
-##Expermental on single Image Display Routine
-
-<div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/images/maps-whistler-1024x486.png" itemprop="contentUrl" data-size="1024x486" >
-    <img src="/assets/images/maps-whistler-600x285.png" itemprop="thumbnail" alt="Satellite view of Whistler." />
-    </a>
-    <figcaption itemprop="caption description">Satellite view of Whistler.<br/><p class="tiny">Imagery ©2015 DigitalGlobe, Province of British Columbia, Map data ©2015 Google</p></figcaption>
-  </figure>
-</div>
-
-##Expermental on fixed-width Image Display Routine
-
-<div class="imgDisplay monow" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/photos/the-little-one.jpg" itemprop="contentUrl" data-size="1019x1200">
-    <img src="/assets/photos/the-little-one-m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">一辈子的遗憾。</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-    <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-    </a>
-    <figcaption itemprop="caption description">Image caption  1</figcaption>
-  </figure>
-</div>
-
-##Experiment on fixed-height thumbnails
-
-<div class="imgDisplay monoh" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/old/DSC02385.jpg" itemprop="contentUrl" data-size="447x597">
-    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" alt="我在想如果照的是信号灯的正面会不会好点。" />
-    </a>
-    <figcaption itemprop="caption description">我在想如果照的是信号灯的正面会不会好点。</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/old/DSC02403.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" alt="可能颜色不到位，可是怎么才到位呢？" />
-    </a>
-    <figcaption itemprop="caption description">可能颜色不到位，可是怎么才到位呢？</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/old/DSC02409.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" alt="拍这张的时候很累。" />
-    </a>
-    <figcaption itemprop="caption description">拍这张的时候很累。</figcaption>
-  </figure>
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/assets/old/DSC02411.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" alt="拍这张的时候很刺眼。" />
-    </a>
-    <figcaption itemprop="caption description">拍这张的时候很刺眼。</figcaption>
-  </figure>
-</div>
-<p class="tiny">&nbsp;</p>
-
-##Maps Container
-
-<div class="mapContainer">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37117.37047820854!2d-122.90857069939362!3d50.10410773648331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1441119013585" width="700" height="350" frameborder="0" style="border:0" allowfullscreen>
-  </iframe>
-</div>
 
