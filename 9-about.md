@@ -6,7 +6,7 @@ title: 关于 &bcong; About
 
 ##哪三喵？
 
-<div class="imgDisplay" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="imgDisplay monow" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/photos/princess-1019x1200.jpg" itemprop="contentUrl" data-size="1019x1200">
     <img src="/assets/photos/princess-300x353.jpg" itemprop="thumbnail" title="家里的公主" alt="家里的公主" />
@@ -32,7 +32,7 @@ title: 关于 &bcong; About
 <!--special classes for listing badges -->
 
 <style>
-.imgDisplay figure {
+.monow figure {
   width: 200px;
 }
 .imgDisplaySpecial {
