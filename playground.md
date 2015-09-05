@@ -10,7 +10,9 @@ title: 操场 &bcong; Playground
 ---
 Last build date: {{ site.time | date_to_rfc822 }}
 
-## This is the place I test things before they go online. 
+## This is the place I test things before they go online.
+
+<kbd>Ctrl</kbd>
 
 <!-- Activated scripts & CSS-->
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
@@ -33,10 +35,10 @@ Last build date: {{ site.time | date_to_rfc822 }}
   <li><i class="fa-li fa fa-check"></i>Tea</li>
   <li><i class="fa-li fa fa-check"></i>Coca Cola</li>
   <li><i class="fa-li fa fa-spinner fa-pulse"></i>Burp</li>
-  <li><i class="fa-li fa fa-refresh fa-pulse"></i>Mountain Dew</li>
+  <li><i class="fa-li fa fa-refresh fa-spin"></i>Mountain Dew</li>
 </ul>
 
-##QR Code generation
+## QR Code generation
 <div id='qrcollapse' data-collapse>
   <p id='qrbtn'>扫一扫</p>
   <div id="qrcode" style="position: absolute; max-width: 300px; max-height: 300px; padding: 1rem; background-color: white; border: 1px solid black; border-radius: 5px;"></div>
@@ -130,23 +132,6 @@ var userList = new List('users', options);
 </script>
 
 
-## [jQuery Collapse](http://webcloud.se/jQuery-Collapse/){:target="_blank"}
-
-<div id="demo" data-collapse>
-  <h2>Fruits</h2>
-  <ul>
-    <li>Apple</li>
-    <li>Pear</li>
-    <li>Orange</li>
-    <li>Banana</li>
-  </ul>
-  <h2>Info</h2>
-  <div>
-    <p>You can use any container you like (in this case a div element)</p>
-  </div>
-</div>
-
-
 <p class="tiny">This is tiny class text</p>
 <small>This is small text</small>
 
@@ -156,8 +141,6 @@ var userList = new List('users', options);
   devMode Off
 {% endif %}
 
-Currently loading custom style sheet `/public/css/nicholaelaw.css`
-
     {% raw %}
     {% for gallery in site.data.galleries %}
     - [{{ gallery.description }}]({{ site.baseurl }}/{{ gallery.id }})
@@ -165,7 +148,7 @@ Currently loading custom style sheet `/public/css/nicholaelaw.css`
 
 <!--Pretty Button Example-->
 
-##Pretty Button Example: 
+## Pretty Button Example: 
 
 <a href="" class="act">Show</a>
 

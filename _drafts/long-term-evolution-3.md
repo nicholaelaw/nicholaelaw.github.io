@@ -25,7 +25,7 @@ title: 博客的长期演进III
 
 <div id='Better Related Posts, without Plugin'/>
 
-###Better Related Posts, without Plugin
+### Better Related Posts, without Plugin
 
 随着博客的文章慢慢多了起来，我发现每篇文章末尾那个Related Posts（类似文章）其实并不是特别地与主题相关，而且偶尔还能看到完全不相关的文章。上网逛逛，看看其他人有神马想法。
 
