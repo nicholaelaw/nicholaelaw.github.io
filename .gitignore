@@ -4,6 +4,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 _experimental/
+assets/processing/
 
 # Compiled source #
 ###################

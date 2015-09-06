@@ -12,8 +12,6 @@ Last build date: {{ site.time | date_to_rfc822 }}
 
 ## This is the place I test things before they go online.
 
-
-
 <!-- Activated scripts & CSS-->
 
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
