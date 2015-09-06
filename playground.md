@@ -12,9 +12,10 @@ Last build date: {{ site.time | date_to_rfc822 }}
 
 ## This is the place I test things before they go online.
 
-<kbd>Ctrl</kbd>
+
 
 <!-- Activated scripts & CSS-->
+
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
 <script type="text/javascript" src="/public/js/list.js"></script>
 <script type="text/javascript" src="/public/js/jquery.tooltipster.min.js"></script>
@@ -37,21 +38,6 @@ Last build date: {{ site.time | date_to_rfc822 }}
   <li><i class="fa-li fa fa-spinner fa-pulse"></i>Burp</li>
   <li><i class="fa-li fa fa-refresh fa-spin"></i>Mountain Dew</li>
 </ul>
-
-## QR Code generation
-<div id='qrcollapse' data-collapse>
-  <p id='qrbtn'>扫一扫</p>
-  <div id="qrcode" style="position: absolute; max-width: 300px; max-height: 300px; padding: 1rem; background-color: white; border: 1px solid black; border-radius: 5px;"></div>
-</div>
-<script>
-$('#qrbtn').click(function(){
-  $('#qrcode').empty().qrcode({
-    width: 256,
-    height: 256,
-    text: 'http://nicholaelaw.github.io/%E4%B8%80%E4%B8%AA%E6%9C%88%E7%9A%84%E6%B1%89%E5%AF%86%E5%B0%94%E9%A1%BF'
-  });
-});
-</script>
 
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>

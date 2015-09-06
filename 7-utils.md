@@ -35,5 +35,6 @@ title: 参考 &bcong; Handy
 * [jQuery Collapse](http://webcloud.se/jQuery-Collapse/){:target="_blank"}
 * [**QArt Coder**](http://research.swtch.com/qr/draw){:target="_blank"}
 * [OS X Shell Scripting Primer](/assets/docs/OSXShellScriptingPrimer.pdf){:target="_blank"}
+* [RegExr](http://www.regexr.com/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

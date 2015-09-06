@@ -31,7 +31,7 @@ Code structure:
 <div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/images/maps-whistler-1024x486.png" itemprop="contentUrl" data-size="1024x486" >
-    <img src="/assets/images/maps-whistler-600x285.png" itemprop="thumbnail" alt="Satellite view of Whistler." />
+    <img src="/assets/images/maps-whistler-600x285.png" itemprop="thumbnail" title="Satellite view of Whistler." alt="Satellite view of Whistler." />
     </a>
     <figcaption itemprop="caption description">Satellite view of Whistler.<br/><p class="tiny">Imagery ©2015 DigitalGlobe, Province of British Columbia, Map data ©2015 Google</p></figcaption>
   </figure>
@@ -42,27 +42,27 @@ Code structure:
 <div class="imgDisplay monow" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02385.jpg" itemprop="contentUrl" data-size="447x597">
-    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" alt="我在想如果照的是信号灯的正面会不会好点。" />
+    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" title="A Pole" alt="A Pole" />
     </a>
-    <figcaption itemprop="caption description">我在想如果照的是信号灯的正面会不会好点。</figcaption>
+    <figcaption itemprop="caption description">A Pole</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02403.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" alt="可能颜色不到位，可是怎么才到位呢？" />
+    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" title="Much leaves." alt="Much leaves." />
     </a>
-    <figcaption itemprop="caption description">可能颜色不到位，可是怎么才到位呢？</figcaption>
+    <figcaption itemprop="caption description">Much leaves.</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02409.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" alt="拍这张的时候很累。" />
+    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" title="Yellow and Green" alt="Yellow and Green" />
     </a>
-    <figcaption itemprop="caption description">拍这张的时候很累。</figcaption>
+    <figcaption itemprop="caption description">Yellow and Green</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02411.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" alt="拍这张的时候很刺眼。" />
+    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" title="Yellooooow and GREEEEEN" alt="Yellooooow and GREEEEEN" />
     </a>
-    <figcaption itemprop="caption description">拍这张的时候很刺眼。</figcaption>
+    <figcaption itemprop="caption description">Yellooooow and GREEEEEN</figcaption>
   </figure>
 </div>
 
@@ -71,27 +71,27 @@ Code structure:
 <div class="imgDisplay monoh" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02385.jpg" itemprop="contentUrl" data-size="447x597">
-    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" alt="我在想如果照的是信号灯的正面会不会好点。" />
+    <img src="/assets/old/DSC02385-m.jpg" itemprop="thumbnail" title="A Pole" alt="A Pole" />
     </a>
-    <figcaption itemprop="caption description">我在想如果照的是信号灯的正面会不会好点。</figcaption>
+    <figcaption itemprop="caption description">A Pole</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02403.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" alt="可能颜色不到位，可是怎么才到位呢？" />
+    <img src="/assets/old/DSC02403-m.jpg" itemprop="thumbnail" title="Much leaves." alt="Much leaves." />
     </a>
-    <figcaption itemprop="caption description">可能颜色不到位，可是怎么才到位呢？</figcaption>
+    <figcaption itemprop="caption description">Much leaves.</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02409.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" alt="拍这张的时候很累。" />
+    <img src="/assets/old/DSC02409-m.jpg" itemprop="thumbnail" title="Yellow and Green" alt="Yellow and Green" />
     </a>
-    <figcaption itemprop="caption description">拍这张的时候很累。</figcaption>
+    <figcaption itemprop="caption description">Yellow and Green</figcaption>
   </figure>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/assets/old/DSC02411.jpg" itemprop="contentUrl" data-size="600x450">
-    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" alt="拍这张的时候很刺眼。" />
+    <img src="/assets/old/DSC02411-m.jpg" itemprop="thumbnail" title="Yellooooow and GREEEEEN" alt="Yellooooow and GREEEEEN" />
     </a>
-    <figcaption itemprop="caption description">拍这张的时候很刺眼。</figcaption>
+    <figcaption itemprop="caption description">Yellooooow and GREEEEEN</figcaption>
   </figure>
 </div>
 

@@ -15,15 +15,11 @@ title: 博客的长期演进III
 这个系列的文章收集了平时维护博客时遇到的各种小问题、hack以及一些想法。
 
 * [Better Related Posts, without Plugin]({{site.baseurl}}{{page.url}}/#Better Related Posts, without Plugin)
-* []({{site.baseurl}}{{page.url}}/#)
-* []({{site.baseurl}}{{page.url}}/#)
-* []({{site.baseurl}}{{page.url}}/#)
-* []({{site.baseurl}}{{page.url}}/#)
-* []({{site.baseurl}}{{page.url}}/#)
+
 
 <!--excerpt-->
 
-<div id='Better Related Posts, without Plugin'/>
+<div id="Better Related Posts, without Plugin" />
 
 ### Better Related Posts, without Plugin
 
@@ -37,12 +33,8 @@ title: 博客的长期演进III
 
 $$\rhd$$
 
-<div id=''/>
+<div id="Regex!" />
 
-<div id=''/>
+### Regex!
 
-<div id=''/>
-
-<div id=''/>
-
-<div id=''/>
+研究了一天一夜，终于搞定了用Sublime Text的snippet来简化写文时插入代码的过程。在我不懈的努力下，终于搞出了能够正确抓取文本的regex！
