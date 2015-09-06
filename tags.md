@@ -1,64 +1,77 @@
-tags:
-- 短文
-- short
-- 莫名其妙
-- random
-- 随手
-- 挂掉
-- dying
-- 想法
-- idea
-- 吐槽
-- rant
-- lpi
-- 考试
-- exam
-- college saga
-- 更新
-- refresh
-- 生日
-- birthday
-- 上学
-- school
-- 水
-- water
-- 健忘
-- forgetful
-- 照片
-- photo
-- 日常
-- daily life
-- 旅行
-- travel
-- 全景
-- panorama
-- photoshop
-- 涂鸦
-- drawing
-- webcomic
-- 纪念日
-- anniversary
-- 流水账
-- blah
-- acrobat
-- 右键菜单
-- context menu
-- 计算机
-- computer
-- 编程
-- programming
-- bugs
-- 折腾
-- tinker
-- wordpress
-- jekyll
-- 博客
-- blog
-- 作业
-- homework
-- 书法
-- 解题
-- problem
-- solution
-- puzzle
-- calligraphy
+---
+layout: page
+permalink: tags/
+hide-page: true
+comments: false
+use-math: false
+use-pswp: false
+use-jquery: false
+title: 标签 &bcong; Tags
+---
+<script type="text/javascript" src="/public/js/list.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
+
+<div id="tags">
+  <h3>Tags in this blog:</h3>
+  <input type="text" class="search" placeholder="Search for tags">
+  <button class="sort" data-sort="tag" data-insensitive="true">Sort tags</button>
+  <ul class="list">
+    {% for tag in site.tags %}
+    <li><a href="#{{ tag | first | slugize }}" class="tag"><code>{{ tag | first }}</code></a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+{% for tag in site.tags %}
+{% capture tag_name %}{{ tag | first }}{% endcapture %}
+<div id="{{ tag_name | slugize }}" ></div>
+
+### `{{ tag_name }}` <sup><a href="#top"><i class="fa fa-angle-double-up"></i></a></sup>
+
+{% for post in site.tags[tag_name] %}
+* {{ post.date | date_to_string }} &supe; [ {{ post.title }} ]({{ post.url }})
+
+{% endfor %}
+{% endfor %}
+
+
+<script>
+var options = {
+  valueNames: [ 'tag' ]
+};
+
+var tagList = new List('tags', options);
+tagList.sort('tag', { order: "asc" });
+</script>
+<style type="text/css">
+  .list {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+  }
+  .list li {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+  }
+  .sort {
+    background-color:#ac4142;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: 1rem;
+    padding:6px 15px;
+    border:0;
+    margin-bottom: 1rem;
+  }
+  .sort:hover {
+    background-color:#ac4142;
+  }
+  .sort:active {
+    position:relative;
+    top:1px;
+  }
+  .search {
+    font-size: 1rem;
+  }
+</style>

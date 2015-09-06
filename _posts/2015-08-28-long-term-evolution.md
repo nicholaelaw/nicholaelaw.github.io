@@ -27,9 +27,9 @@ title: 博客的长期演进
 
 <!--excerpt-->
 
-<div id='让首页仅显示文章预览'/>
+<div id='让首页仅显示文章预览'></div>
 
-###让首页仅显示文章预览
+### 让首页仅显示文章预览
 
 Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章已经很长，全篇显示会显得比较臃肿，也不方便浏览。于是就有了split-excerpt这个组合。
 
@@ -56,9 +56,9 @@ Jekyll默认在首页全篇显示一定数量的文章，而有时单个文章�
 
 $$\rhd$$
 
-<div id='国内社交软件分享'/>
+<div id='国内社交软件分享'></div>
 
-###国内社交软件分享[^jiathis]
+### 国内社交软件分享[^jiathis]
 
 [^jiathis]: 后来在网上又搜到了[AddThis](http://www.addthis.com/)，才发现JiaThis的名字根本就是跟人家学的。AddThis的图标看着都特干净，美观整齐，大小合适。可惜的是AddThis貌似没有微博、微信这些国内现在最流行的社交软件，而且貌似有撞墙的嫌疑。算了，另外想办法吧。实在不行的话，自己找几个好看的图标试试能不能给它换掉。
 
@@ -82,9 +82,9 @@ $$\rhd$$
 
 $$\rhd$$
 
-<div id='加入`.gitignore`'/>
+<div id='加入`.gitignore`'></div>
 
-###加入.gitignore
+### 加入.gitignore
 
 为了节省GitHub资源，有些不必要上传的东西可以加入到`.gitignore`文件里；GitHub甚至有个repo专门收集各种工作环境下的[`.gitignore`](https://github.com/github/gitignore)文档。对于Jekyll来说，自动生成的`_site`文件夹是不必上传的。因为传说中GitHub Pages本身就会忽略其内容，根据源文件编译生成网站。
 
@@ -92,9 +92,9 @@ $$\rhd$$
 
 $$\rhd$$
 
-<div id='启用删除线'/>
+<div id='启用删除线'></div>
 
-###启用删除线
+### 启用删除线
 
 又发现一个问题：默认状态下，Jekyll的Markdown处理器不支持删除线标记`~~`。要启用删除线标记，在`_config.yml`末尾加入
 
@@ -110,9 +110,9 @@ $$\rhd$$
 
 $$\rhd$$
 
-<div id="给网站加上图标"/>
+<div id="给网站加上图标"></div>
 
-###给网站加上图标
+### 给网站加上图标
 
 给博客定制个图标吧！Lanyon默认的是个“L”：
 

@@ -16,10 +16,9 @@ title: 博客的长期演进III
 
 * [Better Related Posts, without Plugin]({{site.baseurl}}{{page.url}}/#Better Related Posts, without Plugin)
 
-
 <!--excerpt-->
 
-<div id="Better Related Posts, without Plugin" />
+<div id="Better Related Posts, without Plugin" ></div>
 
 ### Better Related Posts, without Plugin
 
@@ -33,8 +32,10 @@ title: 博客的长期演进III
 
 $$\rhd$$
 
-<div id="Regex!" />
+<div id="Regex!" ></div>
 
 ### Regex!
 
 研究了一天一夜，终于搞定了用Sublime Text的snippet来简化写文时插入代码的过程。在我不懈的努力下，终于搞出了能够正确抓取文本的regex！
+
+

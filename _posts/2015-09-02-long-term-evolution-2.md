@@ -30,9 +30,9 @@ title: 博客的长期演进II
 
 <!--excerpt-->
 
-<div id='隐藏页面和Permalink'/>
+<div id='隐藏页面和Permalink' ></div>
 
-###隐藏页面和Permalink
+### 隐藏页面和Permalink
 
 隐藏页面：我想在博客里建一个页面， 专门用来测试一些网上学来的东西。可是又不想让它的链接出现在任何地方，所以要想个办法把它藏起来。在Front Matter中使用`hide-page`参数。在`sidebar.html`中加入判断语句`node.hide-page != true`，隐藏明确设置了该参数的页面。
 
@@ -54,9 +54,9 @@ $$\rhd$$
 
 [^permalink]: [Extensionless permalinks](http://jekyllrb.com/docs/permalinks/#extensionless-permalinks){:target="_blank"}
 
-<div id='CSS一知半解：图片置中'/>
+<div id='CSS一知半解：图片置中'></div>
 
-###CSS一知半解：图片置中
+### CSS一知半解：图片置中
 
 我没学过网页开发，没有认真研究过各种网页技术。这里用的所有代码都是充分运用了拿来主义；不过还好脑子够用，偷过来的代码我都有认真研究过。
 
@@ -169,9 +169,9 @@ $$\rhd$$
 
 [^CSS]: 详见[CSS How-to](http://www.w3schools.com/css/css_howto.asp){:target="_blank"}。CSS可以作为外部文件，或者放在HTML的`head`中，或者做为inline表达式。
 
-<div id='添加照片、相册，`node.js`的正确安装方法'/>
+<div id='添加照片、相册，`node.js`的正确安装方法'></div>
 
-###添加照片、相册，`node.js`的正确安装方法
+### 添加照片、相册，`node.js`的正确安装方法
 
 搜索找到文章[Generating an Image Gallery with Jekyll and Lightbox 2](http://christianspecht.de/2014/03/08/generating-an-image-gallery-with-jekyll-and-lightbox2/){:target="_blank"}，觉得[Lightbox](http://lokeshdhakar.com/projects/lightbox2/)看着还不错。
 
@@ -199,9 +199,9 @@ Lightbox需要[jQuery](https://jquery.com/){:target="_blank"}，尽管提供了�
 
 $$\rhd$$
 
-<div id='学习JavaScript'/>
+<div id='学习JavaScript'></div>
 
-###学习JavaScript
+### 学习JavaScript
 
 PhotoSwipe看起来真的好牛B、好漂亮，但是要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。
 
@@ -211,9 +211,9 @@ JavaScript入门以后，虽然还不能写出完整的代码，但至少已经�
 
 $$\rhd$$
 
-<div id='GitHub对大小写的挑剔'/>
+<div id='GitHub对大小写的挑剔'></div>
 
-###GitHub对大小写的挑剔
+### GitHub对大小写的挑剔
 
 在整理文件结构和命名的时候，我决定需要`_include`文件夹下面的文件名统一用小写。于是把`MathJax.html`改成了`mathjax.html`，并且把`default.html`中的`include`语句也一并修改。结果，push的时候GitHub死活说我include不存在的文件。不对啊，我本地build的时候一点问题都没有呢。害我一顿找，大规模的清理了一遍，尝试各种修改，还是不行。始终就是那句话：
 
@@ -240,9 +240,9 @@ $$\rhd$$
 
 $$\rhd$$
 
-<div id='加入Build Timestamp'/>
+<div id='加入Build Timestamp'></div>
 
-###加入Build Timestamp
+### 加入Build Timestamp
 
 随便在哪加入一句
 
@@ -254,17 +254,17 @@ $$\rhd$$
 
 $$\rhd$$
 
-<div id='注释和PhotoSwipe的和睦相处'/>
+<div id='注释和PhotoSwipe的和睦相处'></div>
 
-###注释和PhotoSwipe的和睦相处
+### 注释和PhotoSwipe的和睦相处
 
 貌似注释（Footnote）和PhotoSwipe的框架不是很合拍，如果一篇文章以一个slide结尾，那么第一条注释的序号会放错位置。解决办法就是在图片的容器后（容器之外）插入一个空白字符`&nbsp;`，让它单独一行，这样注释就能够正常显示了。不知道这是Jekyll在parse注释时的问题，还是PhotoSwipe容器与序号列表`li`的问题。
 
 $$\rhd$$
 
-<div id='Responsive `iframe`'/>
+<div id='Responsive `iframe`'></div>
 
-###Responsive `iframe`
+### Responsive `iframe`
 
 在导入旧博文的时候，遇到有一篇游记嵌入了一个古早版本的地图。当时应该还没有Bing Maps，可是嵌入的图片上却有Live的标记；不知道是什么情况。抱着原样复制的想法，我去找了同一个地点的Bing Maps，以及Google Maps。嵌入后却发现地图模块的大小并不受容器控制，而且嵌入地图用的`iframe`并不接受`style="..."`这样的inline CSS。我的反应是，这是什么鬼东西！
 

@@ -8,11 +8,22 @@ use-pswp: true
 use-jquery: true
 title: 操场 &bcong; Playground
 ---
-Last build date: {{ site.time | date_to_rfc822 }}
 
-## This is the place I test things before they go online.
+## Site Status
 
-<!-- Activated scripts & CSS-->
+| `Dev Mode` | `Extra CSS` | `JavaScript` | 
+|:----------:|:-----------:|:------------:|
+|{% if site.data.options.devMode %}`ON`{% else %}`OFF`{% endif %} | {% if site.data.options.extraCSS %}`ALLOWED`{% else %}`NOT ALLOWED`{% endif %} | {% if site.data.options.javaScript %}`ALLOWED`{% else %}`NOT ALLOWED`{% endif %}| 
+
+## Playground Status
+
+| `Comments` |   `Math`   |   `PSWP`   |  `jQuery`  |
+|:----------:|:----------:|:----------:|:----------:|
+| {% if page.comments %}`ON`{% else %}`OFF`{% endif %} | {% if page.use-math %}`ON`{% else %}`OFF`{% endif %} | {% if page.use-pswp %}`ON`{% else %}`OFF`{% endif %} | {% if page.use-jquery %}`ON`{% else %}`OFF`{% endif %} |
+
+`Last build date: {{ site.time | date_to_rfc822 }}` 
+
+<!-- Activated scripts & CSS -->
 
 <script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
 <script type="text/javascript" src="/public/js/list.js"></script>
@@ -22,19 +33,18 @@ Last build date: {{ site.time | date_to_rfc822 }}
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-shadow.css"/>
 
+
 ## Finished Experiments:
 
-* [QR code in a tooltip]({{site.baseurl}}/demo-qr-code-in-tooltip/)
-* [PhotoSwipe Gallery]({{site.baseurl}}/demo-photoswipe-gallery/)
-* [iFrame Containers]({{site.baseurl}}/demo-iframe-containers/)
-
-## FA as list mark
 <ul class="fa-ul">
-  <li><i class="fa-li fa fa-check"></i>Coffee</li>
-  <li><i class="fa-li fa fa-check"></i>Tea</li>
-  <li><i class="fa-li fa fa-check"></i>Coca Cola</li>
-  <li><i class="fa-li fa fa-spinner fa-pulse"></i>Burp</li>
-  <li><i class="fa-li fa fa-refresh fa-spin"></i>Mountain Dew</li>
+  <li><i class="fa-li fa fa-check"></i><a 
+  href="{{site.baseurl}}/demo-qr-code-in-tooltip/">QR code in a tooltip</a></li>
+  <li><i class="fa-li fa fa-check"></i><a 
+  href="{{site.baseurl}}/demo-photoswipe-gallery/">PhotoSwipe Gallery</a></li>
+  <li><i class="fa-li fa fa-check"></i><a 
+  href="{{site.baseurl}}/demo-iframe-containers/">iFrame Containers</a></li>
+  <li><i class="fa-li fa fa-check"></i><a 
+  href="{{site.baseurl}}/tags/">Sortable Tag List and Article Links (List.js Powered)</a></li>
 </ul>
 
 <div id="relatedposts" data-collapse>
@@ -71,59 +81,7 @@ Last build date: {{ site.time | date_to_rfc822 }}
 </pre></code>
 </div>
 
-## <i class="fa fa-fighter-jet"></i>Font Awesome
 
-
-<div class="list-group">
-  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a>
-  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
-  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
-  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
-</div>
-
-## List.js
-
-<div id="users">
-  <h3>Basic example of List.js in action</h3>
-  <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="name">Sort by name</button>
-  <button class="sort" data-sort="born">Sort by year born</button>
-  <div class="list">
-    <div>
-      <h3 class="name">Jonny Strömberg</h3>
-      <p class="born">1990</p>
-    </div>
-    <div>
-      <h3 class="name">Jonas Arnklint</h3>
-      <p class="born">1985</p>
-    </div>
-    <div>
-      <h3 class="name">Martina Elm</h3>
-      <p class="born">1986</p>
-    </div>
-    <div>
-      <h3 class="name">Gustaf Lindqvist</h3>
-      <p class="born">1983</p>
-    </div>
-  </div>
-</div>
-<script>
-var options = {
-  valueNames: [ 'name', 'born' ]
-};
-
-var userList = new List('users', options);
-</script>
-
-
-<p class="tiny">This is tiny class text</p>
-<small>This is small text</small>
-
-{% if site.data.options.devMode %}
-  devMode On
-{% else %}
-  devMode Off
-{% endif %}
 
     {% raw %}
     {% for gallery in site.data.galleries %}
@@ -166,5 +124,4 @@ var userList = new List('users', options);
     return false;
   });
 </script>
-
 
