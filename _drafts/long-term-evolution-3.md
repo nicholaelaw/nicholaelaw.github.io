@@ -38,4 +38,12 @@ $$\rhd$$
 
 研究了一天一夜，终于搞定了用Sublime Text的snippet来简化写文时插入代码的过程。在我不懈的努力下，终于搞出了能够正确抓取文本的regex！
 
+$$\rhd$$
+
+* [重新学习使用Sublime Text]({{site.baseurl}}{{page.url}}/#重新学习使用Sublime Text)
+
+<div id="重新学习使用Sublime Text" ></div>
+
+### 重新学习使用Sublime Text
+
 
