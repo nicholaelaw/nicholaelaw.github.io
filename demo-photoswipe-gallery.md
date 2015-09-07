@@ -26,6 +26,66 @@ Code structure:
 
 <!--Gallery/Image Display Example-->
 
+## Adding items after init
+
+    <div class="imgDisplaySpecial monoh" style="" itemscope itemtype="http://schema.org/ImageGallery">
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="" itemprop="contentUrl">
+      <img src="/assets/test/collage-1-600x800.jpg" itemprop="thumbnail" 
+        title="A photo collage" 
+        alt="A photo collage" /></a>
+      </figure>
+    </div>
+
+    <script>
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+      {
+        src: '/assets/test/Touched-AW-3567-2560x1717.jpg',
+        w: 2560,
+        h: 1717,
+        title: 'Slide 1'
+      },
+      {
+        src: '/assets/test/Touched-AW-2791-2560x1580.jpg',
+        w: 2560,
+        h: 1580,
+        title: 'Slide 2'
+      },
+      {
+        src: '/assets/test/Touched-AW-2956-2560x1339.jpg',
+        w: 2560,
+        h: 1339,
+        title: 'Slide 3'
+      },
+    ];
+
+    // define options (if needed)
+    var options = {
+        // optionName: 'option value'
+        // for example:
+        index: 0 // start at first slide
+    };
+
+    // Initializes and opens PhotoSwipe
+    var collage = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    collage.init();
+    </script>
+
+Note: `initPhotoSwipeFromDOM.js` is just an example of how to build a slide from a set of image links. Maybe we can try to modify it so that it is possible to call `var collage = new PhotoSwipe( p, P, i, o )` from on-page scripts while maintaining current link-reading capability and customizations.
+
+What I'm trying to achieve: show a single image, which is a collage of multiple images itself, on the page. When clicked it would start showing actual images in that collage as slides. Current thoughts:
+
+- use `imgDisplay` + `monod` to show the collage image, as usual;
+- In on-page script call `var collage = new PhotoSwipe( p, P, i, o )` and then add slides via API: `pswp.items.push({ ... })`;
+- To do that, while maintaining current customizations, `initPhotoSwipeFromDOM.js` needs to be dissected and restructured so that the function call `new PhotoSwipe( ... )` is exposed.
+- I've tested the possibility to push an item and can confirm that it works as documented. However if a slide does not have a corresponding thumbnail on the page, the gallery would freeze upon hitting close. It is most likely because `initPhotoSwipeFromDOM.js` is not meant to handle such use case.
+
+I am hopeful this can be done, without too much effort.
+
+
 ##Single Image, Centered
 
 <div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">

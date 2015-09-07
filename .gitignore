@@ -5,6 +5,7 @@ _site/
 .jekyll-metadata
 _experimental/
 assets/processing/
+assets/test/
 
 # Compiled source #
 ###################
