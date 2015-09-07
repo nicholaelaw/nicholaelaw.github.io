@@ -15,7 +15,7 @@ title: FA图标列表 &bcong; Font Awesome List
 <script type="text/javascript" src="/public/js/list.js"></script>
 <script type="text/javascript" src="/public/js/jquery.tooltipster.min.js"></script>
 
-Browse, or type something, to see if you get what you are looking for. Click on the icons to get its CSS class, and Unicode string. For more information on how to use, visit [Font Awesome](http://fortawesome.github.io/Font-Awesome/){:target="_blank"}. For more information about this page, see [关于本页 &#8780; About this Page]({{site.baseurl}}{{page.url}}/#关于本页-About this Page).
+Browse, or type something, to see if you get what you are looking for. Click on the icons to get its CSS class, and Unicode string. For more information on how to use, visit [Font Awesome](http://fortawesome.github.io/Font-Awesome/){:target="_blank"}. For more information about this page, see [关于本页 &#8780; About this Page]({{site.baseurl}}{{page.url}}#关于本页-About this Page).
 
 <div id="icons">
   <h2>All Icons in Font Awesome 4.4</h2>
@@ -34,9 +34,7 @@ Browse, or type something, to see if you get what you are looking for. Click on 
 
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/){:target="_blank"} is an amazing package of free web icons to build your site with. It's easy to use and most pleasing to the eyes. You can do almost anything icon-related with the accompanying CSS kit: spinning, flipped, scaled or set as a list bulletin. How cool is that!
 
-It's like a premium icon solution, without a price tag.
-
-But I can never remember all those names! In fact, I can't even remember the names of those that interests me. So I pieced together this page mostly using codes scavenged from all over the web and a list of icons which I extracted from the source of the official listing using regex. Yes I'm feeling pretty good right now. Hopefully searchable-sortable-icon-name-in-the-tooltip contraption would help anyone who's looking to browse FA icons in a comfortable and informative way.
+But I can never remember all those names! In fact, I can't even remember the names of those that interests me. So I pieced together this page mostly using codes scavenged from all over the web and a list of icons which I extracted from the source of the official listing using regex. Yes, I'm feeling pretty good right now. 
 
 <style>
   .list {
