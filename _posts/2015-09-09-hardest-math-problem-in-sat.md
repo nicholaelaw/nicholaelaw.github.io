@@ -34,13 +34,16 @@ title: SAT考试里最难的数学题？
 > In the figure above, arc *SBT* is one quarter of a circle with center *R* and radius 6. If the length plus the width of rectangle *ABCR* is 8, then the perimeter of the shaded region is
 > 
 > 翻译：上图中，弧*SBT*为四分之一圆；该圆圆心为*R*点，半径为6。若矩形*ABCR*的长、宽之和为8，则阴影部分的周长应为
-> <ol type="A">
+
+<blockquote>
+<ol type="A">
 	<li>\(8+3 \pi\)</li>
 	<li>\(10+3\pi\)</li>
 	<li>\(14+3\pi\)</li>
 	<li>\(1+6\pi\)</li>
 	<li>\(12+6\pi\)</li>
-> </ol>
+</ol>
+</blockquote>
 
 <!--excerpt-->
 
@@ -65,9 +68,13 @@ $$\widehat{SBT}=\frac{1}{4}\cdot 2\pi\cdot 6=3\pi$$
 又因*ABCR*为矩形，得出\\(AC=RB=6\\)。到这里就可以直接选B了：
 
 - 圆弧的长为\\(3\pi\\)，排除两个圆弧部分是\\(6\pi\\)的答案；
-- 剩余未知的\\(SA+CT=SR+RT-(AR+RC)=12-8=4\\)。
+- 剩余未知的*SA*+*CT*=*SR*+*RT*-(*AR*+*RC*)=12-8=4。
 
-所以阴影部分周长\\(=6+4+3\pi=10+3\pi\\)。这……貌似没多难嘛，我高中毕业之后就没再碰过欧氏几何都没怎么费力气……
+所以阴影部分周长是
+
+$$L=6+4+3\pi=10+3\pi$$
+
+这……貌似没多难嘛，我高中毕业之后就没再碰过欧氏几何都没怎么费力气……
 
 $$\square$$
 
