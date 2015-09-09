@@ -48,13 +48,6 @@ title: 操场 &bcong; Playground
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/fa-icon-list/">A Complete Searchable-Sortable-Icon-Name-in-the-Tooltip List of Font Awesome Icons</a></li>
 </ul>
 
-
-
-
-
-
-
-
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>
 <code><pre>
