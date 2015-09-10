@@ -83,3 +83,19 @@ $$\rhd$$
 * [Font Awesome图标清单]({{site.baseurl}}/fa-icon-list/)
 
 这些东西，都是可能会加入到博客正是页面中来的。先放在那，免得要用的时候忘记了怎么做。
+
+* [二维码、改进评论加载，footer]({{site.baseurl}}{{page.url}}/#二维码、改进评论加载，footer)
+
+<div id="二维码、改进评论加载，footer" ></div>
+
+### 改进评论系统，加入footer
+
+几个改动：
+
+- 去掉JiaThis的分享工具条。原因无用且难看
+- 不再自动加载Disqus评论系统，减轻浏览负担
+- 在标题日期旁增加评论数、链接
+- 增加QR码分享
+
+
+

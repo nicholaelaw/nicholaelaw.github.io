@@ -46,9 +46,8 @@ title: 操场 &bcong; Playground
   <li><i class="fa-li fa fa-check"></i><a 
   href="{{site.baseurl}}/tags/">Sortable Tag List and Article Links (List.js Powered)</a></li>
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/fa-icon-list/">A Complete Searchable-Sortable-Icon-Name-in-the-Tooltip List of Font Awesome Icons</a></li>
+  <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/demo-jquery-on-demand/">Load jQuery on Demand</a></li>
 </ul>
-
-
 
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>

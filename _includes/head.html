@@ -24,6 +24,8 @@
     {% if site.data.options.extraCSS %}
       <!-- My own CSS -->
       <link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
       <!-- Core CSS file -->
       <link rel="stylesheet" href="{{ site.baseurl }}/public/css/photoswipe/photoswipe.css"> 
       <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
@@ -34,8 +36,9 @@
     {% endif %}
   {% else %}
     <!-- Load minified CSS if devMode is off -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main-fa-pswp-bundle.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
+    <!--link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.min.css"/-->
   {% endif %}
 
   <!-- Load preloading JavaScript -->

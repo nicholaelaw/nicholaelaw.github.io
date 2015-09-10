@@ -45,23 +45,6 @@ But I can never remember all those names! In fact, I can't even remember the nam
     display: inline-block;
     margin: 0 1rem 1rem 0;
   }
-  .sort {
-    background-color:#ac4142;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-size: 1rem;
-    padding:6px 15px;
-    border:0;
-    margin-bottom: 1rem;
-  }
-  .sort:hover {
-    background-color:#ac4142;
-  }
-  .sort:active {
-    position:relative;
-    top:1px;
-  }
   .search {
     font-size: 1rem;
   }

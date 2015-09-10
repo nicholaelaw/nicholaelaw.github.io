@@ -3,6 +3,40 @@
  * 
  */
 
+/* Meta data line below post title */
+.footer-text {
+  position: relative;
+  display: block;
+  font-size: 50%;
+  color: #9a9a9a;
+}
+
+/* Define footer style */
+footer {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+/* Button style */
+button {
+  background-color:#ac4142;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size: 1rem;
+  padding:6px 15px;
+  border:0;
+  margin-bottom: 1rem;
+}
+button:hover {
+  background-color:#ac4142;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
+
 /* tiny text */
 .tiny {
   font-size: 0.1rem;

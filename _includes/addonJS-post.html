@@ -16,32 +16,42 @@
 
   {% if page.comments %}
     <!-- Load comments and sharing if comments is enabled (per post) -->
-    <!-- JiaThis Button BEGIN -->
-    <div class="jiathis_style">
-    	<span class="jiathis_txt">分享到：</span>
-    	<a class="jiathis_button_tools_1"></a>
-    	<a class="jiathis_button_tools_2"></a>
-    	<a class="jiathis_button_tools_3"></a>
-    	<a class="jiathis_button_tools_4"></a>
-    	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    	<a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-    <!-- JiaThis Button END -->
 
-    <!-- Load Disqus comments. -->
-    <div id="disqus_thread"></div>
+    <!-- Load Disqus comments if allowed, and "Show Comments" button is clicked. -->
+    <!--div id="placeholder" style="position: absolute; border: 1px solid black; display: none; height: 20rem; max-width: 600px; pointer-events: none"></div-->
+    <div>
+    <button id="showComment" onclick="loadComments()">显示评论 &bcong; Show Comments</button>
+    <div>
+    <div id="disqus_thread" style="min-height: 3rem;"></div>
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'nicholaelaw';
-        var disqus_identifier = "{{ site.disqusid }}{{ page.url | replace:'index.html','' }}";
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'nicholaelaw';
+    var disqus_identifier = "{{ site.disqusid }}{{ page.url | replace:'index.html','' }}";
+
+    /* Get comment count */
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+
+    /* Load Comments */
+    function loadComments() {
+
+      //document.getElementById("placeholder").style.display = "block"
+      document.getElementById("showComment").style.display = "none";
+      document.getElementById("disqus_thread").style.minHeight = "8rem";
+      
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      document.getElementById("footer").scrollIntoView();
+    }
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %}

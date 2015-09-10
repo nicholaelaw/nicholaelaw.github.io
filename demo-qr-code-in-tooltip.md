@@ -8,12 +8,9 @@ use-pswp: false
 use-jquery: true
 title: Demo Page&#58; QR Code in a Tooltip
 ---
-<!-- Activated scripts & CSS-->
-<script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
-<script type="text/javascript" src="/public/js/jquery.tooltipster.min.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-shadow.css"/>
+<!-- Activated scripts & CSS -->
+<script type="text/javascript" src="/public/js/jquery-tooltipster-qrcode-bundle.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster-bundle.min.css"/>
 
 ## The Effect
 

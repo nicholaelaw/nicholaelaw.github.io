@@ -13,8 +13,12 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
+    
+    {% if post.comments %}
+    <span class="post-date">{{ post.date | date_to_string }} <i class="fa fa-commenting" style="color: #AC4142;"></i> <a href="{{site.baseurl}}{{post.url}}#disqus_thread"></a></span>
+    {% else %}
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% endif %}
 
     {% if post.no-excerpt %}
       {{ post.content }}
@@ -44,3 +48,16 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = 'nicholaelaw';
+  
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>

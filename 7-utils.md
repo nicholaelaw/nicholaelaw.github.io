@@ -21,7 +21,6 @@ title: 参考 &bcong; Handy
 * [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
 * [Online JavaScript Compression Tool](http://jscompress.com/){:target="_blank"}
 * [Google Closure Compiler](http://closure-compiler.appspot.com/home){:target="_blank"}
-* [Minify your CSS](http://cssminifier.com/){:target="_blank"}
 * [SUPER SCROLL ORAMA](http://johnpolacek.github.io/superscrollorama/){:target="_blank"}
 * [jQuery Scroll Path](http://joelb.me/scrollpath/){:target="_blank"}
 * [List.js](http://www.listjs.com/){:target="_blank"}
@@ -36,5 +35,6 @@ title: 参考 &bcong; Handy
 * [**QArt Coder**](http://research.swtch.com/qr/draw){:target="_blank"}
 * [OS X Shell Scripting Primer](/assets/docs/OSXShellScriptingPrimer.pdf){:target="_blank"}
 * [RegExr](http://www.regexr.com/){:target="_blank"}
+* [Online JavaScript/CSS Compressor](http://refresh-sf.com/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。
