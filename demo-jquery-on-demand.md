@@ -14,6 +14,7 @@ title: Demo Page&#58; jQuery on Demand
 jQuery detection and loading mechanism stolen shamelessly from [a CSS-Tricks article](https://css-tricks.com/snippets/jquery/load-jquery-only-if-not-present/){:target="_blank"}, and adapted to my own purposes.
 
 <button type="button" onclick="loadjQueryOnDemand()">Check jQuery</button>
+
 <p id="demo"></p>
 
 
