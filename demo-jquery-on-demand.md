@@ -4,31 +4,110 @@ permalink: demo-jquery-on-demand/
 hide-page: true
 comments: false
 use-math: false
-use-pswp: false
+use-pswp: true
 use-jquery: false
 title: Demo Page&#58; jQuery on Demand
 ---
 
 ## Load jQuery if it is not present
 
+jQuery detection and loading mechanism stolen shamelessly from [a CSS-Tricks article](https://css-tricks.com/snippets/jquery/load-jquery-only-if-not-present/){:target="_blank"}, and adapted to my own purposes.
+
 <button type="button"
 onclick="loadjQueryOnDemand()">
 Check jQuery</button>
 <p id="demo"></p>
 
+
+## QR tooltip on Demand
+
+Next, try to slap my QR tooltip onto that button, and load necessary files.
+
+<a href="#" onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>
+
+The tooltip complicates things a lot. In order for it to "just work", so that the user will notice anything or have to do anything else, these things needs to happen:
+
+1. Determine if jQuery is loaded;
+2. Determine if tooltipste+qrcode is loaded;
+3. Either load tooltipster+qrcode or load jQuery then tooltipster+qrcode;
+4. Additionally, tooltipster CSS has to be loaded as well;
+5. Make the QR tooltip, but the initialization must happen only once;
+
+Here is a flowchart, made with the excellent [Lucidhart](https://www.lucidchart.com/){:target="_blank"}:
+
+<div class="imgDisplay monod" style="max-width: 600px" itemscope itemtype="http://schema.org/ImageGallery">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/images/QRtip-on-demand-1073x1459.png" itemprop="contentUrl" data-size="1073x1459" >
+  <img src="/assets/images/QRtip-on-demand-1073x1459.png" itemprop="thumbnail" 
+    title="A flowchart decribing the process of loading scripts and making a QR tooltip." 
+    alt="A flowchart decribing the process of loading scripts and making a QR tooltip." /></a>
+  <figcaption itemprop="caption description">A flowchart decribing the process of loading scripts and making a QR tooltip</figcaption>
+  </figure>
+</div>
+
+So there I've done it. I crammed two functions into one button. When clicked for the first time, it loads necessary scripts to make a QR tooltip. Then it would alter its own onclick property, to change its function into showing the tooltip and to prevent initialize again. 
+
 <script type="text/javascript">
+  function QRshare() {
+    if (typeof tooltipster == 'undefined') {
+      if (typeof jQuery == 'undefined') {
+        // Load jQuery and then QR code and Tooltipster
+        getScript("{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js", function() {
+          getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+            $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
+              .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
+            makeQRTip();
+          });
+        });
+      }
+      else {
+        // Load QR code and tooltipster
+        getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+          $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
+            .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
+          makeQRTip();
+        });
+      }
+    }
+    else {
+      // Make QR tooltip
+      makeQRTip();
+    }
+  }
+
+  function makeQRTip() {
+    $('#QRshare').tooltipster({
+      theme: 'tooltipster-shadow',
+      contentAsHTML: true,
+      trigger: 'click',
+      maxwidth: 256,
+      functionReady: function() {
+        $('#qrcode').empty().qrcode({
+          width: 256,
+          height: 256,
+          text: window.location.href
+        });
+      }
+    });
+    $('#QRshare').tooltipster('show', function() {
+      $("#QRshare").attr("onclick","return false");
+    })
+  }
+
   function loadjQueryOnDemand() {
     var result;
     if (typeof jQuery == 'undefined') {
       result = "not detected. ";
       document.getElementById('demo').innerHTML = "jQuery is "+result+"Loading jQuery...";
+      /* console.log("jQuery is not present, loading now.")
       getScript("{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js", function() {
         foo();
-      });
+      });*/
     }
     else {
       result = "already loaded!";
       document.getElementById('demo').innerHTML = "jQuery is "+result;
+      console.log("jQuery is already loaded.");
     }
   }
 

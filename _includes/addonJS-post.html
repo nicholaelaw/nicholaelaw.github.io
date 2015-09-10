@@ -18,11 +18,11 @@
     <!-- Load comments and sharing if comments is enabled (per post) -->
 
     <div>
-      <!-- when clicked, show QR code 
-      <a href="#" onmouseover="QRshare()" onclick="return false;" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption>Scan the QR code on your mobile device!</figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>-->
+      <!-- when clicked, show QR code -->
+      <button onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>">二维码 &bcong; QR code</button>
 
       <!-- when clicked, show comments -->
-      <button id="showComment" onclick="loadComments()">显示评论 &bcong; Show Comments</button>
+      <button id="showComment" onclick="loadComments()">看评论 &bcong; Show Comments</button>
     <div>
     <div id="disqus_thread" style="min-height: 3rem;"></div>
     <script type="text/javascript">
@@ -56,22 +56,29 @@
       }
 
       function QRshare() {
-        if (typeof jQuery == 'undefined') {
-          if (typeof tooltipster == 'undefined') {
+        if (typeof tooltipster == 'undefined') {
+          if (typeof jQuery == 'undefined') {
+            // Load jQuery and then QR code and Tooltipster
             getScript("{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js", function() {
               getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+                $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
+                  .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
                 makeQRTip();
               });
             });
           }
           else {
-            makeQRTip();
+            // Load QR code and tooltipster
+            getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+              $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
+                .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
+              makeQRTip();
+            });
           }
         }
         else {
-          getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
-            makeQRTip();
-          });
+          // Make QR tooltip
+          makeQRTip();
         }
       }
 
@@ -89,6 +96,9 @@
             });
           }
         });
+        $('#QRshare').tooltipster('show', function() {
+          $("#QRshare").attr("onclick","return false");
+        })
       }
 
       function getScript(url, success) {

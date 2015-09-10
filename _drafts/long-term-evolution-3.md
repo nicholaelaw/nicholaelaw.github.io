@@ -17,6 +17,7 @@ title: 博客的长期演进III
 * [Better Related Posts, without Plugin]({{site.baseurl}}{{page.url}}/#Better Related Posts, without Plugin)
 * [Sublime Text, Regular Expression]({{site.baseurl}}{{page.url}}/#Sublime Text, Regular Expression)
 * [二维码，标签，图标和照片展示页]({{site.baseurl}}{{page.url}}/#二维码，标签，图标和照片展示页)
+* [节约流量：二维码按钮、评论按需加载，插入footer]({{site.baseurl}}{{page.url}}/#节约流量：二维码按钮、评论按需加载，插入footer)
 
 <!--excerpt-->
 
@@ -81,21 +82,39 @@ $$\rhd$$
 * [自由控制嵌入的框架大小]({{site.baseurl}}/demo-iframe-containers/)
 * [文章标签汇总]({{site.baseurl}}/tags/)
 * [Font Awesome图标清单]({{site.baseurl}}/fa-icon-list/)
+* [按需加载JavaScript]({{site.baseurl}}/demo-jquery-on-demand/)
 
 这些东西，都是可能会加入到博客正是页面中来的。先放在那，免得要用的时候忘记了怎么做。
 
-* [二维码、改进评论加载，footer]({{site.baseurl}}{{page.url}}/#二维码、改进评论加载，footer)
+<div id="节约流量：二维码按钮、评论按需加载，插入footer" ></div>
 
-<div id="二维码、改进评论加载，footer" ></div>
+### 节约流量
 
-### 改进评论系统，加入footer
+一连做了好多东西，准备投入使用。根据节约流量的原则，要尽量压缩客户端下载的文件数量和大小，所以一般情况下页面都只是加载了必要的东西。目前默认会加载以下数据：
 
-几个改动：
+1. 基础框架：`Poole.css`，`Lanyon.css`，`Syntax.css`；
+2. Font Awesome图标集（CSS）；
+3. PhotoSwipe（CSS）；
+4. 自定义的附加CSS文件；
+5. 根据页面的开关设置，可能会加载PhotoSwipe，Disqus评论系统，jQuery和MathJax的JavaScript；
 
-- 去掉JiaThis的分享工具条。原因无用且难看
-- 不再自动加载Disqus评论系统，减轻浏览负担
-- 在标题日期旁增加评论数、链接
-- 增加QR码分享
+一般仅有不多文字的页面，流量消耗在200KB以下，压缩传送的数据应该更小（20%？）。对于包含较多图片的，消耗流量比较多的页面，如果读者选择浏览那么他就要下载相关的数据，这种流量不在节约的考虑范围内。要节约的是对于一般浏览没有影响的功能所产生的流量。目前已经实施的流量节约手段有
 
+1. 将基础框架、FA和PhotoSwipe的CSS合并压缩，大小由71KB缩减为48KB（节约33%），文件数由6个减为1个；
+2. 在页面设置开关，仅加载当前页面需要的CSS和JS；
+3. 合并经常一起使用的JavaScript，并压缩。例如将`tooltispter.js`与`jquery-qrcode.js`合并，大小由63KB减为31KB（节约51%），`photoswipe.js`与`photoswipe-ui-default.js`合并，大小由115KB减为40KB（比原来分别压缩过的文件还减了2KB）等。
 
+这次做的改动，是将分享和评论部分改为按需加载。去掉了JiaThis的分享工具栏（太丑且无用），取而代之一个自动生成当前页面的二维码的按钮。Disqus的评论模块默认不加载，改为一个“看评论”的按钮，点击后显示评论模块。这样做的好处是，不会无意中增加流量消耗[^bandwidth]。
+
+[^bandwidth]: 实测结果是，就算是一条评论也没有，Disqus评论系统也会消耗大约400KB左右的流量；有时这比原本页面的流量还多。虽说评论只有在拉倒页面底部的时候才开始加载，但误操作的可能性还是很高。因为一般人的使用习惯应该是一直往下滚动页面，直到滚不动为止。这样的话就会触发加载评论，浪费流量。
+
+这些工作还是费了我好一番功夫。因为二维码分享需要用到jQuery、tooltipster和qrcode三个脚本，而页面默认情况下并不会加载这些东西（压缩后大约127KB），所以必须做到点击按钮时先确认需要加载的js，然后再运行生成二维码的代码。这些工作的细节我另建了一个[展示页面]({{site.baseurl}}/demo-jquery-on-demand/)。
+
+值得注意的是，对于利用Jekyll建成的网站，加载Disqus评论系统的时候务必要使用`disqus_identifier`来识别文章，否则在本地测试能够显示的评论数量，传至GitHub Pages后就消失了。具体使用方法见 [Disqus官方说明文档](https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier){:target="_blank"}。
+
+最后加入了`footer.html`，定义本博的版权策略为[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW){:target="_blank"}，大概意思是随意分享、修改、使用但必须注明出处并以相同方式分享。不过奇怪的是其官网上并没有简体中文版。难道天朝官方不认可该协议的有效性？还是没人愿意贡献时间和精力去翻译呢？简单翻译我没问题，但是涉及法律文本的话，恐怕要专业人士来才靠谱。
+
+OK，其它的小地方，就无需多做解释了。
+
+$$\rhd$$
 
