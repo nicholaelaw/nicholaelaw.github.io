@@ -17,41 +17,96 @@
   {% if page.comments %}
     <!-- Load comments and sharing if comments is enabled (per post) -->
 
-    <!-- Load Disqus comments if allowed, and "Show Comments" button is clicked. -->
-    <!--div id="placeholder" style="position: absolute; border: 1px solid black; display: none; height: 20rem; max-width: 600px; pointer-events: none"></div-->
     <div>
-    <button id="showComment" onclick="loadComments()">显示评论 &bcong; Show Comments</button>
+      <!-- when clicked, show QR code 
+      <a href="#" onmouseover="QRshare()" onclick="return false;" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption>Scan the QR code on your mobile device!</figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>-->
+
+      <!-- when clicked, show comments -->
+      <button id="showComment" onclick="loadComments()">显示评论 &bcong; Show Comments</button>
     <div>
     <div id="disqus_thread" style="min-height: 3rem;"></div>
     <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'nicholaelaw';
-    var disqus_identifier = "{{ site.disqusid }}{{ page.url | replace:'index.html','' }}";
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'nicholaelaw';
 
-    /* Get comment count */
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-
-    /* Load Comments */
-    function loadComments() {
-
-      //document.getElementById("placeholder").style.display = "block"
-      document.getElementById("showComment").style.display = "none";
-      document.getElementById("disqus_thread").style.minHeight = "8rem";
-      
+      /* Get comment count */
       /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-      document.getElementById("footer").scrollIntoView();
-    }
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+
+      /* Load Comments */
+      function loadComments() {
+
+        //document.getElementById("placeholder").style.display = "block"
+        document.getElementById("showComment").style.display = "none";
+        document.getElementById("disqus_thread").style.minHeight = "8rem";
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        document.getElementById("footer").scrollIntoView();
+      }
+
+      function QRshare() {
+        if (typeof jQuery == 'undefined') {
+          if (typeof tooltipster == 'undefined') {
+            getScript("{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js", function() {
+              getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+                makeQRTip();
+              });
+            });
+          }
+          else {
+            makeQRTip();
+          }
+        }
+        else {
+          getScript("{{ site.baseurl }}/public/js/jquery-tooltipster-qrcode-bundle.min.js", function() {
+            makeQRTip();
+          });
+        }
+      }
+
+      function makeQRTip() {
+        $('#QRshare').tooltipster({
+          theme: 'tooltipster-shadow',
+          contentAsHTML: true,
+          trigger: 'click',
+          maxwidth: 256,
+          functionReady: function() {
+            $('#qrcode').empty().qrcode({
+              width: 256,
+              height: 256,
+              text: window.location.href
+            });
+          }
+        });
+      }
+
+      function getScript(url, success) {
+        var script = document.createElement('script');
+            script.src = url;
+        var head = document.getElementsByTagName('head')[0],
+            done = false;
+        // Attach handlers for all browsers
+        script.onload = script.onreadystatechange = function() {
+          if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+          done = true;
+            // callback function provided as param
+            success();
+            script.onload = script.onreadystatechange = null;
+            head.removeChild(script)
+          }
+        }
+        head.appendChild(script);
+      }
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %}
