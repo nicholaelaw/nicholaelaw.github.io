@@ -48,38 +48,40 @@ title: 操场 &bcong; Playground
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/fa-icon-list/">A Complete Searchable-Sortable-Icon-Name-in-the-Tooltip List of Font Awesome Icons</a></li>
 </ul>
 
+
+
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>
-<code><pre>
 {% raw %} 
+<pre><code>
 {% assign hasSimilar = '' %}
 {% for post in site.related_posts %}
-    {% assign postHasSimilar = false %}
-    {% for tag in post.tags %}
-        {% for thisTag in page.tags %}
-            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
-                {% if hasSimilar.size == 0 %}
-                <h4>Similar Posts</h4>
-                <ul>
-                {% endif %}
-                <li class="relatedPost">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-                    {% if post.series %}
-                        (Series: {{ post.series }})
-                    {% endif %}
-                    </a>
-                </li>
-                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
-                {% assign postHasSimilar = true %}
-            {% endif %}
-        {% endfor %}
+  {% assign postHasSimilar = false %}
+  {% for tag in post.tags %}
+    {% for thisTag in page.tags %}
+      {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+        {% if hasSimilar.size == 0 %}
+        &lt;h4&gt;Similar Posts&lt;/h4&gt;
+        &lt;ul&gt;
+        {% endif %}
+        &lt;li class="relatedPost"&gt;
+          &lt;a href="{{ site.url }}{{ post.url }}"&gt;{{ post.title }}
+          {% if post.series %}
+            (Series: {{ post.series }})
+          {% endif %}
+          &lt;/a&gt;
+        &lt;/li&gt;
+        {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+        {% assign postHasSimilar = true %}
+      {% endif %}
     {% endfor %}
+  {% endfor %}
 {% endfor %}
-{% if hasSimilar.size > 0 %}
-    </ul>
+{% if hasSimilar.size &gt; 0 %}
+    &lt;/ul&gt;
 {% endif %}
+</code></pre>
 {% endraw %}
-</pre></code>
 </div>
 
 
