@@ -21,9 +21,9 @@ Check jQuery</button>
 
 ## QR tooltip on Demand
 
-Next, try to slap my QR tooltip onto that button, and load necessary files.
+Next, try to slap my QR tooltip onto that button, and load necessary files. Click the above button first, see that jQuery isn't loaded. Then click this button again to generate a QR code, which requires jQuery and another two plugins to work. At last click the above button again to see that jQuery is indeed loaded.
 
-<a href="#" onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>
+<a onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>
 
 The tooltip complicates things a lot. In order for it to "just work", so that the user will notice anything or have to do anything else, these things needs to happen:
 
@@ -57,6 +57,7 @@ So there I've done it. I crammed two functions into one button. When clicked for
             $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
               .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
             makeQRTip();
+            return false;
           });
         });
       }
@@ -66,12 +67,14 @@ So there I've done it. I crammed two functions into one button. When clicked for
           $('<link>').appendTo('head').attr({type : 'text/css', rel : 'stylesheet'})
             .attr('href', '{{ site.baseurl }}/public/css/tooltipster-bundle.min.css');
           makeQRTip();
+          return false;
         });
       }
     }
     else {
       // Make QR tooltip
       makeQRTip();
+      return false;
     }
   }
 
@@ -98,17 +101,11 @@ So there I've done it. I crammed two functions into one button. When clicked for
     var result;
     if (typeof jQuery == 'undefined') {
       result = "not detected. ";
-      document.getElementById('demo').innerHTML = "jQuery is "+result+"Loading jQuery...";
-      /* console.log("jQuery is not present, loading now.")
-      getScript("{{ site.baseurl }}/public/js/jquery/jquery-1.11.3.min.js", function() {
-        foo();
-      });*/
     }
     else {
       result = "already loaded!";
-      document.getElementById('demo').innerHTML = "jQuery is "+result;
-      console.log("jQuery is already loaded.");
     }
+    document.getElementById('demo').innerHTML = "jQuery is "+result;
   }
 
   function foo() {

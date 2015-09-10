@@ -36,5 +36,6 @@ title: 参考 &bcong; Handy
 * [OS X Shell Scripting Primer](/assets/docs/OSXShellScriptingPrimer.pdf){:target="_blank"}
 * [RegExr](http://www.regexr.com/){:target="_blank"}
 * [Online JavaScript/CSS Compressor](http://refresh-sf.com/){:target="_blank"}
+* [Lucidhart](https://www.lucidchart.com/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。
