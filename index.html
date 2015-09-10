@@ -15,7 +15,7 @@ title: Home
     </h1>
     
     {% if post.comments %}
-    <span class="post-date">{{ post.date | date_to_string }} <i class="fa fa-commenting" style="color: #AC4142;"></i> <a href="{{site.baseurl}}{{post.url}}#disqus_thread" data-disqus-identifier="disqus_identifier"></a></span>
+    <span class="post-date">{{ post.date | date_to_string }} <i class="fa fa-commenting" style="color: #AC4142;"></i> <a href="{{site.baseurl}}{{post.url}}#disqus_thread" data-disqus-identifier="{{site.baseurl}}{{post.url}}"></a></span>
     {% else %}
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% endif %}
