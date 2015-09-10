@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               三只猫的温暖
 tagline:             '和一个人的自言自语'
 description:         '各种无处安放的闷骚'
-url:                 https://nicholaelaw.github.io
+url:                 http://nicholaelaw.github.io
 baseurl:             
 paginate:            5
 

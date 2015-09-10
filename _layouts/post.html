@@ -5,7 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   {% if page.comments %}
-  <span class="post-date">{{ page.date | date_to_string }} <i class="fa fa-commenting" style="color: #AC4142;"></i> <a href="{{site.baseurl}}{{post.url}}#disqus_thread"></a></span>
+  <span class="post-date">{{ page.date | date_to_string }} <i class="fa fa-commenting" style="color: #AC4142;"></i> <a href="{{site.baseurl}}{{page.url}}#disqus_thread">??</a></span>
   {% else %}
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% endif %}
