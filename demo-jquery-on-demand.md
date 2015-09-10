@@ -36,13 +36,15 @@ Here is a flowchart, made with the excellent [Lucidhart](https://www.lucidchart.
 
 <div class="imgDisplay monod" style="max-width: 600px" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/images/QRtip-on-demand-1073x1459.png" itemprop="contentUrl" data-size="1073x1459" >
-  <img src="/assets/images/QRtip-on-demand-1073x1459.png" itemprop="thumbnail" 
-    title="A flowchart decribing the process of loading scripts and making a QR tooltip." 
-    alt="A flowchart decribing the process of loading scripts and making a QR tooltip." /></a>
-  <figcaption itemprop="caption description">A flowchart decribing the process of loading scripts and making a QR tooltip</figcaption>
+  <a href="/assets/images/QRtip-on-demand-flowchart-750x1506.png" itemprop="contentUrl" data-size="750x1506" >
+  <img src="/assets/images/QRtip-on-demand-flowchart-750x1506.png" itemprop="thumbnail" 
+    title="Note that jQuery is assumed if tooltipster and qrcode is present." 
+    alt="Note that jQuery is assumed if tooltipster and qrcode is present." /></a>
+  <figcaption itemprop="caption description">Note that jQuery is assumed if tooltipster and qrcode is present.</figcaption>
   </figure>
 </div>
+
+Note there is an assumption made in this process: if tooltipster and qrcode are present, we do not check for jQuery's presence. This is because both tooltipster and qrcode are jQuery plugins and they would not work without jQuery. So it is assumed that whenever a page preloads tooltipster and qrcode, it would load jQuery before the plugins (switch `use-jquery` is set to `true`). The dependency is not checked by the system and is responsibility of the author (in this case, me). If somehow the plugins were loaded without jQuery preceding them, an error would be logged in the console and the contraption would not work.
 
 So there I've done it. I crammed two functions into one button. When clicked for the first time, it loads necessary scripts to make a QR tooltip. Then it would alter its own onclick property, to change its function into showing the tooltip and to prevent initialize again. 
 
