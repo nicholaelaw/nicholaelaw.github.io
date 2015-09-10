@@ -24,13 +24,13 @@ Next, try to slap my QR tooltip onto that button, and load necessary files. Clic
 
 <a onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>"><i class="fa fa-qrcode fa-2x" ></i></a>
 
-The tooltip complicates things a lot. In order for it to "just work", so that the user will notice anything or have to do anything else, these things needs to happen:
+The tooltip complicates things a lot. In order for it to "just work", so that the user will not notice anything or have to do anything besides clicking once, a number of things need to happen:
 
 1. Determine if jQuery is loaded;
-2. Determine if tooltipste+qrcode is loaded;
-3. Either load tooltipster+qrcode or load jQuery then tooltipster+qrcode;
+2. Determine if tooltipster and qrcode is loaded;
+3. Either load tooltipster and qrcode or load jQuery then tooltipster and qrcode;
 4. Additionally, tooltipster CSS has to be loaded as well;
-5. Make the QR tooltip, but the initialization must happen only once;
+5. Make the QR tooltip, and stop the script from being executed again;
 
 Here is a flowchart, made with the excellent [Lucidhart](https://www.lucidchart.com/){:target="_blank"}:
 
