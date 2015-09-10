@@ -33,7 +33,7 @@ Try it: <a href="#" onclick="return false;" id="sharebtn" title="<div id='qrcode
         });
       }
     });
-    $('#sharebtn').tooltipster('reposition');
+    //$('#sharebtn').tooltipster('reposition');
   });
 </script>
 

@@ -33,7 +33,7 @@ Check jQuery</button>
   }
 
   function foo() {
-    $("#demo").append("Now jQuery is loaded!");
+    $("#demo").append("<br><br>Now jQuery is loaded!");
   }
 
   function getScript(url, success) {
