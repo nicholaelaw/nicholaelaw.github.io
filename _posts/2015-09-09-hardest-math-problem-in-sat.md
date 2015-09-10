@@ -31,9 +31,9 @@ title: SAT考试里最难的数学题？
 </div>
 
 
-> In the figure above, arc *SBT* is one quarter of a circle with center *R* and radius 6. If the length plus the width of rectangle *ABCR* is 8, then the perimeter of the shaded region is
+> In the figure above, arc \\(\text{SBT}\\) is one quarter of a circle with center \\(\text{R}\\) and radius 6. If the length plus the width of rectangle \\(\text{ABCR}\\) is 8, then the perimeter of the shaded region is
 > 
-> 翻译：上图中，弧*SBT*为四分之一圆；该圆圆心为*R*点，半径为6。若矩形*ABCR*的长、宽之和为8，则阴影部分的周长应为
+> 翻译：上图中，弧\\(\text{SBT}\\)为四分之一圆；该圆圆心为\\(\text{R}\\)点，半径为6。若矩形\\(\text{ABCR}\\)的长、宽之和为8，则阴影部分的周长应为
 
 <blockquote>
 <ol type="A">
@@ -65,7 +65,7 @@ title: SAT考试里最难的数学题？
 
 $$\widehat{\text{SBT}}=\frac{1}{4}\cdot 2\pi\cdot 6=3\pi$$
 
-又因*ABCR*为矩形，得出\\(\text{AC}=\text{RB}=6\\)。因为圆弧的长为\\(3\pi\\)，排除两个圆弧部分是\\(6\pi\\)的答案；又因为剩余未知的
+又因\\(\text{ABCR}\\)为矩形，得出\\(\text{AC}=\text{RB}=6\\)。因为圆弧的长为\\(3\pi\\)，排除两个圆弧部分是\\(6\pi\\)的答案；又因为剩余未知的
 
 $$\begin{aligned}
 \text{SA}+\text{CT} &= \text{SR}+\text{RT} \\
@@ -81,24 +81,22 @@ $$\square$$
 
 ## 没费力气才怪
 
-如果只是上面几行字，怎么可能用上15分钟才解出来？上面的解法是我写这篇文章的时候才想到的；我下午花了十五分钟的解法，其实离走火入魔就差那么一点点。有没有注意到上面的解里根本没用上\\(\theta\\)？没错，\\(\theta\\)就是下午那会儿脑筋转不开的时候的产物。来看看我是如何绕圈解决*SA*+*CT*的吧：
+如果只是上面几行字，怎么可能用上15分钟才解出来？上面的解法是我写这篇文章的时候才想到的；我下午花了十五分钟的解法，其实离走火入魔就差那么一点点。有没有注意到上面的解里根本没用上\\(\theta\\)？没错，\\(\theta\\)就是下午那会儿脑筋转不开的时候的产物。来看看我是如何绕圈解决\\(\text{SA}+\text{CT}\\)的吧：
 
-要知道*SA*和*CT*，就要知道*AR*和*RC*。\\(AR=RB\cos{\theta}=6\cos{\theta}\\)，\\(AB=RB\sin{\theta}=6\sin{\theta}\\)。又有\\(AR+RC=6\cos{\theta}+6\sin{\theta}=8\\)，那么
+要知道\\(\text{SA}\\)和\\(\text{CT}\\)，就要知道\\(\text{AR}\\)和\\(\text{RC}\\)。\\(\text{AR}=\text{RB}\cos{\theta}=6\cos{\theta}\\)，\\(\text{AB}=\text{RB}\sin{\theta}=6\sin{\theta}\\)。又有\\(\text{AR}+\text{RC}=6\cos{\theta}+6\sin{\theta}=8\\)，那么
 
 $$\begin{aligned}
-  SA+CT &= (6-6\cos{\theta})+(6-6\sin{\theta}) \\
+  \text{SA}+\text{CT} &= (6-6\cos{\theta})+(6-6\sin{\theta}) \\
         &= 12-6(\cos{\theta}+\sin{\theta}) \\
         &= 12-8 \\
         &= 4
 \end{aligned}$$
 
-之所以用到三角函数，就是因为当时只想着暴力解出*AR*和*RC*来。我甚至已经解出了\\(\sin{2\theta}=\frac{7}{9}\\)来，差点就要反求\\(\theta\\)的值了……还好我适时地反问了一下自己：美国人的高中考试会有求反三角函数值的问题吗？选择题都要用科学计算器才能解出来的，那TMD是奥数[^aoshu]。
+之所以用到三角函数，就是因为当时只想着暴力解出\\(\text{AR}\\)和\\(\text{RC}\\)来。我甚至已经解出了\\(\sin{2\theta}=\frac{7}{9}\\)来，差点就要反求\\(\theta\\)的值了……还好我适时地反问了一下自己：美国人的高中考试会有求反三角函数值的问题吗？选择题都要用科学计算器才能解出来的，那TMD是奥数[^aoshu]。
 
 [^aoshu]: 纯吐槽，当代的奥数题我一道都没看过，也没什么兴趣。
 
 以上。
-
-
 
 
 
