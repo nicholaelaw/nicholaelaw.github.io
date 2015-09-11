@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: migrating-from-wordpress
+permalink: migrating-from-wordpress/
 comments: true
 use-math: true
 tags:

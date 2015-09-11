@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merry Christmas
+permalink: Merry-Christmas-2007/
 comments: true
 no-excerpt: true
 date: 2007-12-26 11:29:55.000000000 +08:00

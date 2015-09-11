@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Rebuilding-A-Monster-RAID-5-Array
+permalink: Rebuilding-A-Monster-RAID-5-Array/
 comments: true
 use-pswp: true
 date: 2011-02-22 12:55:09.000000000 +08:00

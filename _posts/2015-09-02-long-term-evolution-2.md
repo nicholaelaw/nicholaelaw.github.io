@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: long-term-evolution-2
+permalink: long-term-evolution-2/
 comments: true
 use-math: true
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Saturday-Endeavour
+permalink: Saturday-Endeavour/
 comments: true
 use-pswp: true
 date: 2011-02-22 13:34:26.000000000 +08:00

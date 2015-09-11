@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Around-June-1st
+permalink: Around-June-1st/
 comments: true
 use-pswp: true
 date: 2008-06-25 06:09:11.000000000 +08:00

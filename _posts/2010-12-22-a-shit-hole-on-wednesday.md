@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2010-12-22 14:23:04.000000000 +08:00
-permalink: shit-hole-on-wed
+permalink: shit-hole-on-wed/
 comments: true
 no-excerpt: true
 categories:

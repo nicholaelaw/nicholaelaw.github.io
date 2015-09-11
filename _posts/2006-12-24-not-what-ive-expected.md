@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: not-what-i-expected
+permalink: not-what-i-expected/
 comments: true
 no-excerpt: true
 date: 2006-12-24 14:55:42.000000000 +08:00

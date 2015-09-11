@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: I-hate-Mondays
+permalink: I-hate-Mondays/
 comments: true
 no-excerpt: true
 date: 2006-09-19 02:08:09.000000000 +08:00

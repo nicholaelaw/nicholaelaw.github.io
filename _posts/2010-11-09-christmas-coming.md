@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Christmas-coming
+permalink: Christmas-coming/
 comments: true
 no-excerpt: true
 date: 2010-11-09 19:54:05.000000000 +08:00

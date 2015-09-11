@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: The-Alphabet
+permalink: The-Alphabet/
 comments: true
 no-excerpt: true
 use-pswp: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Things-Ive-been-doing
+permalink: Things-Ive-been-doing/
 comments: true
 use-pswp: true
 date: 2008-12-09 04:31:22.000000000 +08:00

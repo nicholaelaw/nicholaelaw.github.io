@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: making-of-this-blog
+permalink: making-of-this-blog/
 comments: true
 use-math: true
 tags:

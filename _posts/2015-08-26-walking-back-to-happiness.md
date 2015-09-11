@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: walking-back-to-happiness
+permalink: walking-back-to-happiness/
 comments: true
 use-math: true
 tag:

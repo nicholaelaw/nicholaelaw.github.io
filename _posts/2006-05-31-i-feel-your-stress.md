@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: i-feel-your-stress
+permalink: i-feel-your-stress/
 comments: true
 no-excerpt: true
 date: 2006-05-31 12:09:02.000000000 +08:00

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Getting-Rid-of-MagicISO
+permalink: Getting-Rid-of-MagicISO/
 comments: true
 date: 2011-02-19 22:51:54.000000000 +08:00
 tags:

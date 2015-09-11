@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Blogging-Mishap
+permalink: Blogging-Mishap/
 comments: true
 no-excerpt: true
 use-pswp: true

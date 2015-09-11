@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Steelseries-6G-on-iPad
+permalink: Steelseries-6G-on-iPad/
 comments: true
 use-math: true
 date: 2011-03-01 19:49:56.000000000 +08:00

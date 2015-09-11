@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: beautiful-british-columbia
+permalink: beautiful-british-columbia/
 comments: true
 no-excerpt: true
 date: 2006-08-26 01:26:23.000000000 +08:00

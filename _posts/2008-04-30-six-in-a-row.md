@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Six-in-a-Row
+permalink: Six-in-a-Row/
 comments: true
 no-excerpt: true
 date: 2008-04-30 09:06:26.000000000 +08:00

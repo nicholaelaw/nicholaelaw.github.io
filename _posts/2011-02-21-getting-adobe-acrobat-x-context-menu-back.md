@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Getting-Adobe-Acrobat-X-Context-Menu-Back
+permalink: Getting-Adobe-Acrobat-X-Context-Menu-Back/
 comments: true
 no-excerpt: true
 use-pswp: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: an-underscored-frenzy
+permalink: an-underscored-frenzy/
 comments: true
 use-math: true
 use-pswp: true

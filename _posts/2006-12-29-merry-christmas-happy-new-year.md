@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: merry-christmas-happy-new-year
+permalink: merry-christmas-happy-new-year/
 comments: true
 no-excerpt: true
 date: 2006-12-29 11:09:44.000000000 +08:00
