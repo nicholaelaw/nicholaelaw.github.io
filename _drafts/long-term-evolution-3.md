@@ -18,6 +18,7 @@ title: 博客的长期演进III
 * [Sublime Text, Regular Expression]({{site.baseurl}}{{page.url}}/#Sublime Text, Regular Expression)
 * [二维码，标签，图标和照片展示页]({{site.baseurl}}{{page.url}}/#二维码，标签，图标和照片展示页)
 * [节约流量：二维码按钮、评论按需加载，插入footer]({{site.baseurl}}{{page.url}}/#节约流量：二维码按钮、评论按需加载，插入footer)
+* [`sitemap.xml`，再度统一permalink]({{site.baseurl}}{{page.url}}/#`sitemap.xml`，再度统一permalink)
 
 <!--excerpt-->
 
@@ -118,8 +119,6 @@ OK，其它的小地方，就无需多做解释了。
 
 $$\rhd$$
 
-* [`sitemap.xml`，再度统一permalink]({{site.baseurl}}{{page.url}}/#`sitemap.xml`，再度统一permalink)
-
 <div id="`sitemap.xml`，再度统一permalink" ></div>
 
 ### `sitemap.xml`，再度统一permalink
@@ -128,7 +127,9 @@ $$\rhd$$
 
 但在[Google Webmaster Tools](http://www.google.com/webmasters/tools){:target="_blank"}里面闲逛的时候发现如果permalink后面没有`/`的话，会发生一次跳转，影响收录的过程。所以将所有文章的permalink后面都加上了`/`，算是定下了以后设置permalink的规范。
 
-生成了`sitemap.xml`，就可以去Webmaster Tools里面提交。提交后可以看到发现的页面数（目前81，非常地迷你）；之后就可以等Google慢慢地把这个小博客收录到索引中了。
+生成了`sitemap.xml`，就可以去Webmaster Tools里面提交。提交后可以看到发现的页面数（目前81，非常地迷你）；之后就可以等Google慢慢地把这个小博客收录到索引中了[^baidu]。
+
+[^baidu]: 我也尝试了在百度的站长工具里加入博客的sitemap，但是百度无法抓取GitHub上的任何内容。原因是今年四月份的网络攻击案之后，GitHub屏蔽了所有来自百度UA的请求。所以，被人当枪使的百度从此无法访问GitHub了。不能收录更好，反正从来都没用过百度的服务。
 
 $$\square$$
 
