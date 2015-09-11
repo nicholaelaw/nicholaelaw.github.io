@@ -23,7 +23,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
 <div style="position: relative; max-width: 600px; margin: 0 auto;">
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
-    <img title="This looks pretty."
+    <img itemprop="image" title="This looks pretty."
         src="/assets/images/math-correct.jpg" 
         alt="This looks pretty."
         style="margin-bottom:0;"/>
@@ -35,7 +35,7 @@ The problem arose when I was checking my blog before I went to bed one night. I 
 <div style="position: relative; max-width: 600px; margin: 0 auto;">
     <figure style="margin-left: 0; margin-right: 0;
         max-width: 100%;">
-    <img title="This isn't right."
+    <img itemprop="image"  title="This isn't right."
         src="/assets/images/math-wrong.jpg" 
         alt="This isn't right."
         style="margin-bottom:0;"/>

@@ -119,7 +119,7 @@ $$\rhd$$
 
 <div style="position: relative; max-width: 400px; 
     margin: 0 auto;">
-<img src="/assets/images/GitHub-Logo.png" 
+<img itemprop="image" src="/assets/images/GitHub-Logo.png" 
     style="border-radius: 0.5em; 
     box-shadow: 0px 0px 0.5em #000000; 
     width: 100%;"/>
