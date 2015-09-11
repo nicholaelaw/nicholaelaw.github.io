@@ -118,3 +118,17 @@ OK，其它的小地方，就无需多做解释了。
 
 $$\rhd$$
 
+* [`sitemap.xml`，再度统一permalink]({{site.baseurl}}{{page.url}}/#`sitemap.xml`，再度统一permalink)
+
+<div id="`sitemap.xml`，再度统一permalink" ></div>
+
+### `sitemap.xml`，再度统一permalink
+
+虽然我不怎么关心搜索引擎的优化（也不指望有人在网上搜这里），但是一个健全的网站还是必须有个sitemap，所以从[这里](http://davidensinger.com/2013/03/generating-a-sitemap-in-jekyll-without-a-plugin/){:target="_blank"}偷来一段不用插件生成sitemap的代码，稍作修改就投入使用。
+
+但在[Google Webmaster Tools](http://www.google.com/webmasters/tools){:target="_blank"}里面闲逛的时候发现如果permalink后面没有`/`的话，会发生一次跳转，影响收录的过程。所以将所有文章的permalink后面都加上了`/`，算是定下了以后设置permalink的规范。
+
+生成了`sitemap.xml`，就可以去Webmaster Tools里面提交。提交后可以看到发现的页面数（目前81，非常地迷你）；之后就可以等Google慢慢地把这个小博客收录到索引中了。
+
+$$\square$$
+
