@@ -14,7 +14,7 @@ title: 标签 &bcong; Tags
 <div id="tags">
   <h3>Tags in this blog:</h3>
   <input type="text" class="search" placeholder="Search for tags">
-  <button class="sort" data-sort="tag" data-insensitive="true">Sort tags</button>
+  <button class="sort defaultBtn" data-sort="tag" data-insensitive="true">Sort tags</button>
   <ul class="list">
     {% for tag in site.tags %}
     <li><a href="#{{ tag | first | slugize }}" class="tag"><code>{{ tag | first }}</code></a></li>
@@ -53,23 +53,6 @@ tagList.sort('tag', { order: "asc" });
   .list li {
     display: inline-block;
     margin: 0 0.5rem 0 0;
-  }
-  .sort {
-    background-color:#ac4142;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-size: 1rem;
-    padding:6px 15px;
-    border:0;
-    margin-bottom: 1rem;
-  }
-  .sort:hover {
-    background-color:#ac4142;
-  }
-  .sort:active {
-    position:relative;
-    top:1px;
   }
   .search {
     font-size: 1rem;

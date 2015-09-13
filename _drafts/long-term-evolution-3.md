@@ -19,6 +19,7 @@ title: 博客的长期演进III
 * [二维码，标签，图标和照片展示页]({{site.baseurl}}{{page.url}}/#二维码，标签，图标和照片展示页)
 * [节约流量：二维码按钮、评论按需加载，插入footer]({{site.baseurl}}{{page.url}}/#节约流量：二维码按钮、评论按需加载，插入footer)
 * [`sitemap.xml`，再度统一permalink]({{site.baseurl}}{{page.url}}/#`sitemap.xml`，再度统一permalink)
+* [用Class来重新定义Style，而不是直接修改DOM Object]({{site.baseurl}}{{page.url}}/#用Class来重新定义Style，而不是直接修改DOM Object)
 
 <!--excerpt-->
 
@@ -127,9 +128,41 @@ $$\rhd$$
 
 但在[Google Webmaster Tools](http://www.google.com/webmasters/tools){:target="_blank"}里面闲逛的时候发现如果permalink后面没有`/`的话，会发生一次跳转，影响收录的过程。所以将所有文章的permalink后面都加上了`/`，算是定下了以后设置permalink的规范。
 
-生成了`sitemap.xml`，就可以去Webmaster Tools里面提交。提交后可以看到发现的页面数（目前81，非常地迷你）；之后就可以等Google慢慢地把这个小博客收录到索引中了[^baidu]。
+生成了`sitemap.xml`，就可以去Webmaster Tools里面提交。提交后可以看到发现的页面数（目前81，非常地mini）；之后就可以等Google慢慢地把这个小博客收录到索引中了[^baidu]。
 
 [^baidu]: 我也尝试了在百度的站长工具里加入博客的sitemap，但是百度无法抓取GitHub上的任何内容。原因是今年四月份的网络攻击案之后，GitHub屏蔽了所有来自百度UA的请求。所以，被人当枪使的百度从此无法访问GitHub了。不能收录更好，反正从来都没用过百度的服务。
 
-$$\square$$
+$$\rhd$$
+
+<div id="用Class来重新定义Style，而不是直接修改DOM Object" ></div>
+
+### 用Class来重新定义Style，而不是直接修改DOM Object
+
+今天又得到了一个教训，那就是用CSS定义style的时候，不要去override原来的DOM Object除非所有的CSS都在你的掌控之中。我在折腾几个按钮的时候发现Lanyon自带的CSS里面并没有对`button`进行定义，导致摆出来的按钮又小又丑。所以我在自己的CSS里面加入了下面这样一段定义：
+
+	/* Default button style */
+	button {
+	  background-color:#ac4142;
+	  display:inline-block;
+	  cursor:pointer;
+	  color:#ffffff;
+	  font-size: 1rem;
+	  padding:6px 15px;
+	  border:0;
+	  margin-bottom: 1rem;
+	}
+	button:hover {
+	  background-color:#ac4142;
+	}
+	button:active {
+	  position:relative;
+	  top:1px;
+	}
+
+这样按钮的风格就和其它东西一致了。这样定义直接影响了所有的`button`对象，在当时来说，我觉得这就是我的目的。结果几天以后我发现PhotoSwipe的上一页/下一页失效了！点击的时候按钮没有任何效果，感觉就好像是透明的一般，点上去会触发它下面那一层对象的点击事件。举个例子，如果按钮下方是空白（也就是说，下面是黑色的背景），那么点一下就会关闭slide；如果按钮下方是图像（屏幕较窄的时候），点按钮会触发缩放。
+
+这下搞得我一阵慌乱，到处检查代码。最后冷静下来，仔细分析，觉得应该问题出在按钮本身。因为键盘控制没问题，滑动控制也没问题，唯独鼠标点击出了问题。于是打开Chrome的调试台，审查这个按钮元素的细节。结果一下就发现了问题所在。
+
+PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间在`button`对象上强加了许多style。估计是我的CSS和PhotoSwipe的CSS起了冲突，而最后我的CSS赢了，于是按钮就失效了。知道了问题所在，就好解决了。我不再笼统地定义`button`对象的style，改为定义`defaultBtn`这个class。修改之后，PhotoSwipe又恢复了正常。悬着的一颗心终于落地了。
+
 

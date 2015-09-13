@@ -33,7 +33,6 @@ title: 参考 &bcong; Handy
 * [Jekyll: Better Related Posts](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/){:target="_blank"}
 * [jQuery Collapse](http://webcloud.se/jQuery-Collapse/){:target="_blank"}
 * [**QArt Coder**](http://research.swtch.com/qr/draw){:target="_blank"}
-* [OS X Shell Scripting Primer](/assets/docs/OSXShellScriptingPrimer.pdf){:target="_blank"}
 * [RegExr](http://www.regexr.com/){:target="_blank"}
 * [Online JavaScript/CSS Compressor](http://refresh-sf.com/){:target="_blank"}
 * [Lucidhart](https://www.lucidchart.com/){:target="_blank"}

@@ -18,8 +18,8 @@ footer {
   clear: both;
 }
 
-/* Button style */
-button {
+/* Default button style */
+.defaultBtn {
   background-color:#ac4142;
   display:inline-block;
   cursor:pointer;
@@ -29,10 +29,10 @@ button {
   border:0;
   margin-bottom: 1rem;
 }
-button:hover {
+.defaultBtn:hover {
   background-color:#ac4142;
 }
-button:active {
+.defaultBtn:active {
   position:relative;
   top:1px;
 }

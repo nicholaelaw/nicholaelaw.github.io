@@ -28,53 +28,7 @@ Code structure:
 
 ## Adding items after init
 
-    <div class="imgDisplaySpecial monoh" style="" itemscope itemtype="http://schema.org/ImageGallery">
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="" itemprop="contentUrl">
-      <img src="/assets/test/collage-1-600x800.jpg" itemprop="thumbnail" 
-        title="A photo collage" 
-        alt="A photo collage" /></a>
-      </figure>
-    </div>
-
-    <script>
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-
-    // build items array
-    var items = [
-      {
-        src: '/assets/test/Touched-AW-3567-2560x1717.jpg',
-        w: 2560,
-        h: 1717,
-        title: 'Slide 1'
-      },
-      {
-        src: '/assets/test/Touched-AW-2791-2560x1580.jpg',
-        w: 2560,
-        h: 1580,
-        title: 'Slide 2'
-      },
-      {
-        src: '/assets/test/Touched-AW-2956-2560x1339.jpg',
-        w: 2560,
-        h: 1339,
-        title: 'Slide 3'
-      },
-    ];
-
-    // define options (if needed)
-    var options = {
-        // optionName: 'option value'
-        // for example:
-        index: 0 // start at first slide
-    };
-
-    // Initializes and opens PhotoSwipe
-    var collage = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-    collage.init();
-    </script>
-
-Note: `initPhotoSwipeFromDOM.js` is just an example of how to build a slide from a set of image links. Maybe we can try to modify it so that it is possible to call `var collage = new PhotoSwipe( p, P, i, o )` from on-page scripts while maintaining current link-reading capability and customizations.
+`initPhotoSwipeFromDOM.js` is just an example of how to build a slide from a set of image links. Maybe we can try to modify it so that it is possible to call `var collage = new PhotoSwipe( p, P, i, o )` from on-page scripts while maintaining current link-reading capability and customizations.
 
 What I'm trying to achieve: show a single image, which is a collage of multiple images itself, on the page. When clicked it would start showing actual images in that collage as slides. Current thoughts:
 
@@ -85,8 +39,57 @@ What I'm trying to achieve: show a single image, which is a collage of multiple 
 
 I am hopeful this can be done, without too much effort.
 
+### Update 09/13
 
-##Single Image, Centered
+After fruitless searches and experimentations I failed to produce a working script that does what I have described above. However while reading through the [SEO section](http://photoswipe.com/documentation/seo.html){:target="_blank"} of PhotoSwipe documentation, it occurred to me that I've been looking at this totally wrong.
+
+It is so straight forward and simple that I may as well have been a complete moron to not see this. To create a gallery that shows fewer thumbnails than there are images, simply hiding the rest of the thumbnails with `display: none` would do. But I need to test it first. Like Dr. Whitehall used to say, discovery requires experimentation.
+
+<div class="imgDisplay monoh" style="height: 150px;" itemscope itemtype="http://schema.org/ImageGallery">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/test/Touched-AW-2791-2560x1580.jpg" itemprop="contentUrl" data-size="2560x1580" >
+  <img src="/assets/test/Touched-AW-2791-thumbnail.jpg" itemprop="thumbnail" 
+    title="Image 1 (shown)" 
+    alt="Image 1 (shown)" /></a>
+  <figcaption itemprop="caption description">Image 1 (shown)</figcaption>
+  </figure>
+  <figure style="position: absolute; visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/test/Touched-AW-2956-2560x1339.jpg" itemprop="contentUrl" data-size="2560x1339" >
+  <img style="max-width: 10px;" src="/assets/test/Touched-AW-2956-thumbnail.jpg" itemprop="thumbnail" 
+    title="Image 4 position: absolute; visibility: hidden;" 
+    alt="Image 4 position: absolute; visibility: hidden;" /></a>
+  <figcaption itemprop="caption description">Image 4 position: absolute; visibility: hidden;</figcaption>
+  </figure>
+  <figure style="position: relative; visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/test/Touched-AW-3409-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
+  <img style="max-width: 10px;" src="/assets/test/Touched-AW-3409-thumbnail.jpg" itemprop="thumbnail" 
+    title="Image 5 position: absolute; visibility: hidden;" 
+    alt="Image 5 position: absolute; visibility: hidden;" /></a>
+  <figcaption itemprop="caption description">Image 5 position: absolute; visibility: hidden;</figcaption>
+  </figure>
+  <figure style="visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/test/Touched-AW-3172-1707x2560.jpg" itemprop="contentUrl" data-size="1707x2560" >
+  <img src="/assets/test/Touched-AW-3172-thumbnail.jpg" itemprop="thumbnail" 
+    title="Image 2 visibility: hidden;" 
+    alt="Image 2 visibility: hidden;" /></a>
+  <figcaption itemprop="caption description">Image 2 visibility: hidden;</figcaption>
+  </figure>
+  <figure style="display: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="/assets/test/Touched-AW-3344-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
+  <img src="/assets/test/Touched-AW-3344-thumbnail.jpg" itemprop="thumbnail" 
+    title="Image 3 display: none;" 
+    alt="Image 3 display: none;" /></a>
+  <figcaption itemprop="caption description">Image 3 display: none;</figcaption>
+  </figure>
+</div>
+
+There! Easy-peasy-lemon-squeezy! Do notice that if I use `visibility: hidden` the slide would return to its hidden position upon closing. Not very elegant, is it? `display: none` would have the slide escaping to the top left corner of the screen. Equally confusing. What I did is `position: absolute; visibility: hidden;`, this way the slides would return to the first thumbnail. Still, the escaping slide would just disappear behing the first thumbnail, but it is the easiest solution right now. I can't rewrite the animation effect, I don't have the skill yet.
+
+Yet an improved solution would be to set the thumbnail to a very small size, say `max-width: 10px;`, so the slide would disappear *into* the first thumbnail. Now need to find a way to position those tiny thumbnails so that they would line up with their respective positions in the collage image.
+
+Now next step is to replace that first thumbnail with a collage, like a poster or cover for the collection. I remember needing to make some adjustment if there is aspect ratio mismatch between the thumbnail and the actual image.
+
+## Single Image, Centered
 
 <div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -97,7 +100,7 @@ I am hopeful this can be done, without too much effort.
   </figure>
 </div>
 
-##Slide with Fixed-width Thumbnails
+## Slide with Fixed-width Thumbnails
 
 <div class="imgDisplay monow" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -126,7 +129,7 @@ I am hopeful this can be done, without too much effort.
   </figure>
 </div>
 
-##Slide with Fixed-height Thumbnails
+## Slide with Fixed-height Thumbnails
 
 <div class="imgDisplay monoh" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -155,11 +158,11 @@ I am hopeful this can be done, without too much effort.
   </figure>
 </div>
 
-##Caveats
+## Caveats
 
 Due to the flowing nature of the container, neither of the thumbnail groups look overly nice on a narrow screen. But the fixed-height slide does not have those weird blanks when fitted into a small screen. The actual gallery overlay looks fine on all screens, pleasantly. The width and heights can also be overridden with internal CSS.
 
-##Code
+## Code
 
     ```html
     <!-- Single image -->

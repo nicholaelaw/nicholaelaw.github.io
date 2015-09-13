@@ -20,7 +20,7 @@ Browse, or type something, to see if you get what you are looking for. Click on 
 <div id="icons">
   <h2>All Icons in Font Awesome 4.4</h2>
   <input type="text" class="search" placeholder="eg. heart">
-  <button class="sort" data-sort="icon" data-insensitive="true">Sort by Name</button>
+  <button class="sort defaultBtn" data-sort="icon" data-insensitive="true">Sort by Name</button>
   <ul class="list">
   {% for icon in site.data.fa-icons %}
   <li><a href="#" onclick="return false" class="icon tooltip" title="<code>{{ icon.name }} [{{icon.unicode}}]</code>" border="1px solid black"><i class="fa {{ icon.name }} fa-fw fa-3x"></i></a></li>

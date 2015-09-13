@@ -4,14 +4,13 @@
 
   {% if page.comments %}
     <!-- Load comments and sharing if comments is enabled (per post) -->
-
     <div>
       <!-- when clicked, show QR code -->
-      <button onclick="QRshare()" id="QRshare" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>">二维码 &bcong; QR code</button>
+      <button onclick="QRshare()" id="QRshare" class="defaultBtn" title="<div id='qrcode' style='width: 256px; height: 260px;'><img src='/assets/images/qrbackground.png'/></div><figcaption style='text-align: center;'><i class='fa fa-arrow-up'></i>用手机扫一扫<i class='fa fa-arrow-up'></i></figcaption>">二维码 &bcong; QR code</button>
 
       <!-- when clicked, show comments -->
-      <button id="showComment" onclick="loadComments()">看评论 &bcong; Show Comments</button>
-    <div>
+      <button id="showComment" class="defaultBtn" onclick="loadComments()">看评论 &bcong; Show Comments</button>
+    </div>
     <div id="disqus_thread" style="min-height: 3rem;"></div>
     <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
