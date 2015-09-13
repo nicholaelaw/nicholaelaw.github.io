@@ -47,36 +47,36 @@ It is so straight forward and simple that I may as well have been a complete mor
 
 <div class="imgDisplay monoh" style="height: 150px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/test/Touched-AW-2791-2560x1580.jpg" itemprop="contentUrl" data-size="2560x1580" >
-  <img src="/assets/test/Touched-AW-2791-thumbnail.jpg" itemprop="thumbnail" 
+  <a href="/assets/collage/Touched-AW-2791-2560x1580.jpg" itemprop="contentUrl" data-size="2560x1580" >
+  <img src="/assets/collage/Touched-AW-2791-thumbnail.jpg" itemprop="thumbnail" 
     title="Image 1 (shown)" 
     alt="Image 1 (shown)" /></a>
   <figcaption itemprop="caption description">Image 1 (shown)</figcaption>
   </figure>
   <figure style="position: absolute; visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/test/Touched-AW-2956-2560x1339.jpg" itemprop="contentUrl" data-size="2560x1339" >
-  <img style="max-width: 10px;" src="/assets/test/Touched-AW-2956-thumbnail.jpg" itemprop="thumbnail" 
+  <a href="/assets/collage/Touched-AW-2956-2560x1339.jpg" itemprop="contentUrl" data-size="2560x1339" >
+  <img style="max-width: 10px;" src="/assets/collage/Touched-AW-2956-thumbnail.jpg" itemprop="thumbnail" 
     title="Image 4 position: absolute; visibility: hidden;" 
     alt="Image 4 position: absolute; visibility: hidden;" /></a>
   <figcaption itemprop="caption description">Image 4 position: absolute; visibility: hidden;</figcaption>
   </figure>
   <figure style="position: relative; visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/test/Touched-AW-3409-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
-  <img style="max-width: 10px;" src="/assets/test/Touched-AW-3409-thumbnail.jpg" itemprop="thumbnail" 
+  <a href="/assets/collage/Touched-AW-3409-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
+  <img style="max-width: 10px;" src="/assets/collage/Touched-AW-3409-thumbnail.jpg" itemprop="thumbnail" 
     title="Image 5 position: absolute; visibility: hidden;" 
     alt="Image 5 position: absolute; visibility: hidden;" /></a>
   <figcaption itemprop="caption description">Image 5 position: absolute; visibility: hidden;</figcaption>
   </figure>
   <figure style="visibility: hidden;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/test/Touched-AW-3172-1707x2560.jpg" itemprop="contentUrl" data-size="1707x2560" >
-  <img src="/assets/test/Touched-AW-3172-thumbnail.jpg" itemprop="thumbnail" 
+  <a href="/assets/collage/Touched-AW-3172-1707x2560.jpg" itemprop="contentUrl" data-size="1707x2560" >
+  <img src="/assets/collage/Touched-AW-3172-thumbnail.jpg" itemprop="thumbnail" 
     title="Image 2 visibility: hidden;" 
     alt="Image 2 visibility: hidden;" /></a>
   <figcaption itemprop="caption description">Image 2 visibility: hidden;</figcaption>
   </figure>
   <figure style="display: none;" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-  <a href="/assets/test/Touched-AW-3344-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
-  <img src="/assets/test/Touched-AW-3344-thumbnail.jpg" itemprop="thumbnail" 
+  <a href="/assets/collage/Touched-AW-3344-2560x1707.jpg" itemprop="contentUrl" data-size="2560x1707" >
+  <img src="/assets/collage/Touched-AW-3344-thumbnail.jpg" itemprop="thumbnail" 
     title="Image 3 display: none;" 
     alt="Image 3 display: none;" /></a>
   <figcaption itemprop="caption description">Image 3 display: none;</figcaption>
