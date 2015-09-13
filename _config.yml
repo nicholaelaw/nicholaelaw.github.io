@@ -11,6 +11,7 @@ description:         '各种无处安放的闷骚'
 url:                 http://nicholaelaw.github.io
 baseurl:             
 paginate:            5
+highlighter:         pygments
 
 # About/contact
 author:

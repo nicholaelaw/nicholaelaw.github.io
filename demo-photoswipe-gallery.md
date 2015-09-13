@@ -164,7 +164,7 @@ Due to the flowing nature of the container, neither of the thumbnail groups look
 
 ## Code
 
-    ```html
+    {% highlight html %}
     <!-- Single image -->
     <div class="imgDisplay monod" style="max-width: 600px;" itemscope itemtype="http://schema.org/ImageGallery">
       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -250,5 +250,5 @@ Due to the flowing nature of the container, neither of the thumbnail groups look
       display: none;
     }
     </style>
-
+    {% endhighlight %}
     
