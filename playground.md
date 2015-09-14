@@ -49,6 +49,10 @@ title: 操场 &bcong; Playground
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/demo-jquery-on-demand/">Load jQuery on Demand</a></li>
 </ul>
 
+## Tengwar is Comming!
+<span class="ta ta-it">iT5^t$ t#7UyE5  97ll79=-= &#220;</span>
+Font <i class="fa fa-check">Awesome</i> icons!
+
 <div id="relatedposts" data-collapse>
   <h2>Better Related Posts</h2>
 {% raw %} 

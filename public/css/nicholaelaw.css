@@ -1,7 +1,47 @@
-/* Custom Styles for nicholaelaw.github.io 
+/*! Custom Styles for nicholaelaw.github.io 
  * Status: Experimental
  * 
  */
+
+/* Shorthand classes for easily invoking tengwar annatar font */
+.ta {
+  font-family: TengwarAnnatar;
+  font-size: 1.5rem;
+}
+
+.ta-it {font-style: italic;}
+.ta-bd {font-weight: bold;}
+
+
+/* Embed Tengwar fonts */
+@font-face {
+    font-family: 'TengwarAnnatar';
+    src: url('/public/fonts/tngan.woff') format('woff'),
+         url('/public/fonts/tngan.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'TengwarAnnatar';
+    src: url('/public/fonts/tngani.woff') format('woff'),
+         url('/public/fonts/tngani.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'TengwarAnnatar';
+    src: url('/public/fonts/tnganb.woff') format('woff'),
+         url('/public/fonts/tnganb.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'TengwarAnnatar';
+    src: url('/public/fonts/tnganbi.woff') format('woff'),
+         url('/public/fonts/tnganbi.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
 
 /* Meta data line below post title */
 .footer-text {
