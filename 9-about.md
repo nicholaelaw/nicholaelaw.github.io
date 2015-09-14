@@ -30,6 +30,8 @@ title: 关于 &bcong; About
 
 ##Stuff used in this blog:
 
+[Source of this blog](https://github.com/nicholaelaw/nicholaelaw.github.io)
+
 <!--special classes for listing badges -->
 
 <style>

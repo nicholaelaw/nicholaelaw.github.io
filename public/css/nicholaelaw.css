@@ -3,15 +3,32 @@
  * 
  */
 
-/* Shorthand classes for easily invoking tengwar annatar font */
-.ta {
-  font-family: TengwarAnnatar;
-  font-size: 1.5rem;
+kbd {
+padding:0.1rem 0.6rem;
+border:1px solid #ccc;
+font-size:0.8rem;
+background-color:#f7f7f7;
+color:#333;
+-moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+-webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+display:inline-block;
+margin:0 0.1rem;
+text-shadow:0 1px 0 #fff;
+line-height:1.4;
+white-space:nowrap;
 }
 
-.ta-it {font-style: italic;}
-.ta-bd {font-weight: bold;}
+/* Shorthand classes for easily invoking tengwar annatar font */
+.ta {font-family: TengwarAnnatar;}
 
+.ta-it {font-style: italic;} /* Italic */
+.ta-bd {font-weight: bold;} /* Bold */
+.ta-lg {font-size: 1.5rem;} /* Large version */
+.ta-hl {color: #00f;} /* Highlighted */
 
 /* Embed Tengwar fonts */
 @font-face {

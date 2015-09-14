@@ -165,4 +165,10 @@ $$\rhd$$
 
 PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间在`button`对象上强加了许多style。估计是我的CSS和PhotoSwipe的CSS起了冲突，而最后我的CSS赢了，于是按钮就失效了。知道了问题所在，就好解决了。我不再笼统地定义`button`对象的style，改为定义`defaultBtn`这个class。修改之后，PhotoSwipe又恢复了正常。悬着的一颗心终于落地了。
 
+* [Liquid Nonsense]({{site.baseurl}}{{page.url}}/#Liquid Nonsense)
 
+<div id="Liquid Nonsense" ></div>
+
+### Liquid Nonsense
+
+用Liquid写东西直接把我写疯了。Liquid的语法太TM蛋疼，简直是不让人活了。
