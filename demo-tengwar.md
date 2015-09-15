@@ -9,9 +9,9 @@ use-jquery: false
 hide-page: true
 title: Tengwar Reference Page
 ---
-## The Tengwar is Coming!
+## The Tengwar is Coming! <span class="ta ta-bd">iT5^t1 t#7UyE5</span>
 
-The following is a keyboard mapping of Tengwar Annatar font to latin letters. The keyboard layout is MacBook Pro international. Those tengwar and tehtar that were not available on the keyboard are listed in tables.
+The following is a set of keyboard mapping of Tengwar Annatar font to latin letters. The keyboard layout is MacBook Pro international. Since OS X provides extra symbol input via <kbd>alt</kbd> and <kbd>alt</kbd><kbd>shift</kbd> modifiers, those symbols are also mapped out. For Windows, you have the alt-code at your disposal. Those tengwar and tehtar that were not available on the keyboard are listed in tables.
 
 <style>
 kbd.fw {
@@ -33,21 +33,40 @@ code.tiny {
 </style>
 
 
-### Keyboard: Lower Case
+### Keyboard: Normal Case
 
 <div class="kbdContainer">
 {% for key in site.data.tnganMap.lowerCase %}
 {% if key.name == 'q' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'a' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'z' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}<kbd class="fw">{{key.name}}<br><span class="ta ta-hl"><span style="color: gray;">{{key.pre|escape_once}}</span>{{key.value|escape_once}}</span></kbd>{% endfor %}
 </div>
 
-### Keyboard: Upper Case
+### Keyboard: Shift Case
 
 <div class="kbdContainer">
 {% for key in site.data.tnganMap.upperCase %}
 {% if key.name == 'Q' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'A' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'Z' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}<kbd class="fw">{{key.name}}<br><span class="ta ta-hl"><span style="color: gray;">{{key.pre|escape_once}}</span>{{key.value|escape_once}}</span></kbd>{% endfor %}
 </div>
 <br>
-And a straggler: <kbd style="width: 1.8rem;">&#189;</kbd>&nbsp;&nbsp;&nbsp;<span class="ta ta-hl"><span style="color: gray;"></span>&#189;</span>&nbsp;&nbsp;&nbsp;<code class="tiny">&#38;#189;</code>
+
+### Keyboard: Alt Case
+
+<div class="kbdContainer">
+{% for key in site.data.tnganMap.altCase %}
+{% if key.name == 'q' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'a' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'z' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}<kbd class="fw">{{key.name}}<br><span class="ta ta-hl"><span style="color: gray;">{{key.pre|escape_once}}</span>{{key.value|escape_once}}</span></kbd>{% endfor %}
+</div>
+<br>
+
+### Keyboard: Alt-Shift Case
+
+<div class="kbdContainer">
+{% for key in site.data.tnganMap.altShiftCase %}
+{% if key.name == 'Q' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'A' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{% if key.name == 'Z' %}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}<kbd class="fw">{{key.name}}<br><span class="ta ta-hl"><span style="color: gray;">{{key.pre|escape_once}}</span>{{key.value|escape_once}}</span></kbd>{% endfor %}
+</div>
+<br>
+
+### The Awkward One
+
+Since all the usual tengwar are mapped onto the keyboard, this one tengwa has nowhere to go: <kbd style="width: 1.8rem;">&#189;</kbd>&nbsp;&nbsp;&nbsp;<span class="ta ta-hl"><span style="color: gray;"></span>&#189;</span>&nbsp;&nbsp;&nbsp;<code class="tiny">&#38;#189;</code>
 
 ### Tehtar above and below Tengwar
 
