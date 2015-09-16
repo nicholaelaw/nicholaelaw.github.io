@@ -9,7 +9,8 @@ use-jquery: false
 hide-page: true
 title: Tengwar Reference Page
 ---
-## The Tengwar is Coming! <span class="ta ta-bd">iT5^t1 t#7UyE5</span>
+
+## <span class="ta ta-bd">yj$ztÈ^ = e7\`B\`V2P -</span><!-- Welcome, friend -->
 
 The following is a set of keyboard mapping of Tengwar Annatar font to latin letters. The keyboard layout is MacBook Pro international. Since OS X provides extra symbol input via <kbd>alt</kbd> and <kbd>alt</kbd><kbd>shift</kbd> modifiers, those symbols are also mapped out. For Windows, you have the alt-code at your disposal. Those tengwar and tehtar that were not available on the keyboard are listed in tables.
 

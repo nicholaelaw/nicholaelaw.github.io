@@ -17,11 +17,11 @@ title: 参考 &bcong; Handy
 * [Center an Image CSS Tricks](https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/){:target="_blank"}
 * [Favicon Generator. For real.](http://realfavicongenerator.net/){:target="_blank"}
 * [Solving the Rubik's Revenge](http://www.speedcubing.com/chris/4-solution.html){:target="_blank"}
-* [sublime text 2 下的Markdown写作](http://www.jianshu.com/p/378338f10263){:target="_blank"}
+* [Sublime Text 2 下的Markdown写作](http://www.jianshu.com/p/378338f10263){:target="_blank"}
 * [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
 * [Online JavaScript Compression Tool](http://jscompress.com/){:target="_blank"}
 * [Google Closure Compiler](http://closure-compiler.appspot.com/home){:target="_blank"}
-* [SUPER SCROLL ORAMA](http://johnpolacek.github.io/superscrollorama/){:target="_blank"}
+* [SUPER-SCROLL-ORAMA](http://johnpolacek.github.io/superscrollorama/){:target="_blank"}
 * [jQuery Scroll Path](http://joelb.me/scrollpath/){:target="_blank"}
 * [List.js](http://www.listjs.com/){:target="_blank"}
 * [Charts.js](http://www.chartjs.org/){:target="_blank"}
@@ -36,5 +36,7 @@ title: 参考 &bcong; Handy
 * [RegExr](http://www.regexr.com/){:target="_blank"}
 * [Online JavaScript/CSS Compressor](http://refresh-sf.com/){:target="_blank"}
 * [Lucidhart](https://www.lucidchart.com/){:target="_blank"}
+* [Tengwar Annatar by Johan Winge](http://web.comhem.se/alatius/fonts/annatar.html){:target="_blank"}
+* [Tengwar Transcriber](http://www.arno.org/tengwar/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

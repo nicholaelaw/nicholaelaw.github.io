@@ -172,3 +172,6 @@ PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间�
 ### Liquid Nonsense
 
 用Liquid写东西直接把我写疯了。Liquid的语法太TM蛋疼，简直是不让人活了。
+
+PACE.js Embedded fonts
+
