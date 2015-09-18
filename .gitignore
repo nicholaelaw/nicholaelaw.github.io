@@ -3,9 +3,10 @@
 _site/
 .sass-cache/
 .jekyll-metadata
-_experimental/
 assets/processing/
 assets/test/
+.sublime-project
+505.html
 
 # Compiled source #
 ###################

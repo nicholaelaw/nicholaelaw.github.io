@@ -102,9 +102,11 @@ So there I've done it. I crammed two functions into one button. When clicked for
     var result;
     if (typeof jQuery == 'undefined') {
       result = "not detected. ";
+      console.log('jQuery is not loaded on this page.')
     }
     else {
       result = "already loaded!";
+      console.log('jQuery detected.')
     }
     document.getElementById('demo').innerHTML = "jQuery is "+result;
   }

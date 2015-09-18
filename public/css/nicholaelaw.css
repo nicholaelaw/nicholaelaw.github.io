@@ -198,10 +198,8 @@ footer {
 }
 
 /* Nav Bar implementation aped from
- * EagerIO. Adapted to mimic Lanyon sidebar
- * behaviour.
- *
- *
+ * EagerIO. Adapted to mimic Lanyon
+ * layout-reverse sidebar-overlay theme.
  */
 
 eager-side-nav {
@@ -212,10 +210,10 @@ eager-side-nav {
   top: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  font-family: inherit !important;
-  font-size: 1rem !important;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif !important;
+  font-size: 0.875rem !important;
   max-width: 100% !important;
-  padding: 3.75rem 2.5rem 1.5rem 1.5rem !important;
+  padding: 3.5rem 0rem 1.5rem 0rem !important;
   overflow: auto !important;
   -webkit-overflow-scrolling: touch;
   box-shadow: 16px 0 15px 15px rgba(0, 0, 0, 0) !important;
@@ -225,15 +223,35 @@ eager-side-nav {
   transition: transform .4s ease !important
 }
 
-@media (max-width: 768px) {
+/*@media (min-width: 48em) {
   eager-side-nav {
-    font-size: 1.25rem !important
+    font-size: 0.875rem !important
+  }
+}
+
+@media (max-width: 768px) {
+  eager-side-nav-button {
+    top: 1.75rem !important;
+    right: 1.75rem !important
   }
 }
 
 @media (max-width: 480px) {
+  eager-side-nav-button {
+    top: 1rem !important;
+    right: 1rem !important
+  }
+}*/
+
+@media (min-width: 30em) {
   eager-side-nav {
-    font-size: 1.125rem !important
+    font-size: 0.75rem !important
+  }
+}
+
+@media print {
+  eager-side-nav {
+    display: none;
   }
 }
 
@@ -281,13 +299,13 @@ eager-side-nav > * {
   overflow: hidden !important;
   width: 100% !important;
   max-width: 20rem !important;
-  font-size: 1rem !important;
-  margin: 0 !important
+  /*font-size: 0.875rem !important;*/
+  margin: 0 2.5rem 0 1rem !important;
 }
 
 eager-side-nav-label {
   cursor: default !important;
-  font-size: .8rem !important;
+  /*font-size: .8rem !important;*/
   margin-top: 2rem !important;
   text-transform: uppercase !important;
   letter-spacing: .05rem !important;
@@ -300,10 +318,17 @@ eager-side-nav-label:first-child {
 
 eager-side-nav > a {
   cursor: pointer !important;
-  /*border: 0 !important;*/
+  /*border-box: 1px solid black !important;*/
   border-top: 1px solid rgba(255,255,255,.1);
-  padding: 1rem 1rem !important;
+  padding: 0.5rem 2.5rem 0.5rem 1rem !important;
   text-decoration: none !important
+}
+
+eager-side-nav > a:hover,
+eager-side-nav > a:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
 }
 
 @font-face {
@@ -320,21 +345,7 @@ eager-side-nav-button {
   top: 1rem !important;
   right: 1rem !important;
   width: 25px !important;
-  height: 25px !important
-}
-
-@media (max-width: 768px) {
-  eager-side-nav-button {
-    top: 1.75rem !important;
-    right: 1.75rem !important
-  }
-}
-
-@media (max-width: 480px) {
-  eager-side-nav-button {
-    top: 1rem !important;
-    right: 1rem !important
-  }
+  height: 25px !important;
 }
 
 eager-side-nav-button > * {
@@ -346,6 +357,7 @@ eager-side-nav-button > * {
   width: 25px !important;
   -webkit-transition: all .4s ease !important;
   transition: all .4s ease !important
+
 }
 
 eager-side-nav-button > *:nth-child(1) {
@@ -359,6 +371,12 @@ eager-side-nav-button > *:nth-child(2) {
 eager-side-nav-button > *:nth-child(3) {
   top: 18px !important
 }
+
+/*eager-side-nav-button:active:before,
+eager-side-nav-button:before,
+eager-side-nav-button:focus {
+  background-color: rgba(255,255,255,.6);
+}*/
 
 eager-side-nav-button[eager-side-nav-opened="true"] > *:nth-child(1) {
   -webkit-transform: rotateZ(45deg) !important;

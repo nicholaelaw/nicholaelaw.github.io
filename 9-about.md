@@ -2,7 +2,7 @@
 layout: page
 permalink: about/
 use-pswp: true
-title: 关于 &bcong; About
+title: 关于 ≌ About
 ---
 
 ##哪三喵？

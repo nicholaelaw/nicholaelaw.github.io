@@ -2,7 +2,7 @@
 layout: page
 permalink: handy/
 use-math: true
-title: 参考 &bcong; Handy
+title: 参考 ≌ Handy
 ---
 
 * [Disqus](http://www.disqus.com/){:target="_blank"}

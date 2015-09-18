@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: fa-icon-list/
+permalink: demo-fa-icon-list/
 hide-page: true
 comments: false
 use-math: false

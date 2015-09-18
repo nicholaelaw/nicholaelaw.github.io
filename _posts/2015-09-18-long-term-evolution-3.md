@@ -20,6 +20,7 @@ title: 博客的长期演进III
 * [节约流量：二维码按钮、评论按需加载，插入footer]({{site.baseurl}}{{page.url}}/#节约流量：二维码按钮、评论按需加载，插入footer)
 * [`sitemap.xml`，再度统一permalink]({{site.baseurl}}{{page.url}}/#`sitemap.xml`，再度统一permalink)
 * [用Class来重新定义Style，而不是直接修改DOM Object]({{site.baseurl}}{{page.url}}/#用Class来重新定义Style，而不是直接修改DOM Object)
+* [Liquid Nonsense]({{site.baseurl}}{{page.url}}/#Liquid Nonsense)
 
 <!--excerpt-->
 
@@ -43,15 +44,17 @@ $$\rhd$$
 
 自从建了这个博客以后，写了不少代码。代码写多了，重复的也很多。`HTML`是给机器读的语言，让人来编写的话难免过于繁冗。所以各种节约按键数量的方法也在我的研究范围里。最开始我用[MacDown](http://macdown.uranusjr.com/){:target="_blank"}写文，清爽直观，操作简单。但是随着我折腾的东西越来越复杂，简单的Markdown远远无法满足需求。比如用PhotoSwipe创建的照片幻灯，每插入一张图要这么多代码：
 
-	<div class="imgDisplay monoh" style="" itemscope itemtype="http://schema.org/ImageGallery">
-	  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-	  <a href="image path" itemprop="contentUrl" data-size="" >
-	  <img src="image path" itemprop="thumbnail" 
-	    title="image description" 
-	    alt="image description" /></a>
-	  <figcaption itemprop="caption description">image description</figcaption>
-	  </figure>
-	</div>
+{% highlight html %}
+<div class="imgDisplay monoh" style="" itemscope itemtype="http://schema.org/ImageGallery">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="image path" itemprop="contentUrl" data-size="" >
+  <img src="image path" itemprop="thumbnail" 
+    title="image description" 
+    alt="image description" /></a>
+  <figcaption itemprop="caption description">image description</figcaption>
+  </figure>
+</div>
+{% endhighlight %}
 
 因为每张图的名称、描述都不一样，简单的手动复制粘贴都会耗费许多时间和精力。所以必须把效率提高一些，减少一些不必要的劳动，把脑子用到值得思考的问题上。于是我转移到了神器[Sublime Text](http://www.sublimetext.com/){:target="_blank"}里面写文。原本我只是在ST里改改`HTML`之类，但是多花了一点时间在上面之后，我发现我之前完全是在以错误的方式使用这个软件。
 
@@ -87,6 +90,8 @@ $$\rhd$$
 * [按需加载JavaScript]({{site.baseurl}}/demo-jquery-on-demand/)
 
 这些东西，都是可能会加入到博客正是页面中来的。先放在那，免得要用的时候忘记了怎么做。
+
+$$\rhd$$
 
 <div id="节约流量：二维码按钮、评论按需加载，插入footer" ></div>
 
@@ -140,24 +145,26 @@ $$\rhd$$
 
 今天又得到了一个教训，那就是用CSS定义style的时候，不要去override原来的DOM Object除非所有的CSS都在你的掌控之中。我在折腾几个按钮的时候发现Lanyon自带的CSS里面并没有对`button`进行定义，导致摆出来的按钮又小又丑。所以我在自己的CSS里面加入了下面这样一段定义：
 
-	/* Default button style */
-	button {
-	  background-color:#ac4142;
-	  display:inline-block;
-	  cursor:pointer;
-	  color:#ffffff;
-	  font-size: 1rem;
-	  padding:6px 15px;
-	  border:0;
-	  margin-bottom: 1rem;
-	}
-	button:hover {
-	  background-color:#ac4142;
-	}
-	button:active {
-	  position:relative;
-	  top:1px;
-	}
+{% highlight css %}
+/* Default button style */
+button {
+  background-color:#ac4142;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size: 1rem;
+  padding:6px 15px;
+  border:0;
+  margin-bottom: 1rem;
+}
+button:hover {
+  background-color:#ac4142;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
+{% endhighlight %}
 
 这样按钮的风格就和其它东西一致了。这样定义直接影响了所有的`button`对象，在当时来说，我觉得这就是我的目的。结果几天以后我发现PhotoSwipe的上一页/下一页失效了！点击的时候按钮没有任何效果，感觉就好像是透明的一般，点上去会触发它下面那一层对象的点击事件。举个例子，如果按钮下方是空白（也就是说，下面是黑色的背景），那么点一下就会关闭slide；如果按钮下方是图像（屏幕较窄的时候），点按钮会触发缩放。
 
@@ -165,13 +172,57 @@ $$\rhd$$
 
 PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间在`button`对象上强加了许多style。估计是我的CSS和PhotoSwipe的CSS起了冲突，而最后我的CSS赢了，于是按钮就失效了。知道了问题所在，就好解决了。我不再笼统地定义`button`对象的style，改为定义`defaultBtn`这个class。修改之后，PhotoSwipe又恢复了正常。悬着的一颗心终于落地了。
 
-* [Liquid Nonsense]({{site.baseurl}}{{page.url}}/#Liquid Nonsense)
+$$\rhd$$
 
 <div id="Liquid Nonsense" ></div>
 
 ### Liquid Nonsense
 
-用Liquid写东西直接把我写疯了。Liquid的语法太TM蛋疼，简直是不让人活了。
+用Liquid写东西直接把我写疯了。Liquid的语法太TM蛋疼，简直是不让人活了。Liquid的语法结构实在是让人头疼。比如说做Tengwar Reference的时候，附表每行四个符号。字符的代码已经存为一个简单的文本文件，我打算用`loop`每四个元素插入一个换行符来生成Table。结果怎么样都不行（代码已简化）：
 
-PACE.js Embedded fonts
+{% highlight liquid %}{% raw %}
+<table>
+  <tbody>
+    <tr>
+    {% for key in site.data.tnganMap.bars-tildes %}
+    <!-- 插入单元格内容 Insert cell content -->
+
+    {% if forloop.index|modulo:4 == 0 %}
+    <!-- 如果当前loop的序号能被4整除，换行 -->
+    <!-- Insert line break if current -->
+    <!-- loop index is a multiply of 4 -->
+    	<br>
+    {% endif %}
+    {% endfor %}
+    </tr>
+  </tbody>
+</table>
+{% endraw %}{% endhighlight %}
+
+我绞尽脑汁，也弄不明白为什么上面那段代码不起作用[^liquid]。表面上看，`forloop.index|modulo:4 == 0`这句永远都是`true`。经过不停地查找Liquid的文档，还有别人提出的类似的问题，我终于找到了问题所在。出于某种我还无法想象的原因，不能直接拿`forloop.index`做判断，必须将它的值赋给一个变量，然后再判断：
+
+[^liquid]: Pygments的语法高亮似乎发现了问题：`|`和`:`都被标红了。可是我又不是在写纯Liquid，语法高亮都用的是MD或者HTML来着。
+
+{% highlight liquid %}{% raw %}
+<table>
+  <tbody>
+    <tr>
+    {% for key in site.data.tnganMap.bars-tildes %}
+    <!-- 插入单元格内容 Insert cell content -->
+
+    <!-- 如果当前loop的序号能被4整除，换行 -->
+    <!-- Insert line break if current -->
+    <!-- loop index is a multiply of 4 -->
+    {% assign i = forloop.index|modulo:4 %}{% if i == 0 %}
+      <br>
+    {% endif %}
+    {% endfor %}
+    </tr>
+  </tbody>
+</table>
+{% endraw %}{% endhighlight %}
+
+这下就对了。我心中有千万种吐槽却不知道该从哪开始。
+
+$$\square$$
 

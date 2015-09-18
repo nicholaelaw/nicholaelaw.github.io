@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: content/
-title: 目录 &bcong; All Posts
+title: 目录 ≌ All Posts
 ---
 
 ## 全部文章
