@@ -9,10 +9,8 @@ use-jquery: false
 tags:
  - problem
  - puzzle
- - solution
- - 解题
- - 数学
- - mathematics
+ - solution ≌ 解题
+ - math ≌ 数学
 title: SAT考试里最难的数学题？
 ---
 

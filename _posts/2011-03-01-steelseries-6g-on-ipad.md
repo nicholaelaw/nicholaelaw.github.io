@@ -8,8 +8,8 @@ categories:
 - Old entries
 tags:
 - iPad
-- 折腾
-- tinker
+- tinker ≌ 折腾
+- keyboard  ≌ 键盘
 title: Steelseries 6G on iPad!
 ---
 

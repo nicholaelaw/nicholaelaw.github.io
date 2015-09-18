@@ -7,12 +7,9 @@ date: 2010-11-09 19:54:05.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 剩蛋
-- Christmas
-- 吐槽
-- rant
-- 短文
-- short
+- Christmas ≌ 剩蛋
+- rant ≌ 吐槽
+- short ≌ 短文
 title: Christmas’ coming
 ---
 

@@ -7,10 +7,8 @@ date: 2006-12-24 14:55:42.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 莫名其妙
-- random
-- 吐槽
-- rant
+- random ≌ 莫名其妙
+- rant ≌ 吐槽
 title: Well well, not what I've expected...
 ---
 终于，来到了Ontario。

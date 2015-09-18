@@ -7,12 +7,9 @@ date: 2007-12-26 11:29:55.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 剩蛋
-- Christmas
-- 莫名其妙
-- random
-- 吐槽
-- rant
+- Christmas ≌ 剩蛋
+- random ≌ 莫名其妙
+- rant ≌ 吐槽
 title: Merry Christmas
 ---
 圣诞节。

@@ -7,12 +7,9 @@ use-pswp: true
 date: 2011-02-21 03:45:32.000000000 +08:00
 tags:
 - acrobat
-- 右键菜单
-- context menu
-- 计算机
-- computer
-- 折腾
-- tinker
+- context menu ≌ 右键菜单
+- computer ≌ 计算机
+- tinker ≌ 折腾
 title: Getting Adobe Acrobat X Context Menu Back
 ---
 

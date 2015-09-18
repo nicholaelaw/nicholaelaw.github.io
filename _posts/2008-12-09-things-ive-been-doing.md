@@ -7,13 +7,10 @@ date: 2008-12-09 04:31:22.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 作业
-- homework
+- homework ≌ 作业
 - webcomic
-- 吐槽
-- rant
-- 日常
-- daily life
+- rant ≌ 吐槽
+- daily life ≌ 日常
 title: Things I’ve been doing
 ---
 

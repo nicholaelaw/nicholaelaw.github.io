@@ -12,12 +12,9 @@ tags:
 - C++
 - Debian
 - MPI
-- 编程
-- Programming
-- 折腾
-- tinker
-- 计算机
-- computer
+- programming ≌ 编程
+- tinker ≌ 折腾
+- computer ≌ 计算机
 - QuantLib
 - SVN
 - Visual Studio

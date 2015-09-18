@@ -9,12 +9,9 @@ tags:
 - MagicISO
 - OS X
 - VMware
-- 计算机
-- computer
-- 折腾
-- tinker
-- 吐槽
-- rant
+- computer ≌ 计算机
+- tinker ≌ 折腾
+- rant ≌ 吐槽
 title: Dealing with .dmg files on Windows and Getting Rid of MagicISO
 ---
 

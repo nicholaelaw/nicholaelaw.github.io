@@ -7,12 +7,9 @@ no-excerpt: true
 categories:
 - Old Entries
 tags:
-- 作业
-- homework
-- 吐槽
-- rant
-- 上学
-- school
+- homework ≌ 作业
+- rant ≌ 吐槽
+- school ≌ 上学
 title: A Shit Hole on Wednesday 星期三的噩梦
 ---
 [噩梦般的作业（PDF文档！）](/assets/docs/M773A5-original.pdf)

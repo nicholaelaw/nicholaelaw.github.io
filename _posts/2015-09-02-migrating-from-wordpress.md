@@ -6,10 +6,8 @@ use-math: true
 tags:
 - wordpress
 - jekyll
-- 博客
-- blog
-- 折腾
-- tinker
+- blog ≌ 博客
+- tinker ≌ 折腾
 title: 从Wordpress迁移到Jekyll
 ---
 

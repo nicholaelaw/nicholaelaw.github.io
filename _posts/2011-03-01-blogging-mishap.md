@@ -8,11 +8,9 @@ date: 2011-03-01 20:19:13.000000000 +08:00
 categories:
 - Old entries
 tags:
-- 意外
-- accident
+- accident ≌ 意外
 - wordpress
-- 折腾
-- tinker
+- tinker ≌ 折腾
 title: Blogging Mishap
 ---
 

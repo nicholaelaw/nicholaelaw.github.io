@@ -4,9 +4,9 @@ permalink: walking-back-to-happiness/
 comments: true
 use-math: true
 tag:
-- 解题
+- math ≌ 数学
 - problem
-- solution
+- solution ≌ 解题
 - puzzle
 title: 一个走路的问题
 ---

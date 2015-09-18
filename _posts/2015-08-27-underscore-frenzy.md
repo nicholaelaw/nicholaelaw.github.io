@@ -5,13 +5,10 @@ comments: true
 use-math: true
 use-pswp: true
 tags:
-- 计算机
-- computer
+- computer ≌ 计算机
 - bugs
-- 编程
-- programming
-- 折腾
-- tinker
+- programming ≌ 编程
+- tinker ≌ 折腾
 - github
 title: An Underscored Frenzy
 ---

@@ -7,13 +7,10 @@ date: 2008-06-25 06:09:11.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- photo
-- travel
-- 照片
-- 旅行
+- photo ≌ 照片
+- travel ≌ 旅行
 - photoshop
-- 全景
-- panorama
+- panorama ≌ 全景
 title: Around June 1st
 ---
 终于有心情更新这里了，这次的主题还是照片。我终于说服自己停止浪费时间，还是留下点什么吧。

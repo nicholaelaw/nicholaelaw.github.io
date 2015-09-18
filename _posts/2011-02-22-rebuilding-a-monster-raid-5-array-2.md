@@ -5,14 +5,10 @@ comments: true
 use-pswp: true
 date: 2011-02-22 12:55:09.000000000 +08:00
 tags:
-- 存储
-- storage
-- 阵列
-- RAID
-- 计算机
-- computer
-- 折腾
-- tinker
+- storage ≌ 存储
+- RAID ≌ 阵列
+- computer ≌ 计算机
+- tinker ≌ 折腾
 title: Rebuilding A Monster RAID 5 Array
 ---
 

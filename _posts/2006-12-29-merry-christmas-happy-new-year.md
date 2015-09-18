@@ -7,10 +7,8 @@ date: 2006-12-29 11:09:44.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 剩蛋
-- Christmas
-- 莫名其妙
-- random
+- Christmas ≌ 剩蛋
+- random ≌ 莫名其妙
 title: Merry Christmas, Happy New Year.
 ---
  嗯哼，圣诞已经过了。可以稍微轻松一下了。不知为什么总觉得圣诞是个负担。或者说，就像……就像……就像圣诞！

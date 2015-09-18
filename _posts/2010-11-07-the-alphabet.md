@@ -8,10 +8,8 @@ date: 2010-11-07 14:03:42.000000000 +08:00
 categories:
 - Old Entries
 tags:
-- 书法
-- calligraphy
-- 涂鸦
-- drawing
+- calligraphy ≌ 书法
+- drawing ≌ 涂鸦
 title: The Alphabet
 ---
 
