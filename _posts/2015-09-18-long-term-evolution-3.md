@@ -42,7 +42,7 @@ $$\rhd$$
 
 ### Sublime Text, Regular Expression
 
-自从建了这个博客以后，写了不少代码。代码写多了，重复的也很多。`HTML`是给机器读的语言，让人来编写的话难免过于繁冗。所以各种节约按键数量的方法也在我的研究范围里。最开始我用[MacDown](http://macdown.uranusjr.com/){:target="_blank"}写文，清爽直观，操作简单。但是随着我折腾的东西越来越复杂，简单的Markdown远远无法满足需求。比如用PhotoSwipe创建的照片幻灯，每插入一张图要这么多代码：
+自从建了这个博客以后，写了不少代码。代码写多了，重复的也很多。<abbr>HTML</abbr>是给机器读的语言，让人来编写的话难免过于繁冗。所以各种节约按键数量的方法也在我的研究范围里。最开始我用[MacDown](http://macdown.uranusjr.com/){:target="_blank"}写文，清爽直观，操作简单。但是随着我折腾的东西越来越复杂，简单的Markdown远远无法满足需求。比如用PhotoSwipe创建的照片幻灯，每插入一张图要这么多代码：
 
 {% highlight html %}
 <div class="imgDisplay monoh" style="" itemscope itemtype="http://schema.org/ImageGallery">
@@ -56,7 +56,7 @@ $$\rhd$$
 </div>
 {% endhighlight %}
 
-因为每张图的名称、描述都不一样，简单的手动复制粘贴都会耗费许多时间和精力。所以必须把效率提高一些，减少一些不必要的劳动，把脑子用到值得思考的问题上。于是我转移到了神器[Sublime Text](http://www.sublimetext.com/){:target="_blank"}里面写文。原本我只是在ST里改改`HTML`之类，但是多花了一点时间在上面之后，我发现我之前完全是在以错误的方式使用这个软件。
+因为每张图的名称、描述都不一样，简单的手动复制粘贴都会耗费许多时间和精力。所以必须把效率提高一些，减少一些不必要的劳动，把脑子用到值得思考的问题上。于是我转移到了神器[Sublime Text](http://www.sublimetext.com/){:target="_blank"}里面写文。原本我只是在ST里改改<abbr>HTML</abbr>之类，但是多花了一点时间在上面之后，我发现我之前完全是在以错误的方式使用这个软件。
 
 于是开始下载各种插件，换主题，自己编一些快捷方式，减少重复劳动。现在，我只要输入`pswp`然后<kbd>Tab</kbd>，就能插入上面那段代码。然后研究Regex（正则表达式），进一步减少重复劳动（懒嘛）。
 
@@ -100,22 +100,22 @@ $$\rhd$$
 一连做了好多东西，准备投入使用。根据节约流量的原则，要尽量压缩客户端下载的文件数量和大小，所以一般情况下页面都只是加载了必要的东西。目前默认会加载以下数据：
 
 1. 基础框架：`Poole.css`，`Lanyon.css`，`Syntax.css`；
-2. Font Awesome图标集（CSS）；
-3. PhotoSwipe（CSS）；
-4. 自定义的附加CSS文件；
+2. Font Awesome图标集（<abbr>CSS</abbr>里面加入了下面这样一段定义：）；
+3. PhotoSwipe（<abbr>CSS</abbr>里面加入了下面这样一段定义：）；
+4. 自定义的附加<abbr>CSS</abbr>里面加入了下面这样一段定义：文件；
 5. 根据页面的开关设置，可能会加载PhotoSwipe，Disqus评论系统，jQuery和MathJax的JavaScript；
 
 一般仅有不多文字的页面，流量消耗在200KB以下，压缩传送的数据应该更小（20%？）。对于包含较多图片的，消耗流量比较多的页面，如果读者选择浏览那么他就要下载相关的数据，这种流量不在节约的考虑范围内。要节约的是对于一般浏览没有影响的功能所产生的流量。目前已经实施的流量节约手段有
 
-1. 将基础框架、FA和PhotoSwipe的CSS合并压缩，大小由71KB缩减为48KB（节约33%），文件数由6个减为1个；
-2. 在页面设置开关，仅加载当前页面需要的CSS和JS；
+1. 将基础框架、FA和PhotoSwipe的<abbr>CSS</abbr>里面加入了下面这样一段定义：合并压缩，大小由71KB缩减为48KB（节约33%），文件数由6个减为1个；
+2. 在页面设置开关，仅加载当前页面需要的<abbr>CSS</abbr>里面加入了下面这样一段定义：和<abbr>JS</abbr>；
 3. 合并经常一起使用的JavaScript，并压缩。例如将`tooltispter.js`与`jquery-qrcode.js`合并，大小由63KB减为31KB（节约51%），`photoswipe.js`与`photoswipe-ui-default.js`合并，大小由115KB减为40KB（比原来分别压缩过的文件还减了2KB）等。
 
 这次做的改动，是将分享和评论部分改为按需加载。去掉了JiaThis的分享工具栏（太丑且无用），取而代之一个自动生成当前页面的二维码的按钮。Disqus的评论模块默认不加载，改为一个“看评论”的按钮，点击后显示评论模块。这样做的好处是，不会无意中增加流量消耗[^bandwidth]。
 
 [^bandwidth]: 实测结果是，就算是一条评论也没有，Disqus评论系统也会消耗大约400KB左右的流量；有时这比原本页面的流量还多。虽说评论只有在拉倒页面底部的时候才开始加载，但误操作的可能性还是很高。因为一般人的使用习惯应该是一直往下滚动页面，直到滚不动为止。这样的话就会触发加载评论，浪费流量。
 
-这些工作还是费了我好一番功夫。因为二维码分享需要用到jQuery、tooltipster和qrcode三个脚本，而页面默认情况下并不会加载这些东西（压缩后大约127KB），所以必须做到点击按钮时先确认需要加载的js，然后再运行生成二维码的代码。这些工作的细节我另建了一个[展示页面]({{site.baseurl}}/demo-jquery-on-demand/)。
+这些工作还是费了我好一番功夫。因为二维码分享需要用到jQuery、tooltipster和qrcode三个脚本，而页面默认情况下并不会加载这些东西（压缩后大约127KB），所以必须做到点击按钮时先确认需要加载的<abbr>JS</abbr>，然后再运行生成二维码的代码。这些工作的细节我另建了一个[展示页面]({{site.baseurl}}/demo-jquery-on-demand/)。
 
 值得注意的是，对于利用Jekyll建成的网站，加载Disqus评论系统的时候务必要使用`disqus_identifier`来识别文章，否则在本地测试能够显示的评论数量，传至GitHub Pages后就消失了。具体使用方法见 [Disqus官方说明文档](https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier){:target="_blank"}。
 
@@ -143,7 +143,7 @@ $$\rhd$$
 
 ### 用Class来重新定义Style，而不是直接修改DOM Object
 
-今天又得到了一个教训，那就是用CSS定义style的时候，不要去override原来的DOM Object除非所有的CSS都在你的掌控之中。我在折腾几个按钮的时候发现Lanyon自带的CSS里面并没有对`button`进行定义，导致摆出来的按钮又小又丑。所以我在自己的CSS里面加入了下面这样一段定义：
+今天又得到了一个教训，那就是用<abbr>CSS</abbr>里面加入了下面这样一段定义：定义style的时候，不要去override原来的DOM Object除非所有的<abbr>CSS</abbr>里面加入了下面这样一段定义：都在你的掌控之中。我在折腾几个按钮的时候发现Lanyon自带的<abbr>CSS</abbr>里面加入了下面这样一段定义：里面并没有对`button`进行定义，导致摆出来的按钮又小又丑。所以我在自己的<abbr>CSS</abbr>里面加入了下面这样一段定义：
 
 {% highlight css %}
 /* Default button style */
@@ -170,7 +170,7 @@ button:active {
 
 这下搞得我一阵慌乱，到处检查代码。最后冷静下来，仔细分析，觉得应该问题出在按钮本身。因为键盘控制没问题，滑动控制也没问题，唯独鼠标点击出了问题。于是打开Chrome的调试台，审查这个按钮元素的细节。结果一下就发现了问题所在。
 
-PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间在`button`对象上强加了许多style。估计是我的CSS和PhotoSwipe的CSS起了冲突，而最后我的CSS赢了，于是按钮就失效了。知道了问题所在，就好解决了。我不再笼统地定义`button`对象的style，改为定义`defaultBtn`这个class。修改之后，PhotoSwipe又恢复了正常。悬着的一颗心终于落地了。
+PhotoSwipe的UI按钮是以`.pswp_button`等class来定义的。我却无意间在`button`对象上强加了许多style。估计是我的<abbr>CSS</abbr>里面加入了下面这样一段定义：和PhotoSwipe的<abbr>CSS</abbr>里面加入了下面这样一段定义：起了冲突，而最后我的<abbr>CSS</abbr>里面加入了下面这样一段定义：赢了，于是按钮就失效了。知道了问题所在，就好解决了。我不再笼统地定义`button`对象的style，改为定义`defaultBtn`这个class。修改之后，PhotoSwipe又恢复了正常。悬着的一颗心终于落地了。
 
 $$\rhd$$
 
@@ -201,7 +201,7 @@ $$\rhd$$
 
 我绞尽脑汁，也弄不明白为什么上面那段代码不起作用[^liquid]。表面上看，`forloop.index|modulo:4 == 0`这句永远都是`true`。经过不停地查找Liquid的文档，还有别人提出的类似的问题，我终于找到了问题所在。出于某种我还无法想象的原因，不能直接拿`forloop.index`做判断，必须将它的值赋给一个变量，然后再判断：
 
-[^liquid]: Pygments的语法高亮似乎发现了问题：`|`和`:`都被标红了。可是我又不是在写纯Liquid，语法高亮都用的是MD或者HTML来着。
+[^liquid]: Pygments的语法高亮似乎发现了问题：`|`和`:`都被标红了。可是我又不是在写纯Liquid，语法高亮都用的是<abbr>MD</abbr>或者<abbr>HTML</abbr>来着。
 
 {% highlight liquid %}{% raw %}
 <table>
