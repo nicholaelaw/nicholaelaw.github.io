@@ -5,10 +5,15 @@ comments: true
 use-math: true
 tags:
  - computer
+ - 计算机
  - programming
+ - 编程
  - memo
+ - 备忘
  - tinker
+ - 折腾
  - lte
+ - 长期演进
 title: 博客的长期演进III
 ---
 
