@@ -29,7 +29,6 @@ title: 操场 &bcong; Playground
 <script type="text/javascript" src="/public/js/list.js"></script>
 <script type="text/javascript" src="/public/js/jquery.tooltipster.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery-collapse-with-storage.min.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/public/css/tooltipster/tooltipster-shadow.css"/>
 

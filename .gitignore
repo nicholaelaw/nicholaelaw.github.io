@@ -1,6 +1,7 @@
 # Jekyll Ignore #
 #################
 _site/
+_backup/
 .sass-cache/
 .jekyll-metadata
 assets/processing/
