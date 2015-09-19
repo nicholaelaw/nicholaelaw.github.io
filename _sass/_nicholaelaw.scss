@@ -1,6 +1,13 @@
 /*! Custom Styles for nicholaelaw.github.io */
 // Status: integrated, work in progress
 
+// Contents:
+// PACE.js with minimal theme (loading progress bar)
+// eager-side-nav
+// Tengwar Annatar font
+// Customizations
+
+
 // PACE.js theme: minimal
 .pace {
   -webkit-pointer-events: none;
@@ -13,7 +20,6 @@
   &-inactive {display: none;}
 
   .pace-progress {
-    background: #AC4142;
     position: fixed;
     z-index: 2000;
     top: 0;
@@ -54,32 +60,32 @@ kbd {
 
 // Embed Tengwar fonts
 @font-face {
-    font-family: 'TengwarAnnatar';
-    src: url('/public/fonts/tngan.woff') format('woff'),
-         url('/public/fonts/tngan.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'TengwarAnnatar';
+  src: url('/public/fonts/tngan.woff') format('woff'),
+       url('/public/fonts/tngan.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
-    font-family: 'TengwarAnnatar';
-    src: url('/public/fonts/tngani.woff') format('woff'),
-         url('/public/fonts/tngani.ttf') format('truetype');
-    font-style: italic;
-    font-weight: normal;
+  font-family: 'TengwarAnnatar';
+  src: url('/public/fonts/tngani.woff') format('woff'),
+       url('/public/fonts/tngani.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
 }
 @font-face {
-    font-family: 'TengwarAnnatar';
-    src: url('/public/fonts/tnganb.woff') format('woff'),
-         url('/public/fonts/tnganb.ttf') format('truetype');
-    font-style: normal;
-    font-weight: bold;
+  font-family: 'TengwarAnnatar';
+  src: url('/public/fonts/tnganb.woff') format('woff'),
+       url('/public/fonts/tnganb.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
 }
 @font-face {
-    font-family: 'TengwarAnnatar';
-    src: url('/public/fonts/tnganbi.woff') format('woff'),
-         url('/public/fonts/tnganbi.ttf') format('truetype');
-    font-style: italic;
-    font-weight: bold;
+  font-family: 'TengwarAnnatar';
+  src: url('/public/fonts/tnganbi.woff') format('woff'),
+       url('/public/fonts/tnganbi.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
 }
 
 // Meta data line below post title
@@ -100,7 +106,6 @@ footer {
 
 // Default button style
 .defaultBtn {
-  background-color:#ac4142;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
@@ -108,10 +113,6 @@ footer {
   padding:6px 15px;
   border:0;
   margin-bottom: 1rem;
-
-  &:hover {
-    background-color:#ac4142;
-  }
 
   &:active {
     position:relative;
@@ -132,11 +133,11 @@ footer {
 
 // Stuff to deal with pesky iframe
 .mapContainer {
-    position: relative;
-    padding-bottom: 50%;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
 
   iframe {
     position: absolute;
@@ -274,6 +275,7 @@ eager-side-nav {
   }
 
   & > a {
+    color: #ffffff !important;
     cursor: pointer !important;
     //border-box: 1px solid black !important;
     border-top: 1px solid rgba(255,255,255,.1);
@@ -303,6 +305,7 @@ eager-side-nav-cover {
   pointer-events: none !important;
   -webkit-transition: opacity .4s ease !important;
   transition: opacity .4s ease !important;
+  background: #000000 !important;
 
   &[eager-side-nav-opened="true"] {
     pointer-events: all !important;
@@ -311,6 +314,7 @@ eager-side-nav-cover {
 }
 
 eager-side-nav-label {
+  color: rgba(255,255,255,.6) !important;
   cursor: default !important;
   //font-size: .8rem !important;
   margin-top: 2rem !important;
@@ -370,6 +374,10 @@ eager-side-nav-button {
       -webkit-transform-origin: 4px -2px !important;
       transform-origin: 4px -2px !important;
     }
+  }
+
+  &[eager-side-nav-opened="true"] eager-side-nav-button-bar {
+    background: #ffffff !important;
   }
 }
 

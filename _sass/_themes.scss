@@ -4,124 +4,35 @@
 //
 // .theme-base-xx
 
-$Red:     #ac4142; //08
-$Orange:  #d28445; //09
-$Yellow:  #f4bf75; //0a
-$Green:   #90a959; //0b
-$Cyan:    #75b5aa; //0c
-$Blue:    #6a9fb5; //0d
-$Magenta: #aa759f; //0e
-$Brown:   #8f5536; //0f
+$themes: (
+  base-08: #ac4142, // Red
+  base-09: #d28445, // Orange
+  base-0a: #f4bf75, // Yellow
+  base-0b: #90a959, // Green
+  base-0c: #75b5aa, // Cyan
+  base-0d: #6a9fb5, // Blue
+  base-0e: #aa759f, // Magenta
+  base-0f: #8f5536  // Brown
+);
 
-
-// Red
-.theme-base-08 {
-  .sidebar,
-  .sidebar-toggle:active,
-  #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Red;
-  }
-  .container a,
-  .sidebar-toggle,
-  .related-posts li a:hover {
-    color: $Red;
-  }
-}
-
-// Orange
-.theme-base-09 {
-  .sidebar,
-  .sidebar-toggle:active,
-  #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Orange;
-  }
-  .container a,
-  .sidebar-toggle,
-  .related-posts li a:hover {
-    color: $Orange;
-  }
-}
-
-// Yellow
-.theme-base-0a {
-  .sidebar,
-  .sidebar-toggle:active,
-  #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Yellow;
-  }
-  .container a,
-  .sidebar-toggle,
-  .related-posts li a:hover {
-    color: $Yellow;
-  }
-}
-
-// Green 
-.theme-base-0b {
-  .sidebar,
-  .sidebar-toggle:active,
-  #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Green;
-  }
-  .container a,
-  .sidebar-toggle,
-  .related-posts li a:hover {
-    color: $Green;
-  }
-}
-
-// Cyan 
-.theme-base-0c {
-   .sidebar,
-   .sidebar-toggle:active,
-   #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Cyan;
-  }
-   .container a,
-   .sidebar-toggle,
-   .related-posts li a:hover {
-    color: $Cyan;
-  }
-}
-
-// Blue 
-.theme-base-0d {
-   .sidebar,
-   .sidebar-toggle:active,
-   #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Blue;
-  }
-   .container a,
-   .sidebar-toggle,
-   .related-posts li a:hover {
-    color: $Blue;
-  }
-}
-
-// Magenta 
-.theme-base-0e {
-   .sidebar,
-   .sidebar-toggle:active,
-   #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Magenta;
-  }
-   .container a,
-   .sidebar-toggle,
-   .related-posts li a:hover {
-    color: $Magenta;
-  }
-}
-
-// Brown 
-.theme-base-0f {
-   .sidebar,
-   .sidebar-toggle:active,
-   #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $Brown;
-  }
-   .container a,
-   .sidebar-toggle,
-   .related-posts li a:hover {
-    color: $Brown;
+@each $theme, $color in $themes {
+  .theme-#{$theme} {
+    .sidebar,
+    .sidebar-toggle:active,
+    #sidebar-checkbox:checked ~ .sidebar-toggle,
+    eager-side-nav,
+    eager-side-nav-button-bar,
+    .pace-progress,
+    .defaultBtn,
+    .defaultBtn:hover {
+      background-color: $color !important;
+    }
+    .container a,
+    .sidebar-toggle,
+    .related-posts li a:hover,
+    code,
+    #comment-icon {
+      color: $color;
+    }
   }
 }

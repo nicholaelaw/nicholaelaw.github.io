@@ -1,12 +1,13 @@
 <!-- Sidebar replacement stolen from eager.io -->
 <script>
   INSTALL_OPTIONS = {
-    "labelColor": "rgba(255,255,255,.6)",
-    "linkColor": "#ffffff",
-    "backgroundColor": "#ac4142",
-    "buttonColor": "#ac4142",
+    //Style information replaced by themes.
+    //"labelColor": "rgba(255,255,255,.6)",
+    //"linkColor": "#ffffff",
+    //"backgroundColor": "#ac4142",
+    //"buttonColor": "#ac4142",
+    //"coverColor": "#000000",
     "showCover": true,
-    "coverColor": "#000000",
     "items": [
       {
         "itemType": "label",
@@ -44,31 +45,31 @@
   buttonEl = document.createElement('eager-side-nav-button');
   coverEl = document.createElement('eager-side-nav-cover');
 
-  addStyles = function() {
-    var style = document.createElement('style');
-    style.innerHTML = '' +
-      'eager-side-nav > a {' +
-        'color: ' + options.linkColor + ' !important' +
-      '}' +
-      'eager-side-nav-label {' +
-        'color: ' + options.labelColor + ' !important' +
-      '}' +
-      'eager-side-nav {' +
-        'background: ' + options.backgroundColor + ' !important' +
-      '}' +
-      'eager-side-nav-button-bar {' +
-        'background: ' + options.buttonColor + ' !important' +
-      '}' +
-      'eager-side-nav-button[eager-side-nav-opened="true"] eager-side-nav-button-bar {' +
-        'background: ' + options.linkColor + ' !important' +
-      '}' +
-      (options.showCover ? '' +
-      'eager-side-nav-cover {' +
-        'background: ' + options.coverColor + ' !important' +
-      '}' : '') +
-    '';
-    document.body.appendChild(style);
-  };
+  // addStyles = function() {
+  //   var style = document.createElement('style');
+  //   style.innerHTML = '' +
+  //     'eager-side-nav > a {' +
+  //       'color: ' + options.linkColor + ' !important' +
+  //     '}' +
+  //     'eager-side-nav-label {' +
+  //       'color: ' + options.labelColor + ' !important' +
+  //     '}' +
+  //     'eager-side-nav {' +
+  //       'background: ' + options.backgroundColor + ' !important' +
+  //     '}' +
+  //     'eager-side-nav-button-bar {' +
+  //       'background: ' + options.buttonColor + ' !important' +
+  //     '}' +
+  //     'eager-side-nav-button[eager-side-nav-opened="true"] eager-side-nav-button-bar {' +
+  //       'background: ' + options.linkColor + ' !important' +
+  //     '}' +
+  //     (options.showCover ? '' +
+  //     'eager-side-nav-cover {' +
+  //       'background: ' + options.coverColor + ' !important' +
+  //     '}' : '') +
+  //   '';
+  //   document.body.appendChild(style);
+  // };
 
   addCover = function() {
     if (pointerEventsSupport) {
@@ -159,7 +160,7 @@
   };
 
   document.addEventListener('DOMContentLoaded', function(){
-    addStyles();
+    //addStyles();
     addCover();
     addNavItems();
     addButton();
