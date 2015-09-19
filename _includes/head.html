@@ -24,34 +24,11 @@
   </title>
 
   <!-- Load CSS -->
-  {% if site.data.options.devMode %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-    <!-- Load custom CSS if extraCSS is true (site-wide) -->
-    {% if site.data.options.extraCSS %}
-      <!-- My own CSS -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
-      <!-- Font Awesome -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.css"/>
-      <!-- Core CSS file -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/public/css/photoswipe/photoswipe.css"> 
-      <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-           In the folder of skin CSS file there are also:
-           - .png and .svg icons sprite, 
-           - preloader.gif (for browsers that do not support CSS animations) -->
-      <link rel="stylesheet" href="{{ site.baseurl }}/public/css/photoswipe/default-skin.css"> 
-    {% endif %}
-  {% else %}
-    <!-- Load minified CSS if devMode is off -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main-fa-pswp-bundle.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/nicholaelaw.css">
-    <!--link rel="stylesheet" href="{{ site.baseurl }}/public/css/font-awesome.min.css"/-->
-  {% endif %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/main-pswp-fa-bundle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  <!-- Load preloading JavaScript -->
 
+  <!-- Load preloading components -->
   {% include addonJS-pre.html %}
 
   <!-- Icons -->

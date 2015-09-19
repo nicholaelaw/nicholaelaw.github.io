@@ -1,11 +1,11 @@
-// Pagination
-//
+/* Pagination */
 // Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
 // there are no more previous or next posts to show.
-
 .pagination {
   overflow: hidden; // clearfix
-  margin: 0 -1.5rem 1rem;
+  //margin: 0 -1.5rem 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
@@ -15,8 +15,7 @@
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: solid #eee;
-  border-width: 1px 0;
+  border: 1px solid #eee;
 
   &:first-child {
     margin-bottom: -1px;
@@ -32,11 +31,10 @@ a.pagination-item:hover {
   .pagination {
     margin: 3rem 0;
   }
-
+  
   .pagination-item {
     float: left;
     width: 50%;
-    border-width: 1px;
 
     &:first-child {
       margin-bottom: 0;

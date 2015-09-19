@@ -1,7 +1,5 @@
-// Body resets
-//
+/* Body resets */
 // Update the foundational and global aspects of the page.
-
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -12,15 +10,17 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; //Lanyon
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif; //Lanyon
   font-size: 16px;
   line-height: 1.5;
 
   @media (min-width: 38em) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -45,19 +45,24 @@ a {
   strong {
     color: inherit;
   }
+
+  &[href^="#fn:"],
+  &[href^="#fnref:"] {
+    display: inline-block;
+    margin-left: .1rem;
+    font-weight: bold;
+  }
 }
 
 img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
 }
 
 table {
   margin-bottom: 1rem;
   width: 100%;
-  font-size: 85%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
@@ -68,11 +73,16 @@ th {
   border: 1px solid #e5e5e5;
 }
 
-th {
-  text-align: left;
-}
+// th {
+//  text-align: left;
+//}
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+
+.footnotes {
+  margin-top: 2rem;
+  font-size: 85%;
 }

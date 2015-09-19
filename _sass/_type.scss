@@ -1,12 +1,15 @@
-// Typography
+/* Typography */
 //
 // Headings, body text, lists, and other misc typographic elements.
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif; //Lanyon
   margin-bottom: .5rem;
-  font-weight: bold;
+  //font-weight: bold;
+  font-weight: 400; //Lanyon
   line-height: 1.25;
   color: #313131;
+  letter-spacing: -.025rem; //Lanyon
   text-rendering: optimizeLegibility;
 }
 
@@ -85,26 +88,6 @@ blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
-}
-
-
-// Markdown footnotes
-//
-// See the example content post for an example.
-
-// Footnote number within body text
-a[href^="#fn:"],
-// Back to footnote link
-a[href^="#fnref:"] {
-  display: inline-block;
-  margin-left: .1rem;
-  font-weight: bold;
-}
-
-// List of footnotes
-.footnotes {
-  margin-top: 2rem;
-  font-size: 85%;
 }
 
 // Custom type

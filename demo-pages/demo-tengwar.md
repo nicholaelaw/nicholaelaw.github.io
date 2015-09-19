@@ -28,7 +28,6 @@ div.kbdContainer {
   max-width: 33rem;
 }
 code.tiny {
-  font-size: 10%;
   color: Gray;
 }
 </style>

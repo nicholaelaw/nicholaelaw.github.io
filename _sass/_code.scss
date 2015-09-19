@@ -1,8 +1,6 @@
-// Code
-//
+/* Code blocks */
 // Inline and block-level code snippets. Includes tweaks to syntax highlighted
 // snippets from Pygments/Rouge and Gist embeds.
-
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -19,29 +17,42 @@ code {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-}
 
-pre code {
-  padding: 0;
-  font-size: 100%;
-  color: inherit;
-  background-color: transparent;
+  // retro-added from Poole.css
+  display: block;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
 }
 
 // Pygments via Jekyll
 .highlight {
-  padding: 1rem;
+  //padding: 1rem;
+  //font-size: .8rem;
+  //line-height: 1.4;
+  //background-color: #f9f9f9;
+  //border-radius: .25rem;
   margin-bottom: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  background-color: #f9f9f9;
-  border-radius: .25rem;
+  border-radius: 4px;
 
   pre {
     margin-bottom: 0;
-    overflow-x: auto;
+    // overflow-x: auto;
   }
-
+  
+  // Not present in Poole.css
   .lineno {
     display: inline-block; // Ensures the null space also isn't selectable
     padding-right: .75rem;
@@ -54,25 +65,27 @@ pre code {
   }
 }
 
-
 // Gist via GitHub Pages
-// .gist .gist-file {
-//   font-family: Menlo, Monaco, "Courier New", monospace !important;
-// }
-// .gist .markdown-body {
-//   padding: 15px;
-// }
-// .gist pre {
-//   padding: 0;
-//   background-color: transparent;
-// }
-// .gist .gist-file .gist-data {
-//   font-size: .8rem !important;
-//   line-height: 1.4;
-// }
-// .gist code {
-//   padding: 0;
-//   color: inherit;
-//   background-color: transparent;
-//   border-radius: 0;
-// }
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+
+  .gist-data {
+    font-size: .8rem !important;
+    line-height: 1.4;
+  }
+}
+.gist {
+  .markdown-body {
+    padding: 15px;
+  }
+  pre {
+    padding: 0;
+    background-color: transparent;
+  }
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}

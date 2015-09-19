@@ -14,6 +14,8 @@ paginate:            5
 highlighter:         pygments
 TZ:                  Asia/Chongqing
 exclude:             [project.sublime-project, /assets/test/, /assets/processing/]
+sass:
+  style:             compressed
 
 # About/contact
 author:

@@ -45,7 +45,7 @@ title: 操场 &bcong; Playground
   href="{{site.baseurl}}/demo-iframe-containers/">iFrame Containers</a></li>
   <li><i class="fa-li fa fa-check"></i><a 
   href="{{site.baseurl}}/tags/">Sortable Tag List and Article Links (List.js Powered)</a></li>
-  <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/fa-icon-list/">A Complete Searchable-Sortable-Icon-Name-in-the-Tooltip List of Font Awesome Icons</a></li>
+  <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/demo-fa-icon-list/">A Complete Searchable-Sortable-Icon-Name-in-the-Tooltip List of Font Awesome Icons</a></li>
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/demo-jquery-on-demand/">Load jQuery on Demand</a></li>
   <li><i class="fa-li fa fa-check"></i><a href="{{site.baseurl}}/tengwar-reference/">My Tengwar Reference Page</a></li>
 </ul>
