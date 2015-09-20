@@ -101,6 +101,6 @@ title: 关于 ≌ About
 
 Deep gratitude goes to all parties mentioned above and more.
 
-如有疑问，请大声提问。
+如有疑问，请大声提问。如有疑问，请猛击[这里](ma&#x69;lto&#x3a;n&#x69;cholaelaw&#64;gma&#x69;l&#46;com)
 
 最后生成日期 &#8780; Last build date: {{ site.time | date_to_rfc822 }}

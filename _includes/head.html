@@ -17,7 +17,11 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {% if paginator.page == 1 %}
+        {{ site.title }} &middot; {{ site.tagline }}
+      {% else %}
+        {{ site.title }} &middot; {{ site.tagline }} &supe; {{ paginator.page }}/{{ paginator.total_pages }}
+      {% endif %}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
