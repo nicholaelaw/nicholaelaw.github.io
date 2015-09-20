@@ -21,7 +21,7 @@ title: SAT考试里最难的数学题？
 <div class="imgDisplay monod" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
   <a href="/assets/images/SAT-Problem-RASBTC-799x776.png" itemprop="contentUrl" data-size="799x776" >
-  <img src="/assets/images/SAT-Problem-RASBTC-799x776.png" itemprop="thumbnail" 
+  <img src="/assets/images/SAT-Problem-RASBTC-799x776.png" itemprop="image" 
     title="为了省事，就把这道题叫做RASBTC。" 
     alt="为了省事，就把这道题叫做RASBTC。" /></a>
   <figcaption itemprop="caption description">为了省事，就把这道题叫做RASBTC。</figcaption>
@@ -52,7 +52,7 @@ title: SAT考试里最难的数学题？
 <div class="imgDisplay monod" style="max-width: 400px;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
   <a href="/assets/images/SAT-Problem-RASBTC-solution-800x758.png" itemprop="contentUrl" data-size="800x758" >
-  <img src="/assets/images/SAT-Problem-RASBTC-solution-800x758.png" itemprop="thumbnail" 
+  <img src="/assets/images/SAT-Problem-RASBTC-solution-800x758.png" itemprop="image" 
     title="作辅助线并设夹角theta" 
     alt="作辅助线并设夹角theta" /></a>
   <figcaption itemprop="caption description">作辅助线并设夹角\(\theta\)</figcaption>
