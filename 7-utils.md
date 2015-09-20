@@ -38,5 +38,6 @@ title: 参考 ≌ Handy
 * [Lucidhart](https://www.lucidchart.com/){:target="_blank"}
 * [Tengwar Annatar by Johan Winge](http://web.comhem.se/alatius/fonts/annatar.html){:target="_blank"}
 * [Tengwar Transcriber](http://www.arno.org/tengwar/){:target="_blank"}
+* [Google Search Console](https://www.google.com/webmasters/tools/home){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。

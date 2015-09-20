@@ -200,7 +200,7 @@ $$\rhd$$
 
 PhotoSwipe看起来真的好牛B、好漂亮，但是要使用它需要一定的JavaScript基础知识。从它网站给出的实例来看，要在代码层面做的工作不少。那么如果我要将它拿来用，就必须先学会JavaScript。
 
-打开[w3school](http://www.w3schools.com/){:target="_blank"}网站，从JavaScript第一章开始读。同时把PhotoSwipe官方的示例复制下来，放到我的[操场]({{site.baseurl}}{{page.url}}/playground/)上，动手。
+打开[w3school](http://www.w3schools.com/){:target="_blank"}网站，从JavaScript第一章开始读。同时把PhotoSwipe官方的示例复制下来，放到我的[操场]({{site.baseurl}}/playground/)上，动手。
 
 JavaScript入门以后，虽然还不能写出完整的代码，但至少已经能够读懂别人写的代码了。这时我也成功地把官网的示例原样复制了出来。虽然只是copy-paste，但是对于对`HTML5-CSS3-JS`一窍不通的人来说，还是费了不少功夫。
 
