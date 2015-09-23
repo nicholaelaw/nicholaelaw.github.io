@@ -39,5 +39,6 @@ title: 参考 ≌ Handy
 * [Tengwar Annatar by Johan Winge](http://web.comhem.se/alatius/fonts/annatar.html){:target="_blank"}
 * [Tengwar Transcriber](http://www.arno.org/tengwar/){:target="_blank"}
 * [Google Search Console](https://www.google.com/webmasters/tools/home){:target="_blank"}
+* [xkcd Simple Writer](http://xkcd.com/simplewriter/){:target="_blank"}
 
 [^bold]: 粗体表示经测试已撞墙的网站。
