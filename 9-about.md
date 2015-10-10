@@ -5,7 +5,7 @@ use-pswp: true
 title: 关于 ≌ About
 ---
 
-##哪三喵？
+## 哪三喵？
 
 <div class="imgDisplay monow" style="clear: both;" itemscope itemtype="http://schema.org/ImageGallery">
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -88,7 +88,7 @@ title: 关于 ≌ About
   </figure>
 </div>
 
-##Along with
+## Along with
 
 * Photo galleries built using [PhotoSwipe](http://photoswipe.com/){:target="_blank"}
 * <del>Social sharing widget from [JiaThis](http://www.jiathis.com/){:target="_blank"}</del>

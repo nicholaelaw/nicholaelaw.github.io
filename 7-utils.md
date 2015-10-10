@@ -40,5 +40,9 @@ title: 参考 ≌ Handy
 * [Tengwar Transcriber](http://www.arno.org/tengwar/){:target="_blank"}
 * [Google Search Console](https://www.google.com/webmasters/tools/home){:target="_blank"}
 * [xkcd Simple Writer](http://xkcd.com/simplewriter/){:target="_blank"}
+* [Hemingway App](http://www.hemingwayapp.com/){:target="_blank"}
+* [Lonely Speck](http://www.lonelyspeck.com/){:target="_blank"}
+* [The Photon Collective](http://photoncollective.com/){:target="_blank"}
+
 
 [^bold]: 粗体表示经测试已撞墙的网站。

@@ -2,11 +2,13 @@
 #################
 _site/
 _backup/
+_drafts/
 .sass-cache/
 .jekyll-metadata
 assets/processing/
 assets/test/
-.sublime-project
+*.sublime-project
+*.sublime-workspace
 505.html
 public/test.scss
 public/test.coffee
